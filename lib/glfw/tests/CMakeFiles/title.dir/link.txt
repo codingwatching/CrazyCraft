@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/title.dir/title.c.o -o title  ../src/libglfw3.a -lm -lpthread /usr/lib/librt.so -lm -ldl 

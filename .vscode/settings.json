@@ -1,0 +1,4 @@
+{
+    "makefile.alwaysPreConfigure": true,
+    "makefile.loggingLevel": "Debug"
+}

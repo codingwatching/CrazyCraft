@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/wave.dir/wave.c.o -o wave  ../src/libglfw3.a -lm -lpthread /usr/lib/librt.so -lm -ldl 
