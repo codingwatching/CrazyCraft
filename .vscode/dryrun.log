@@ -1,7 +1,6 @@
 make game --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/ati/Desktop/code/lol'
 g++ -o src/main.o -c src/main.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
- 
 g++ -o src/eog/IndexBuffer.o -c src/eog/IndexBuffer.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
 g++ -o src/eog/Renderer.o -c src/eog/Renderer.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
 g++ -o src/eog/Shader.o -c src/eog/Shader.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  

@@ -1,14 +1,12 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 4.3
- 
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Thu Feb 17 16:00:02 2022
+# Make data base, printed on Thu Feb 17 16:10:50 2022
 
 # Variables
 
@@ -23,7 +21,7 @@ NO_AT_BRIDGE = 1
 # makefile (from 'Makefile', line 10)
 SRC = $(wildcard src/*.cpp) $(wildcard src/**/*.cpp) $(wildcard src/*.cpp) $(wildcard src/**/**/*.cpp) $(wildcard src/**/**/**/*.cpp)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-c060420f-a561-42d7-8741-a9dba6b3e668.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e0285c67-7140-4335-b75c-c0421580f092.sock
 # environment
 VSCODE_CWD = /home/ati
 # default
@@ -93,7 +91,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 2915
+VSCODE_PID = 3919
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -158,7 +156,6 @@ GNUMAKEFLAGS :=
 LOGNAME = ati
 # environment
 XDG_VTNR = 1
- 
 # makefile
 .DEFAULT_GOAL := all
 # environment
@@ -270,7 +267,6 @@ src/eog/Renderer.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-02-17 15:21:00.106600063
 #  File has been updated.
 #  Successfully updated.
@@ -281,6 +277,7 @@ dirs:
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
+ 
 # automatic
 # @ := dirs
 # automatic
@@ -360,6 +357,7 @@ src/vendor/glm/detail/glm.o:
 
 all: dirs libs game
 #  Phony target (prerequisite of .PHONY).
+ 
 #  Command line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -406,7 +404,6 @@ src/eog/VertexArray.o:
 #  Modification time never checked.
 #  File has not been updated.
 
- 
 # Not a target:
 src/eog/Texture.o:
 #  Implicit rule search has not been done.
@@ -433,6 +430,6 @@ src/vendor/imgui/imgui_demo.o:
 # strcache performance: lookups = 399 / hit rate = 13%
 # hash-table stats:
 # Load=346/8192=4%, Rehash=0, Collisions=8/399=2%
-# Finished Make data base on Thu Feb 17 16:00:02 2022
+# Finished Make data base on Thu Feb 17 16:10:50 2022
 
  
