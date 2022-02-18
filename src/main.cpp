@@ -96,14 +96,13 @@ int main()
     GLCall( glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA) );
 
         VertexArray va;
-        unsigned int vbi = NULL;
-        unsigned int ibi = NULL;
+        VertexBuffer vb = NULL;
+        IndexBuffer ib = NULL;
 
-        CrazyCraft::Mesh::build(poses,uvs,tris,vbi,ibi);
+        CrazyCraft::Mesh::build(poses,uvs,tris,vb,ib);
     
 
-        VertexBuffer vb(vbi);
-        IndexBuffer ib(ibi);
+     
 
         glfwSetWindowSizeCallback(window, [](GLFWwindow* window, int width, int height)
             {
@@ -121,7 +120,6 @@ int main()
         // view matrix
         glm::mat4 ident = glm::mat4(1.0f);
         glm::mat4 view = ident;
-
 
         VertexBufferLayout layout;
         layout.AddFloat(3);

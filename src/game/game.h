@@ -2,6 +2,9 @@
 #define UV_COUNT 4
 #define TRIANGLE_COUNT 6
 
+#include "eog/VertexBuffer.h"
+#include "eog/IndexBuffer.h"
+
 namespace CrazyCraft{
 
 namespace Sounds{
@@ -18,7 +21,7 @@ namespace Sounds{
     
 }
 namespace Mesh{
-void build(glm::vec3 positions[],glm::vec2 uvs[],unsigned int triangles[],unsigned int& vb,unsigned int& ib){
+void build(glm::vec3 positions[],glm::vec2 uvs[],unsigned int triangles[],VertexBuffer& vb,IndexBuffer& ib){
     float vbd[POS_COUNT * 3 + UV_COUNT *2];
     for (int i; i <= (POS_COUNT + UV_COUNT);i++){
         if(i % 5 == 1){
@@ -37,8 +40,8 @@ void build(glm::vec3 positions[],glm::vec2 uvs[],unsigned int triangles[],unsign
             vbd[i] = uvs[i / 5].y;
         }
     }
-    vb = VertexBuffer(vbd, sizeof(vbd)).Getrendererid();
-    ib = IndexBuffer(triangles, TRIANGLE_COUNT).Getrendererid();
+    vb = VertexBuffer(vbd, sizeof(vbd));
+    ib = IndexBuffer(triangles, TRIANGLE_COUNT);
 }
 }
 }

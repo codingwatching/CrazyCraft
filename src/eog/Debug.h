@@ -14,12 +14,12 @@ void inline GLClearError()
     while (glGetError() != GL_NO_ERROR);
 }
 
-bool inline GLCheckError()
+bool inline GLCheckError(std::string loc)
 {
     while (GLenum error = glGetError())
     {
         
-        std::cout << "[OpenGL Error] ";
+        std::cout << "[OpenGL Error] in line '" << loc << "':";
           switch(error) {
               case GL_INVALID_ENUM :
                   std::cout << "GL_INVALID_ENUM : An unacceptable value is specified for an enumerated argument.";
@@ -52,10 +52,11 @@ bool inline GLCheckError()
 }
 
 
+
 #ifdef _DEBUG
 #define GLCall(x) GLClearError();\
     x;\
-    ASSERT(GLCheckError())
+    ASSERT(GLCheckError(#x))
 #else
 #define GLCall(x) x
 #endif

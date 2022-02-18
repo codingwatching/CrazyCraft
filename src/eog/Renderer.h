@@ -8,6 +8,7 @@
 #include "Shader.h"
 
 class Renderer
+
 {
     public:
         void Clear() const;
