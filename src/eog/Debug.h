@@ -56,7 +56,7 @@ bool inline GLCheckError(std::string loc)
 #ifdef _DEBUG
 #define GLCall(x) GLClearError();\
     x;\
-    ASSERT(GLCheckError(#x))
+    GLCheckError(#x)
 #else
 #define GLCall(x) x
 #endif

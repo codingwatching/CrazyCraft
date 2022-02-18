@@ -2,7 +2,6 @@
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <eog/Debug.h>
 #include "VertexArray.h"
 #include "IndexBuffer.h"
 #include "Shader.h"

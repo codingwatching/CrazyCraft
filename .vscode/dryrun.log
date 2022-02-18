@@ -1,7 +1,19 @@
-make game --dry-run --keep-going --print-directory
+make game --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/ati/Desktop/code/lol'
 g++ -o src/main.o -c src/main.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
- 
+g++ -o src/eog/IndexBuffer.o -c src/eog/IndexBuffer.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+g++ -o src/eog/Renderer.o -c src/eog/Renderer.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+g++ -o src/eog/Shader.o -c src/eog/Shader.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+g++ -o src/eog/Texture.o -c src/eog/Texture.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+g++ -o src/eog/VertexArray.o -c src/eog/VertexArray.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+g++ -o src/eog/VertexBuffer.o -c src/eog/VertexBuffer.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+g++ -o src/input/Input.o -c src/input/Input.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+g++ -o src/vendor/imgui/imgui.o -c src/vendor/imgui/imgui.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+g++ -o src/vendor/imgui/imgui_demo.o -c src/vendor/imgui/imgui_demo.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+g++ -o src/vendor/imgui/imgui_draw.o -c src/vendor/imgui/imgui_draw.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+g++ -o src/vendor/imgui/imgui_impl_glfw_gl3.o -c src/vendor/imgui/imgui_impl_glfw_gl3.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+g++ -o src/vendor/stb_image/stb_image.o -c src/vendor/stb_image/stb_image.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+g++ -o src/vendor/glm/detail/glm.o -c src/vendor/glm/detail/glm.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
 g++ -o bin/game src/main.o src/eog/IndexBuffer.o src/eog/Renderer.o src/eog/Shader.o src/eog/Texture.o src/eog/VertexArray.o src/eog/VertexBuffer.o src/input/Input.o src/vendor/imgui/imgui.o src/vendor/imgui/imgui_demo.o src/vendor/imgui/imgui_draw.o src/vendor/imgui/imgui_impl_glfw_gl3.o src/vendor/stb_image/stb_image.o src/vendor/glm/detail/glm.o lib/glad/src/glad.o lib/glfw/src/libglfw3.a -ldl -lpthread -lGL -lm
 make: Leaving directory '/home/ati/Desktop/code/lol'
  
