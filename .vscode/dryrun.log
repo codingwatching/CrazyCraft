@@ -1,5 +1,8 @@
-make game --dry-run --always-make --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/ati/Desktop/code/lol'
+mkdir -p ./bin
+cd lib/glad && g++ -o src/glad.o -Iinclude -c src/glad.c
+cd lib/glfw && cmake . && make
 g++ -o src/main.o -c src/main.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
 g++ -o src/eog/IndexBuffer.o -c src/eog/IndexBuffer.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
 g++ -o src/eog/Renderer.o -c src/eog/Renderer.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
