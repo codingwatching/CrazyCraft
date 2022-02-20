@@ -26,6 +26,7 @@ IndexBuffer::~IndexBuffer()
 
 void IndexBuffer::Bind() const
 {
+    std::cout << m_RendererID << std::endl;
     GLCall( glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_RendererID) );
 }
 

@@ -5,6 +5,7 @@ g++ -o src/eog/IndexBuffer.o -c src/eog/IndexBuffer.cpp -fpermissive -Ilib/glad/
 g++ -o src/eog/Renderer.o -c src/eog/Renderer.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
 g++ -o src/eog/Shader.o -c src/eog/Shader.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
 g++ -o src/eog/Texture.o -c src/eog/Texture.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+ 
 g++ -o src/eog/VertexArray.o -c src/eog/VertexArray.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
 g++ -o src/eog/VertexBuffer.o -c src/eog/VertexBuffer.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
 g++ -o src/input/Input.o -c src/input/Input.cpp -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  

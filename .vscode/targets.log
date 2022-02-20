@@ -5,8 +5,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Fri Feb 18 14:34:26 2022
+# Make data base, printed on Sun Feb 20 17:07:01 2022
 
 # Variables
 
@@ -21,7 +22,7 @@ NO_AT_BRIDGE = 1
 # makefile (from 'Makefile', line 10)
 SRC = $(wildcard src/*.cpp) $(wildcard src/**/*.cpp) $(wildcard src/*.cpp) $(wildcard src/**/**/*.cpp) $(wildcard src/**/**/**/*.cpp)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-21ca3394-6dbb-4081-b0bd-c1c7d89c02a7.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ae46d502-ba22-4c39-8819-f94423e20739.sock
 # environment
 VSCODE_CWD = /home/ati
 # default
@@ -73,7 +74,7 @@ PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXDBnwNU/agent.556
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXn0Uf7h/agent.556
 # default
 .SHELLFLAGS := -c
 # environment
@@ -91,13 +92,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4728
+VSCODE_PID = 803
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/510,unix/atiarch:/tmp/.ICE-unix/510
+SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/512,unix/atiarch:/tmp/.ICE-unix/512
 # automatic
 *F = $(notdir $*)
 # environment
@@ -294,6 +295,7 @@ dirs:
 # automatic
 # | := 
 # variable set hash-table stats:
+ 
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
 #  recipe to execute (from 'Makefile', line 24):
 	mkdir -p ./$(BIN)
@@ -301,7 +303,6 @@ dirs:
 clean:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
- 
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 36):
@@ -429,6 +430,6 @@ src/vendor/imgui/imgui_demo.o:
 # strcache performance: lookups = 399 / hit rate = 13%
 # hash-table stats:
 # Load=346/8192=4%, Rehash=0, Collisions=8/399=2%
-# Finished Make data base on Fri Feb 18 14:34:26 2022
+# Finished Make data base on Sun Feb 20 17:07:01 2022
 
  
