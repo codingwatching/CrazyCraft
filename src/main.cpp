@@ -36,13 +36,13 @@ GLFWwindow* InitWindow()
     glfwWindowHint(GLFW_SAMPLES, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // To make MacOS happy; should not be needed
+    //glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // To make MacOS happy; should not be needed
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     // Open a window and create its OpenGL context
     GLFWwindow* window = glfwCreateWindow( 960, 540, "CrazyCraft", NULL, NULL);
     if( window == NULL ){
-        fprintf( stderr, "Failed to open GLFW window. If you have an Intel GPU, they are not 3.3 compatible. Try the 2.1 version of the tutorials.\n" );
+        fprintf( stderr, "Failed to open GLFW window.\n" );
         glfwTerminate();
         return nullptr;
 
@@ -60,7 +60,7 @@ GLFWwindow* InitWindow()
     std::cout << "Using GL Version: " << glGetString(GL_VERSION) << std::endl;
 
     // Ensure we can capture the escape key being pressed below
-            glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
+            //glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
           Input::loadCallbacks(window);
 
     return window;

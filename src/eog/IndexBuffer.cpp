@@ -15,6 +15,7 @@ IndexBuffer::IndexBuffer(unsigned int idtocopy)
 {
    m_RendererID = idtocopy;
 }
+
 unsigned int IndexBuffer::Getrendererid(){
 return m_RendererID;
 }
