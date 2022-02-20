@@ -57,7 +57,7 @@ GLFWwindow* InitWindow()
          return nullptr;
 	}
 
-    std::cout << "Using GL Version: " << glGetString(GL_VERSION) << std::endl;
+    std::cout << "Using openGL Version: " << glGetString(GL_VERSION) << std::endl;
 
     // Ensure we can capture the escape key being pressed below
             //glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);

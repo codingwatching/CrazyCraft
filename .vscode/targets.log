@@ -5,9 +5,8 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Sun Feb 20 17:07:01 2022
+# Make data base, printed on Sun Feb 20 17:22:14 2022
 
 # Variables
 
@@ -168,7 +167,7 @@ USER = ati
 # default
 MAKE_VERSION := 4.3
 # makefile (from 'Makefile', line 6)
-LDFLAGS = lib/glad/src/glad.o lib/glfw/src/libglfw3.a -ldl -lpthread -lGL -lm
+LDFLAGS = lib/glad/src/glad.o lib/glfw/src/libglfw3.a -ldl -lpthread -lGL
 # environment
 SSH_AGENT_PID = 557
 # environment
@@ -178,7 +177,7 @@ BIN = bin
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # makefile (from 'Makefile', line 5)
-CFLAGS = -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
+CFLAGS = -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Isrc/vendor/  
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -268,7 +267,7 @@ src/eog/Renderer.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-17 15:21:00.106600063
+#  Last modified 2022-02-20 17:22:07.311981243
 #  File has been updated.
 #  Successfully updated.
 
@@ -278,10 +277,15 @@ dirs:
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
+ 
 # automatic
+ 
 # @ := dirs
+ 
 # automatic
+ 
 # * := 
+ 
 # automatic
 # < := 
 # automatic
@@ -295,7 +299,6 @@ dirs:
 # automatic
 # | := 
 # variable set hash-table stats:
- 
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
 #  recipe to execute (from 'Makefile', line 24):
 	mkdir -p ./$(BIN)
@@ -430,6 +433,6 @@ src/vendor/imgui/imgui_demo.o:
 # strcache performance: lookups = 399 / hit rate = 13%
 # hash-table stats:
 # Load=346/8192=4%, Rehash=0, Collisions=8/399=2%
-# Finished Make data base on Sun Feb 20 17:07:01 2022
+# Finished Make data base on Sun Feb 20 17:22:14 2022
 
  

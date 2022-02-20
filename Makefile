@@ -2,8 +2,8 @@ UNAME_S = $(shell uname -s)
 
 CC = g++
 CFLAGS = -fpermissive
-CFLAGS += -Ilib/glad/include -Ilib/glfw/include -Isrc -Ilib/stb -Isrc/vendor/  
-LDFLAGS = lib/glad/src/glad.o lib/glfw/src/libglfw3.a -ldl -lpthread -lGL -lm
+CFLAGS += -Ilib/glad/include -Ilib/glfw/include -Isrc -Isrc/vendor/  
+LDFLAGS = lib/glad/src/glad.o lib/glfw/src/libglfw3.a -ldl -lpthread -lGL
 
 
 
