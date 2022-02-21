@@ -110,7 +110,7 @@ tests/events: tests/CMakeFiles/events.dir/__/deps/getopt.c.o
 tests/events: tests/CMakeFiles/events.dir/build.make
 tests/events: src/libglfw3.a
 tests/events: /usr/lib/libm.so
-tests/events: /usr/lib/librt.so
+tests/events: /usr/lib/librt.a
 tests/events: /usr/lib/libm.so
 tests/events: tests/CMakeFiles/events.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable events"

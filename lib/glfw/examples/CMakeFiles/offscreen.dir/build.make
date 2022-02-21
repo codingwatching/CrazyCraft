@@ -94,7 +94,7 @@ examples/offscreen: examples/CMakeFiles/offscreen.dir/offscreen.c.o
 examples/offscreen: examples/CMakeFiles/offscreen.dir/build.make
 examples/offscreen: src/libglfw3.a
 examples/offscreen: /usr/lib/libm.so
-examples/offscreen: /usr/lib/librt.so
+examples/offscreen: /usr/lib/librt.a
 examples/offscreen: /usr/lib/libm.so
 examples/offscreen: examples/CMakeFiles/offscreen.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable offscreen"

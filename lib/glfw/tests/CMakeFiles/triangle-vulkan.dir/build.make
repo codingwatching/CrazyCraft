@@ -94,7 +94,7 @@ tests/triangle-vulkan: tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o
 tests/triangle-vulkan: tests/CMakeFiles/triangle-vulkan.dir/build.make
 tests/triangle-vulkan: src/libglfw3.a
 tests/triangle-vulkan: /usr/lib/libm.so
-tests/triangle-vulkan: /usr/lib/librt.so
+tests/triangle-vulkan: /usr/lib/librt.a
 tests/triangle-vulkan: /usr/lib/libm.so
 tests/triangle-vulkan: tests/CMakeFiles/triangle-vulkan.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable triangle-vulkan"

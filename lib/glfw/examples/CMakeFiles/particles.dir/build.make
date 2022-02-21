@@ -126,7 +126,7 @@ examples/particles: examples/CMakeFiles/particles.dir/__/deps/getopt.c.o
 examples/particles: examples/CMakeFiles/particles.dir/build.make
 examples/particles: src/libglfw3.a
 examples/particles: /usr/lib/libm.so
-examples/particles: /usr/lib/librt.so
+examples/particles: /usr/lib/librt.a
 examples/particles: examples/CMakeFiles/particles.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable particles"
 	cd /home/ati/Desktop/code/lol/lib/glfw/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/particles.dir/link.txt --verbose=$(VERBOSE)

@@ -110,7 +110,7 @@ tests/inputlag: tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o
 tests/inputlag: tests/CMakeFiles/inputlag.dir/build.make
 tests/inputlag: src/libglfw3.a
 tests/inputlag: /usr/lib/libm.so
-tests/inputlag: /usr/lib/librt.so
+tests/inputlag: /usr/lib/librt.a
 tests/inputlag: /usr/lib/libm.so
 tests/inputlag: tests/CMakeFiles/inputlag.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable inputlag"

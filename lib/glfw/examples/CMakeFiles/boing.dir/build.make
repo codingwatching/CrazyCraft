@@ -94,7 +94,7 @@ examples/boing: examples/CMakeFiles/boing.dir/boing.c.o
 examples/boing: examples/CMakeFiles/boing.dir/build.make
 examples/boing: src/libglfw3.a
 examples/boing: /usr/lib/libm.so
-examples/boing: /usr/lib/librt.so
+examples/boing: /usr/lib/librt.a
 examples/boing: /usr/lib/libm.so
 examples/boing: examples/CMakeFiles/boing.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable boing"

@@ -94,7 +94,7 @@ tests/allocator: tests/CMakeFiles/allocator.dir/allocator.c.o
 tests/allocator: tests/CMakeFiles/allocator.dir/build.make
 tests/allocator: src/libglfw3.a
 tests/allocator: /usr/lib/libm.so
-tests/allocator: /usr/lib/librt.so
+tests/allocator: /usr/lib/librt.a
 tests/allocator: /usr/lib/libm.so
 tests/allocator: tests/CMakeFiles/allocator.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable allocator"

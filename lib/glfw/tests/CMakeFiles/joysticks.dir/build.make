@@ -94,7 +94,7 @@ tests/joysticks: tests/CMakeFiles/joysticks.dir/joysticks.c.o
 tests/joysticks: tests/CMakeFiles/joysticks.dir/build.make
 tests/joysticks: src/libglfw3.a
 tests/joysticks: /usr/lib/libm.so
-tests/joysticks: /usr/lib/librt.so
+tests/joysticks: /usr/lib/librt.a
 tests/joysticks: /usr/lib/libm.so
 tests/joysticks: tests/CMakeFiles/joysticks.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable joysticks"

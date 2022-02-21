@@ -94,7 +94,7 @@ tests/title: tests/CMakeFiles/title.dir/title.c.o
 tests/title: tests/CMakeFiles/title.dir/build.make
 tests/title: src/libglfw3.a
 tests/title: /usr/lib/libm.so
-tests/title: /usr/lib/librt.so
+tests/title: /usr/lib/librt.a
 tests/title: /usr/lib/libm.so
 tests/title: tests/CMakeFiles/title.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable title"

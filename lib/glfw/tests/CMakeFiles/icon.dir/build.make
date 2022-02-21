@@ -94,7 +94,7 @@ tests/icon: tests/CMakeFiles/icon.dir/icon.c.o
 tests/icon: tests/CMakeFiles/icon.dir/build.make
 tests/icon: src/libglfw3.a
 tests/icon: /usr/lib/libm.so
-tests/icon: /usr/lib/librt.so
+tests/icon: /usr/lib/librt.a
 tests/icon: /usr/lib/libm.so
 tests/icon: tests/CMakeFiles/icon.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable icon"

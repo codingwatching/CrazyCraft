@@ -94,7 +94,7 @@ tests/tearing: tests/CMakeFiles/tearing.dir/tearing.c.o
 tests/tearing: tests/CMakeFiles/tearing.dir/build.make
 tests/tearing: src/libglfw3.a
 tests/tearing: /usr/lib/libm.so
-tests/tearing: /usr/lib/librt.so
+tests/tearing: /usr/lib/librt.a
 tests/tearing: /usr/lib/libm.so
 tests/tearing: tests/CMakeFiles/tearing.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable tearing"

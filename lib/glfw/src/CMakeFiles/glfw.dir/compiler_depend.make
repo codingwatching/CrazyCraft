@@ -5,18 +5,19 @@ src/CMakeFiles/glfw.dir/context.c.o: src/context.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -41,6 +42,7 @@ src/CMakeFiles/glfw.dir/context.c.o: src/context.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -53,11 +55,13 @@ src/CMakeFiles/glfw.dir/context.c.o: src/context.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -66,7 +70,6 @@ src/CMakeFiles/glfw.dir/context.c.o: src/context.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -83,7 +86,7 @@ src/CMakeFiles/glfw.dir/context.c.o: src/context.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -152,12 +155,14 @@ src/CMakeFiles/glfw.dir/context.c.o: src/context.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/assert.h \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/syslimits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed/syslimits.h \
   /usr/include/limits.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/local_lim.h \
@@ -167,18 +172,19 @@ src/CMakeFiles/glfw.dir/egl_context.c.o: src/egl_context.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -203,6 +209,7 @@ src/CMakeFiles/glfw.dir/egl_context.c.o: src/egl_context.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -215,11 +222,13 @@ src/CMakeFiles/glfw.dir/egl_context.c.o: src/egl_context.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -228,7 +237,6 @@ src/CMakeFiles/glfw.dir/egl_context.c.o: src/egl_context.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -245,7 +253,7 @@ src/CMakeFiles/glfw.dir/egl_context.c.o: src/egl_context.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -314,6 +322,8 @@ src/CMakeFiles/glfw.dir/egl_context.c.o: src/egl_context.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/string.h \
   /usr/include/strings.h \
@@ -328,18 +338,19 @@ src/CMakeFiles/glfw.dir/glx_context.c.o: src/glx_context.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -364,6 +375,7 @@ src/CMakeFiles/glfw.dir/glx_context.c.o: src/glx_context.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -376,11 +388,13 @@ src/CMakeFiles/glfw.dir/glx_context.c.o: src/glx_context.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -389,7 +403,6 @@ src/CMakeFiles/glfw.dir/glx_context.c.o: src/glx_context.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -406,7 +419,7 @@ src/CMakeFiles/glfw.dir/glx_context.c.o: src/glx_context.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -475,6 +488,8 @@ src/CMakeFiles/glfw.dir/glx_context.c.o: src/glx_context.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/string.h \
   /usr/include/strings.h \
@@ -489,18 +504,19 @@ src/CMakeFiles/glfw.dir/init.c.o: src/init.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -525,6 +541,7 @@ src/CMakeFiles/glfw.dir/init.c.o: src/init.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -537,11 +554,13 @@ src/CMakeFiles/glfw.dir/init.c.o: src/init.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -550,7 +569,6 @@ src/CMakeFiles/glfw.dir/init.c.o: src/init.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -567,7 +585,7 @@ src/CMakeFiles/glfw.dir/init.c.o: src/init.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -636,6 +654,8 @@ src/CMakeFiles/glfw.dir/init.c.o: src/init.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/string.h \
   /usr/include/strings.h \
@@ -650,18 +670,19 @@ src/CMakeFiles/glfw.dir/input.c.o: src/input.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -686,6 +707,7 @@ src/CMakeFiles/glfw.dir/input.c.o: src/input.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -698,11 +720,13 @@ src/CMakeFiles/glfw.dir/input.c.o: src/input.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -711,7 +735,6 @@ src/CMakeFiles/glfw.dir/input.c.o: src/input.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -728,7 +751,7 @@ src/CMakeFiles/glfw.dir/input.c.o: src/input.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -797,10 +820,12 @@ src/CMakeFiles/glfw.dir/input.c.o: src/input.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   src/mappings.h \
   /usr/include/assert.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/float.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/float.h \
   /usr/include/math.h \
   /usr/include/bits/math-vector.h \
   /usr/include/bits/libm-simd-decl-stubs.h \
@@ -821,18 +846,19 @@ src/CMakeFiles/glfw.dir/linux_joystick.c.o: src/linux_joystick.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -857,6 +883,7 @@ src/CMakeFiles/glfw.dir/linux_joystick.c.o: src/linux_joystick.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -869,11 +896,13 @@ src/CMakeFiles/glfw.dir/linux_joystick.c.o: src/linux_joystick.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -882,7 +911,6 @@ src/CMakeFiles/glfw.dir/linux_joystick.c.o: src/linux_joystick.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -899,7 +927,7 @@ src/CMakeFiles/glfw.dir/linux_joystick.c.o: src/linux_joystick.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -968,6 +996,8 @@ src/CMakeFiles/glfw.dir/linux_joystick.c.o: src/linux_joystick.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/sys/stat.h \
   /usr/include/bits/stat.h \
@@ -1000,18 +1030,19 @@ src/CMakeFiles/glfw.dir/monitor.c.o: src/monitor.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -1036,6 +1067,7 @@ src/CMakeFiles/glfw.dir/monitor.c.o: src/monitor.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -1048,11 +1080,13 @@ src/CMakeFiles/glfw.dir/monitor.c.o: src/monitor.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -1061,7 +1095,6 @@ src/CMakeFiles/glfw.dir/monitor.c.o: src/monitor.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -1078,7 +1111,7 @@ src/CMakeFiles/glfw.dir/monitor.c.o: src/monitor.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -1147,6 +1180,8 @@ src/CMakeFiles/glfw.dir/monitor.c.o: src/monitor.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/assert.h \
   /usr/include/math.h \
@@ -1157,7 +1192,7 @@ src/CMakeFiles/glfw.dir/monitor.c.o: src/monitor.c \
   /usr/include/bits/fp-fast.h \
   /usr/include/bits/mathcalls-helper-functions.h \
   /usr/include/bits/mathcalls.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/float.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/float.h \
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/stdlib.h \
@@ -1165,8 +1200,8 @@ src/CMakeFiles/glfw.dir/monitor.c.o: src/monitor.c \
   /usr/include/bits/waitstatus.h \
   /usr/include/alloca.h \
   /usr/include/bits/stdlib-float.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/syslimits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed/syslimits.h \
   /usr/include/limits.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/local_lim.h \
@@ -1176,18 +1211,19 @@ src/CMakeFiles/glfw.dir/null_init.c.o: src/null_init.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -1212,6 +1248,7 @@ src/CMakeFiles/glfw.dir/null_init.c.o: src/null_init.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -1224,11 +1261,13 @@ src/CMakeFiles/glfw.dir/null_init.c.o: src/null_init.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -1237,7 +1276,6 @@ src/CMakeFiles/glfw.dir/null_init.c.o: src/null_init.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -1254,7 +1292,7 @@ src/CMakeFiles/glfw.dir/null_init.c.o: src/null_init.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -1323,6 +1361,8 @@ src/CMakeFiles/glfw.dir/null_init.c.o: src/null_init.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/stdlib.h \
   /usr/include/bits/waitflags.h \
@@ -1334,18 +1374,19 @@ src/CMakeFiles/glfw.dir/null_joystick.c.o: src/null_joystick.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -1370,6 +1411,7 @@ src/CMakeFiles/glfw.dir/null_joystick.c.o: src/null_joystick.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -1382,11 +1424,13 @@ src/CMakeFiles/glfw.dir/null_joystick.c.o: src/null_joystick.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -1395,7 +1439,6 @@ src/CMakeFiles/glfw.dir/null_joystick.c.o: src/null_joystick.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -1412,7 +1455,7 @@ src/CMakeFiles/glfw.dir/null_joystick.c.o: src/null_joystick.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -1481,24 +1524,27 @@ src/CMakeFiles/glfw.dir/null_joystick.c.o: src/null_joystick.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h
 
 src/CMakeFiles/glfw.dir/null_monitor.c.o: src/null_monitor.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -1523,6 +1569,7 @@ src/CMakeFiles/glfw.dir/null_monitor.c.o: src/null_monitor.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -1535,11 +1582,13 @@ src/CMakeFiles/glfw.dir/null_monitor.c.o: src/null_monitor.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -1548,7 +1597,6 @@ src/CMakeFiles/glfw.dir/null_monitor.c.o: src/null_monitor.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -1565,7 +1613,7 @@ src/CMakeFiles/glfw.dir/null_monitor.c.o: src/null_monitor.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -1634,6 +1682,8 @@ src/CMakeFiles/glfw.dir/null_monitor.c.o: src/null_monitor.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/stdlib.h \
   /usr/include/bits/waitflags.h \
@@ -1655,18 +1705,19 @@ src/CMakeFiles/glfw.dir/null_window.c.o: src/null_window.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -1691,6 +1742,7 @@ src/CMakeFiles/glfw.dir/null_window.c.o: src/null_window.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -1703,11 +1755,13 @@ src/CMakeFiles/glfw.dir/null_window.c.o: src/null_window.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -1716,7 +1770,6 @@ src/CMakeFiles/glfw.dir/null_window.c.o: src/null_window.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -1733,7 +1786,7 @@ src/CMakeFiles/glfw.dir/null_window.c.o: src/null_window.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -1802,6 +1855,8 @@ src/CMakeFiles/glfw.dir/null_window.c.o: src/null_window.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/stdlib.h \
   /usr/include/bits/waitflags.h \
@@ -1814,19 +1869,20 @@ src/CMakeFiles/glfw.dir/osmesa_context.c.o: src/osmesa_context.c \
   /usr/include/stdlib.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/floatn.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/sys/types.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/types/clock_t.h \
@@ -1848,6 +1904,7 @@ src/CMakeFiles/glfw.dir/osmesa_context.c.o: src/osmesa_context.c \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/alloca.h \
@@ -1859,7 +1916,7 @@ src/CMakeFiles/glfw.dir/osmesa_context.c.o: src/osmesa_context.c \
   /usr/include/assert.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/wchar.h \
   /usr/include/bits/stdint-uintn.h \
@@ -1889,6 +1946,7 @@ src/CMakeFiles/glfw.dir/osmesa_context.c.o: src/osmesa_context.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/sigthread.h \
@@ -1903,7 +1961,7 @@ src/CMakeFiles/glfw.dir/osmesa_context.c.o: src/osmesa_context.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -1968,24 +2026,27 @@ src/CMakeFiles/glfw.dir/osmesa_context.c.o: src/osmesa_context.c \
   /usr/include/bits/types/struct_itimerspec.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h
 
 src/CMakeFiles/glfw.dir/platform.c.o: src/platform.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -2010,6 +2071,7 @@ src/CMakeFiles/glfw.dir/platform.c.o: src/platform.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -2022,11 +2084,13 @@ src/CMakeFiles/glfw.dir/platform.c.o: src/platform.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -2035,7 +2099,6 @@ src/CMakeFiles/glfw.dir/platform.c.o: src/platform.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -2052,7 +2115,7 @@ src/CMakeFiles/glfw.dir/platform.c.o: src/platform.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -2121,24 +2184,27 @@ src/CMakeFiles/glfw.dir/platform.c.o: src/platform.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h
 
 src/CMakeFiles/glfw.dir/posix_module.c.o: src/posix_module.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -2163,6 +2229,7 @@ src/CMakeFiles/glfw.dir/posix_module.c.o: src/posix_module.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -2175,11 +2242,13 @@ src/CMakeFiles/glfw.dir/posix_module.c.o: src/posix_module.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -2188,7 +2257,6 @@ src/CMakeFiles/glfw.dir/posix_module.c.o: src/posix_module.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -2205,7 +2273,7 @@ src/CMakeFiles/glfw.dir/posix_module.c.o: src/posix_module.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -2274,6 +2342,8 @@ src/CMakeFiles/glfw.dir/posix_module.c.o: src/posix_module.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/dlfcn.h \
   /usr/include/bits/dlfcn.h
@@ -2282,18 +2352,19 @@ src/CMakeFiles/glfw.dir/posix_thread.c.o: src/posix_thread.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -2318,6 +2389,7 @@ src/CMakeFiles/glfw.dir/posix_thread.c.o: src/posix_thread.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -2330,11 +2402,13 @@ src/CMakeFiles/glfw.dir/posix_thread.c.o: src/posix_thread.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -2343,7 +2417,6 @@ src/CMakeFiles/glfw.dir/posix_thread.c.o: src/posix_thread.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -2360,7 +2433,7 @@ src/CMakeFiles/glfw.dir/posix_thread.c.o: src/posix_thread.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -2429,6 +2502,8 @@ src/CMakeFiles/glfw.dir/posix_thread.c.o: src/posix_thread.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/assert.h \
   /usr/include/string.h \
@@ -2438,18 +2513,19 @@ src/CMakeFiles/glfw.dir/posix_time.c.o: src/posix_time.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -2474,6 +2550,7 @@ src/CMakeFiles/glfw.dir/posix_time.c.o: src/posix_time.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -2486,11 +2563,13 @@ src/CMakeFiles/glfw.dir/posix_time.c.o: src/posix_time.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -2499,7 +2578,6 @@ src/CMakeFiles/glfw.dir/posix_time.c.o: src/posix_time.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -2516,7 +2594,7 @@ src/CMakeFiles/glfw.dir/posix_time.c.o: src/posix_time.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -2585,24 +2663,27 @@ src/CMakeFiles/glfw.dir/posix_time.c.o: src/posix_time.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h
 
 src/CMakeFiles/glfw.dir/vulkan.c.o: src/vulkan.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -2627,6 +2708,7 @@ src/CMakeFiles/glfw.dir/vulkan.c.o: src/vulkan.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -2639,11 +2721,13 @@ src/CMakeFiles/glfw.dir/vulkan.c.o: src/vulkan.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -2652,7 +2736,6 @@ src/CMakeFiles/glfw.dir/vulkan.c.o: src/vulkan.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -2669,7 +2752,7 @@ src/CMakeFiles/glfw.dir/vulkan.c.o: src/vulkan.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -2738,6 +2821,8 @@ src/CMakeFiles/glfw.dir/vulkan.c.o: src/vulkan.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/assert.h \
   /usr/include/string.h \
@@ -2752,18 +2837,19 @@ src/CMakeFiles/glfw.dir/window.c.o: src/window.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -2788,6 +2874,7 @@ src/CMakeFiles/glfw.dir/window.c.o: src/window.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -2800,11 +2887,13 @@ src/CMakeFiles/glfw.dir/window.c.o: src/window.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -2813,7 +2902,6 @@ src/CMakeFiles/glfw.dir/window.c.o: src/window.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -2830,7 +2918,7 @@ src/CMakeFiles/glfw.dir/window.c.o: src/window.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -2899,6 +2987,8 @@ src/CMakeFiles/glfw.dir/window.c.o: src/window.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/assert.h \
   /usr/include/string.h \
@@ -2908,24 +2998,25 @@ src/CMakeFiles/glfw.dir/window.c.o: src/window.c \
   /usr/include/bits/waitstatus.h \
   /usr/include/alloca.h \
   /usr/include/bits/stdlib-float.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/float.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/float.h
 
 src/CMakeFiles/glfw.dir/x11_init.c.o: src/x11_init.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -2950,6 +3041,7 @@ src/CMakeFiles/glfw.dir/x11_init.c.o: src/x11_init.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -2962,11 +3054,13 @@ src/CMakeFiles/glfw.dir/x11_init.c.o: src/x11_init.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -2975,7 +3069,6 @@ src/CMakeFiles/glfw.dir/x11_init.c.o: src/x11_init.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -2992,7 +3085,7 @@ src/CMakeFiles/glfw.dir/x11_init.c.o: src/x11_init.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -3061,6 +3154,8 @@ src/CMakeFiles/glfw.dir/x11_init.c.o: src/x11_init.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/stdlib.h \
   /usr/include/bits/waitflags.h \
@@ -3069,8 +3164,8 @@ src/CMakeFiles/glfw.dir/x11_init.c.o: src/x11_init.c \
   /usr/include/bits/stdlib-float.h \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/syslimits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed/syslimits.h \
   /usr/include/limits.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/local_lim.h \
@@ -3082,18 +3177,19 @@ src/CMakeFiles/glfw.dir/x11_monitor.c.o: src/x11_monitor.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -3118,6 +3214,7 @@ src/CMakeFiles/glfw.dir/x11_monitor.c.o: src/x11_monitor.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -3130,11 +3227,13 @@ src/CMakeFiles/glfw.dir/x11_monitor.c.o: src/x11_monitor.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -3143,7 +3242,6 @@ src/CMakeFiles/glfw.dir/x11_monitor.c.o: src/x11_monitor.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -3160,7 +3258,7 @@ src/CMakeFiles/glfw.dir/x11_monitor.c.o: src/x11_monitor.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -3229,9 +3327,11 @@ src/CMakeFiles/glfw.dir/x11_monitor.c.o: src/x11_monitor.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/syslimits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed/syslimits.h \
   /usr/include/limits.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/local_lim.h \
@@ -3256,18 +3356,19 @@ src/CMakeFiles/glfw.dir/x11_window.c.o: src/x11_window.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -3292,6 +3393,7 @@ src/CMakeFiles/glfw.dir/x11_window.c.o: src/x11_window.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -3304,11 +3406,13 @@ src/CMakeFiles/glfw.dir/x11_window.c.o: src/x11_window.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -3317,7 +3421,6 @@ src/CMakeFiles/glfw.dir/x11_window.c.o: src/x11_window.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -3334,7 +3437,7 @@ src/CMakeFiles/glfw.dir/x11_window.c.o: src/x11_window.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -3403,6 +3506,8 @@ src/CMakeFiles/glfw.dir/x11_window.c.o: src/x11_window.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h \
   /usr/include/X11/cursorfont.h \
   /usr/include/X11/Xmd.h \
@@ -3413,8 +3518,8 @@ src/CMakeFiles/glfw.dir/x11_window.c.o: src/x11_window.c \
   /usr/include/bits/waitstatus.h \
   /usr/include/alloca.h \
   /usr/include/bits/stdlib-float.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/syslimits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed/syslimits.h \
   /usr/include/limits.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/local_lim.h \
@@ -3431,18 +3536,19 @@ src/CMakeFiles/glfw.dir/xkb_unicode.c.o: src/xkb_unicode.c \
   /usr/include/stdc-predef.h \
   src/internal.h \
   include/GLFW/glfw3.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
@@ -3467,6 +3573,7 @@ src/CMakeFiles/glfw.dir/xkb_unicode.c.o: src/xkb_unicode.c \
   /usr/include/bits/types/struct_timespec.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/siginfo_t.h \
   /usr/include/bits/types/__sigval_t.h \
   /usr/include/bits/siginfo-arch.h \
@@ -3479,11 +3586,13 @@ src/CMakeFiles/glfw.dir/xkb_unicode.c.o: src/xkb_unicode.c \
   /usr/include/bits/types/stack_t.h \
   /usr/include/sys/ucontext.h \
   /usr/include/bits/sigstack.h \
+  /usr/include/bits/sigstksz.h \
   /usr/include/bits/ss_flags.h \
   /usr/include/bits/types/struct_sigstack.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/bits/sigthread.h \
@@ -3492,7 +3601,6 @@ src/CMakeFiles/glfw.dir/xkb_unicode.c.o: src/xkb_unicode.c \
   /usr/include/sys/types.h \
   /usr/include/bits/types/clock_t.h \
   /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/time_t.h \
   /usr/include/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/bits/byteswap.h \
@@ -3509,7 +3617,7 @@ src/CMakeFiles/glfw.dir/xkb_unicode.c.o: src/xkb_unicode.c \
   /usr/include/X11/Xresource.h \
   /usr/include/X11/Xcursor/Xcursor.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -3578,6 +3686,8 @@ src/CMakeFiles/glfw.dir/xkb_unicode.c.o: src/xkb_unicode.c \
   /usr/include/bits/types/__locale_t.h \
   /usr/include/bits/setjmp.h \
   /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
   src/posix_time.h
 
 
@@ -3607,8 +3717,6 @@ src/null_joystick.c:
 
 src/null_init.c:
 
-src/monitor.c:
-
 /usr/include/bits/dirent_ext.h:
 
 /usr/include/bits/dirent.h:
@@ -3637,8 +3745,6 @@ src/monitor.c:
 
 /usr/include/math.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/float.h:
-
 src/mappings.h:
 
 src/vulkan.c:
@@ -3659,8 +3765,6 @@ src/egl_context.c:
 
 /usr/include/limits.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/limits.h:
-
 /usr/include/bits/fcntl-linux.h:
 
 /usr/include/strings.h:
@@ -3670,6 +3774,12 @@ src/posix_time.c:
 /usr/include/bits/mathcalls-helper-functions.h:
 
 /usr/include/string.h:
+
+/usr/include/bits/stat.h:
+
+/usr/include/assert.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/bits/types/struct___jmp_buf_tag.h:
 
@@ -3703,19 +3813,13 @@ src/posix_thread.h:
 
 /usr/include/linux/posix_types.h:
 
-/usr/include/bits/types/struct_itimerspec.h:
+/usr/include/asm-generic/int-ll64.h:
 
-/usr/include/bits/struct_rwlock.h:
+/usr/include/asm-generic/errno-base.h:
 
-/usr/include/bits/struct_stat.h:
+/usr/include/asm-generic/types.h:
 
-/usr/include/bits/types/time_t.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/bits/types/struct_sigstack.h:
+/usr/include/asm/types.h:
 
 /usr/include/bits/math-vector.h:
 
@@ -3747,6 +3851,14 @@ include/GLFW/glfw3.h:
 
 /usr/include/X11/Xutil.h:
 
+/usr/include/bits/struct_stat.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
+
+/usr/include/bits/struct_rwlock.h:
+
 /usr/include/signal.h:
 
 src/null_window.c:
@@ -3756,30 +3868,6 @@ src/null_window.c:
 /usr/include/bits/siginfo-arch.h:
 
 /usr/include/bits/types.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/bits/getopt_core.h:
-
-/usr/include/bits/sigstack.h:
-
-/usr/include/fcntl.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/bits/sigaction.h:
-
-/usr/include/bits/confname.h:
-
-src/osmesa_context.c:
-
-/usr/include/bits/fcntl.h:
-
-src/platform.h:
-
-/usr/include/X11/Xosdefs.h:
 
 /usr/include/bits/thread-shared-types.h:
 
@@ -3791,11 +3879,29 @@ src/platform.h:
 
 /usr/include/bits/getopt_posix.h:
 
-/usr/include/bits/stdint-intn.h:
+/usr/include/bits/sigaction.h:
 
-src/internal.h:
+/usr/include/bits/getopt_core.h:
 
-/usr/include/bits/types/clockid_t.h:
+/usr/include/bits/sigstack.h:
+
+/usr/include/bits/dlfcn.h:
+
+/usr/include/bits/signum-generic.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/X11/Xosdefs.h:
+
+/usr/include/bits/confname.h:
+
+src/osmesa_context.c:
+
+/usr/include/bits/fcntl.h:
+
+src/platform.h:
 
 /usr/include/bits/wordsize.h:
 
@@ -3804,6 +3910,22 @@ src/internal.h:
 /usr/include/bits/typesizes.h:
 
 /usr/include/bits/uintn-identity.h:
+
+/usr/include/bits/types/struct_sigstack.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/sigstksz.h:
+
+src/internal.h:
+
+src/monitor.c:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h:
+
+/usr/include/bits/long-double.h:
 
 /usr/include/bits/environments.h:
 
@@ -3817,12 +3939,6 @@ src/internal.h:
 
 /usr/include/bits/endianness.h:
 
-/usr/include/bits/dlfcn.h:
-
-/usr/include/bits/signum-generic.h:
-
-/usr/include/gnu/stubs-64.h:
-
 /usr/include/bits/stdlib-float.h:
 
 /usr/include/bits/time64.h:
@@ -3835,13 +3951,13 @@ src/null_joystick.h:
 
 /usr/include/bits/wchar.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/float.h:
+
 /usr/include/X11/extensions/render.h:
 
 /usr/include/linux/types.h:
 
 /usr/include/linux/ioctl.h:
-
-/usr/include/asm-generic/int-ll64.h:
 
 /usr/include/bits/stdint-uintn.h:
 
@@ -3849,19 +3965,33 @@ src/posix_module.c:
 
 /usr/include/endian.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed/syslimits.h:
-
 src/null_platform.h:
 
 /usr/include/unistd.h:
 
 /usr/include/sys/cdefs.h:
 
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/sys/time.h:
+
 src/linux_joystick.c:
 
 /usr/include/bits/posix_opt.h:
 
-/usr/include/sys/time.h:
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/bits/pthread_stack_min.h:
 
 /usr/include/bits/sigthread.h:
 
@@ -3893,14 +4023,6 @@ src/linux_joystick.c:
 
 /usr/include/stdio.h:
 
-/usr/include/bits/byteswap.h:
-
-/usr/include/bits/stat.h:
-
-/usr/include/assert.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h:
-
 /usr/include/bits/select.h:
 
 /usr/include/bits/types/struct_timeval.h:
@@ -3910,8 +4032,6 @@ src/linux_joystick.c:
 /usr/include/bits/types/__FILE.h:
 
 /usr/include/asm/bitsperlong.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h:
 
 /usr/include/X11/keysym.h:
 
@@ -3923,13 +4043,17 @@ src/linux_joystick.c:
 
 /usr/include/X11/extensions/XI2.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h:
-
 /usr/include/X11/Xatom.h:
 
 /usr/include/X11/Xcursor/Xcursor.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed/syslimits.h:
+
 /usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h:
 
 /usr/include/bits/time.h:
 
@@ -3948,8 +4072,6 @@ src/context.c:
 /usr/include/bits/ss_flags.h:
 
 /usr/include/bits/types/struct_FILE.h:
-
-/usr/include/asm/types.h:
 
 /usr/include/stdlib.h:
 
@@ -3983,6 +4105,8 @@ src/xkb_unicode.h:
 
 /usr/include/X11/extensions/XInput2.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include-fixed/limits.h:
+
 /usr/include/bits/types/__sigval_t.h:
 
 /usr/include/X11/extensions/Xfixes.h:
@@ -3992,6 +4116,10 @@ src/xkb_unicode.h:
 /usr/include/X11/extensions/shape.h:
 
 /usr/include/X11/extensions/shapeconst.h:
+
+/usr/include/asm/ioctl.h:
+
+src/linux_joystick.h:
 
 /usr/include/bits/mathcalls.h:
 
@@ -4007,16 +4135,8 @@ src/posix_time.h:
 
 /usr/include/asm-generic/ioctls.h:
 
-src/linux_joystick.h:
-
-/usr/include/asm/ioctl.h:
-
 /usr/include/bits/sched.h:
 
 /usr/include/bits/types/siginfo_t.h:
 
 /usr/include/asm-generic/ioctl.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/asm-generic/types.h:

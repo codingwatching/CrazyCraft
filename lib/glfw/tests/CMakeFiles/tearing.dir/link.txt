@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/tearing.dir/tearing.c.o -o tearing  ../src/libglfw3.a -lm -lpthread /usr/lib/librt.so -lm -ldl 
+/usr/bin/cc CMakeFiles/tearing.dir/tearing.c.o -o tearing  ../src/libglfw3.a -lm /usr/lib/librt.a -lm -ldl 

@@ -110,7 +110,7 @@ tests/glfwinfo: tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o
 tests/glfwinfo: tests/CMakeFiles/glfwinfo.dir/build.make
 tests/glfwinfo: src/libglfw3.a
 tests/glfwinfo: /usr/lib/libm.so
-tests/glfwinfo: /usr/lib/librt.so
+tests/glfwinfo: /usr/lib/librt.a
 tests/glfwinfo: /usr/lib/libm.so
 tests/glfwinfo: tests/CMakeFiles/glfwinfo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable glfwinfo"

@@ -4,12 +4,14 @@
 tests/CMakeFiles/events.dir/__/deps/getopt.c.o: deps/getopt.c \
   /usr/include/stdc-predef.h \
   deps/getopt.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
   /usr/include/string.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
@@ -20,25 +22,26 @@ tests/CMakeFiles/events.dir/__/deps/getopt.c.o: deps/getopt.c \
 tests/CMakeFiles/events.dir/events.c.o: tests/events.c \
   /usr/include/stdc-predef.h \
   deps/glad/gl.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h \
   /usr/include/stdint.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
+  /usr/include/features-time64.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/sys/cdefs.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/bits/types.h \
-  /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
   /usr/include/bits/wchar.h \
   /usr/include/bits/stdint-intn.h \
   /usr/include/bits/stdint-uintn.h \
   /usr/include/stdio.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -70,6 +73,7 @@ tests/CMakeFiles/events.dir/events.c.o: tests/events.c \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/thread-shared-types.h \
   /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/struct_mutex.h \
   /usr/include/bits/struct_rwlock.h \
   /usr/include/alloca.h \
@@ -87,25 +91,11 @@ tests/CMakeFiles/events.dir/events.c.o: tests/events.c \
 
 /usr/include/bits/locale.h:
 
-/usr/include/locale.h:
-
 /usr/include/ctype.h:
 
 /usr/include/alloca.h:
 
 /usr/include/bits/struct_mutex.h:
-
-deps/getopt.h:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/stdint.h:
-
-/usr/include/bits/stdint-intn.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h:
 
 /usr/include/strings.h:
 
@@ -115,43 +105,67 @@ deps/getopt.h:
 
 /usr/include/bits/types/__locale_t.h:
 
-/usr/include/sys/cdefs.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h:
-
 /usr/include/bits/byteswap.h:
 
 /usr/include/bits/types/locale_t.h:
 
-/usr/include/sys/types.h:
+/usr/include/sys/cdefs.h:
 
-/usr/include/features.h:
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdarg.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+deps/getopt.h:
 
 /usr/include/gnu/stubs-64.h:
 
-/usr/include/bits/time64.h:
+/usr/include/bits/stdint-intn.h:
 
-/usr/include/string.h:
+/usr/include/locale.h:
 
-/usr/include/bits/uintn-identity.h:
-
-/usr/include/bits/typesizes.h:
-
-/usr/include/bits/wchar.h:
-
-tests/events.c:
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stddef.h:
 
 deps/getopt.c:
 
 /usr/include/bits/long-double.h:
 
-/usr/include/gnu/stubs.h:
+/usr/include/bits/time64.h:
 
-/usr/include/bits/types/__mbstate_t.h:
+/usr/include/string.h:
+
+/usr/include/features.h:
+
+/usr/include/stdint.h:
+
+/usr/include/features-time64.h:
 
 /usr/include/bits/types/__fpos64_t.h:
 
 /usr/include/bits/select.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.2.0/include/stdint.h:
+
+/usr/include/bits/wchar.h:
+
+tests/events.c:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/bits/types/__mbstate_t.h:
 
 /usr/include/bits/stdlib-float.h:
 
@@ -187,11 +201,9 @@ deps/glad/gl.h:
 
 /usr/include/bits/waitstatus.h:
 
+/usr/include/sys/types.h:
+
 /usr/include/bits/types/clock_t.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h:
-
-/usr/include/bits/types/clockid_t.h:
 
 /usr/include/stdio.h:
 
@@ -214,7 +226,3 @@ deps/glad/gl.h:
 /usr/include/bits/pthreadtypes.h:
 
 /usr/include/bits/thread-shared-types.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/bits/pthreadtypes-arch.h:

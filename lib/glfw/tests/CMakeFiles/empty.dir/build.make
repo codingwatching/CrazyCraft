@@ -110,7 +110,7 @@ tests/empty: tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o
 tests/empty: tests/CMakeFiles/empty.dir/build.make
 tests/empty: src/libglfw3.a
 tests/empty: /usr/lib/libm.so
-tests/empty: /usr/lib/librt.so
+tests/empty: /usr/lib/librt.a
 tests/empty: tests/CMakeFiles/empty.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable empty"
 	cd /home/ati/Desktop/code/lol/lib/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/empty.dir/link.txt --verbose=$(VERBOSE)

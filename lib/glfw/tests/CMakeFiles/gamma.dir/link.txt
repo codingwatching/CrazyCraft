@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/gamma.dir/gamma.c.o -o gamma  ../src/libglfw3.a -lm -lpthread /usr/lib/librt.so -lm -ldl 
+/usr/bin/cc CMakeFiles/gamma.dir/gamma.c.o -o gamma  ../src/libglfw3.a -lm /usr/lib/librt.a -lm -ldl 

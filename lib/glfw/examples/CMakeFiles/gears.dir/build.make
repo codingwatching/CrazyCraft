@@ -94,7 +94,7 @@ examples/gears: examples/CMakeFiles/gears.dir/gears.c.o
 examples/gears: examples/CMakeFiles/gears.dir/build.make
 examples/gears: src/libglfw3.a
 examples/gears: /usr/lib/libm.so
-examples/gears: /usr/lib/librt.so
+examples/gears: /usr/lib/librt.a
 examples/gears: /usr/lib/libm.so
 examples/gears: examples/CMakeFiles/gears.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable gears"

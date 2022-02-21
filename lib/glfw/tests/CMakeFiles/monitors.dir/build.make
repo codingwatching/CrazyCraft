@@ -110,7 +110,7 @@ tests/monitors: tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o
 tests/monitors: tests/CMakeFiles/monitors.dir/build.make
 tests/monitors: src/libglfw3.a
 tests/monitors: /usr/lib/libm.so
-tests/monitors: /usr/lib/librt.so
+tests/monitors: /usr/lib/librt.a
 tests/monitors: /usr/lib/libm.so
 tests/monitors: tests/CMakeFiles/monitors.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable monitors"

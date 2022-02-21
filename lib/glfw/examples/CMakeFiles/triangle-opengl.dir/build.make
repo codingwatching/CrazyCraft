@@ -94,7 +94,7 @@ examples/triangle-opengl: examples/CMakeFiles/triangle-opengl.dir/triangle-openg
 examples/triangle-opengl: examples/CMakeFiles/triangle-opengl.dir/build.make
 examples/triangle-opengl: src/libglfw3.a
 examples/triangle-opengl: /usr/lib/libm.so
-examples/triangle-opengl: /usr/lib/librt.so
+examples/triangle-opengl: /usr/lib/librt.a
 examples/triangle-opengl: /usr/lib/libm.so
 examples/triangle-opengl: examples/CMakeFiles/triangle-opengl.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable triangle-opengl"

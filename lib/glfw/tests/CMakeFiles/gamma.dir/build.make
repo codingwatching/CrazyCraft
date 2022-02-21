@@ -94,7 +94,7 @@ tests/gamma: tests/CMakeFiles/gamma.dir/gamma.c.o
 tests/gamma: tests/CMakeFiles/gamma.dir/build.make
 tests/gamma: src/libglfw3.a
 tests/gamma: /usr/lib/libm.so
-tests/gamma: /usr/lib/librt.so
+tests/gamma: /usr/lib/librt.a
 tests/gamma: /usr/lib/libm.so
 tests/gamma: tests/CMakeFiles/gamma.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable gamma"

@@ -94,7 +94,7 @@ examples/sharing: examples/CMakeFiles/sharing.dir/sharing.c.o
 examples/sharing: examples/CMakeFiles/sharing.dir/build.make
 examples/sharing: src/libglfw3.a
 examples/sharing: /usr/lib/libm.so
-examples/sharing: /usr/lib/librt.so
+examples/sharing: /usr/lib/librt.a
 examples/sharing: /usr/lib/libm.so
 examples/sharing: examples/CMakeFiles/sharing.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable sharing"

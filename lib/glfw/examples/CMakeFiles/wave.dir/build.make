@@ -94,7 +94,7 @@ examples/wave: examples/CMakeFiles/wave.dir/wave.c.o
 examples/wave: examples/CMakeFiles/wave.dir/build.make
 examples/wave: src/libglfw3.a
 examples/wave: /usr/lib/libm.so
-examples/wave: /usr/lib/librt.so
+examples/wave: /usr/lib/librt.a
 examples/wave: /usr/lib/libm.so
 examples/wave: examples/CMakeFiles/wave.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable wave"

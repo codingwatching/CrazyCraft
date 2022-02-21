@@ -94,7 +94,7 @@ examples/triangle-opengles: examples/CMakeFiles/triangle-opengles.dir/triangle-o
 examples/triangle-opengles: examples/CMakeFiles/triangle-opengles.dir/build.make
 examples/triangle-opengles: src/libglfw3.a
 examples/triangle-opengles: /usr/lib/libm.so
-examples/triangle-opengles: /usr/lib/librt.so
+examples/triangle-opengles: /usr/lib/librt.a
 examples/triangle-opengles: /usr/lib/libm.so
 examples/triangle-opengles: examples/CMakeFiles/triangle-opengles.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable triangle-opengles"

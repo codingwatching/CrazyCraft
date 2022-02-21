@@ -94,7 +94,7 @@ examples/heightmap: examples/CMakeFiles/heightmap.dir/heightmap.c.o
 examples/heightmap: examples/CMakeFiles/heightmap.dir/build.make
 examples/heightmap: src/libglfw3.a
 examples/heightmap: /usr/lib/libm.so
-examples/heightmap: /usr/lib/librt.so
+examples/heightmap: /usr/lib/librt.a
 examples/heightmap: /usr/lib/libm.so
 examples/heightmap: examples/CMakeFiles/heightmap.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable heightmap"

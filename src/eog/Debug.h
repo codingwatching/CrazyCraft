@@ -25,7 +25,7 @@ bool inline GLCheckError(std::string loc)
                   std::cout << "GL_INVALID_ENUM : An unacceptable value is specified for an enumerated argument.";
                   break;
               case GL_INVALID_VALUE :
-                  std::cout << "GL_INVALID_OPERATION : A numeric argument is out of range.";
+                  std::cout << "GL_INVALID_VALUE : A numeric argument is out of range.";
                   break;
               case GL_INVALID_OPERATION :
                   std::cout << "GL_INVALID_OPERATION : The specified operation is not allowed in the current state.";
@@ -56,7 +56,7 @@ bool inline GLCheckError(std::string loc)
 #ifdef _DEBUG
 #define GLCall(x) GLClearError();\
     x;\
-    GLCheckError(#x)
+    ASSERT(GLCheckError(#x))
 #else
 #define GLCall(x) x
 #endif

@@ -94,7 +94,7 @@ tests/window: tests/CMakeFiles/window.dir/window.c.o
 tests/window: tests/CMakeFiles/window.dir/build.make
 tests/window: src/libglfw3.a
 tests/window: /usr/lib/libm.so
-tests/window: /usr/lib/librt.so
+tests/window: /usr/lib/librt.a
 tests/window: /usr/lib/libm.so
 tests/window: tests/CMakeFiles/window.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable window"

@@ -94,7 +94,7 @@ tests/reopen: tests/CMakeFiles/reopen.dir/reopen.c.o
 tests/reopen: tests/CMakeFiles/reopen.dir/build.make
 tests/reopen: src/libglfw3.a
 tests/reopen: /usr/lib/libm.so
-tests/reopen: /usr/lib/librt.so
+tests/reopen: /usr/lib/librt.a
 tests/reopen: /usr/lib/libm.so
 tests/reopen: tests/CMakeFiles/reopen.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable reopen"

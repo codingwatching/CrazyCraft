@@ -94,7 +94,7 @@ tests/cursor: tests/CMakeFiles/cursor.dir/cursor.c.o
 tests/cursor: tests/CMakeFiles/cursor.dir/build.make
 tests/cursor: src/libglfw3.a
 tests/cursor: /usr/lib/libm.so
-tests/cursor: /usr/lib/librt.so
+tests/cursor: /usr/lib/librt.a
 tests/cursor: /usr/lib/libm.so
 tests/cursor: tests/CMakeFiles/cursor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable cursor"

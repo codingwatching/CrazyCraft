@@ -110,7 +110,7 @@ tests/msaa: tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o
 tests/msaa: tests/CMakeFiles/msaa.dir/build.make
 tests/msaa: src/libglfw3.a
 tests/msaa: /usr/lib/libm.so
-tests/msaa: /usr/lib/librt.so
+tests/msaa: /usr/lib/librt.a
 tests/msaa: /usr/lib/libm.so
 tests/msaa: tests/CMakeFiles/msaa.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable msaa"

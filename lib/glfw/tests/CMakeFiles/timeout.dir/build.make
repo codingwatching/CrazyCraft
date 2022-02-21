@@ -94,7 +94,7 @@ tests/timeout: tests/CMakeFiles/timeout.dir/timeout.c.o
 tests/timeout: tests/CMakeFiles/timeout.dir/build.make
 tests/timeout: src/libglfw3.a
 tests/timeout: /usr/lib/libm.so
-tests/timeout: /usr/lib/librt.so
+tests/timeout: /usr/lib/librt.a
 tests/timeout: /usr/lib/libm.so
 tests/timeout: tests/CMakeFiles/timeout.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable timeout"

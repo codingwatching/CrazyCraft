@@ -110,7 +110,7 @@ tests/iconify: tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o
 tests/iconify: tests/CMakeFiles/iconify.dir/build.make
 tests/iconify: src/libglfw3.a
 tests/iconify: /usr/lib/libm.so
-tests/iconify: /usr/lib/librt.so
+tests/iconify: /usr/lib/librt.a
 tests/iconify: /usr/lib/libm.so
 tests/iconify: tests/CMakeFiles/iconify.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable iconify"

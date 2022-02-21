@@ -94,7 +94,7 @@ examples/splitview: examples/CMakeFiles/splitview.dir/splitview.c.o
 examples/splitview: examples/CMakeFiles/splitview.dir/build.make
 examples/splitview: src/libglfw3.a
 examples/splitview: /usr/lib/libm.so
-examples/splitview: /usr/lib/librt.so
+examples/splitview: /usr/lib/librt.a
 examples/splitview: /usr/lib/libm.so
 examples/splitview: examples/CMakeFiles/splitview.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable splitview"

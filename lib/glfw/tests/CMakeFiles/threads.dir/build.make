@@ -110,7 +110,7 @@ tests/threads: tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o
 tests/threads: tests/CMakeFiles/threads.dir/build.make
 tests/threads: src/libglfw3.a
 tests/threads: /usr/lib/libm.so
-tests/threads: /usr/lib/librt.so
+tests/threads: /usr/lib/librt.a
 tests/threads: tests/CMakeFiles/threads.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable threads"
 	cd /home/ati/Desktop/code/lol/lib/glfw/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/threads.dir/link.txt --verbose=$(VERBOSE)

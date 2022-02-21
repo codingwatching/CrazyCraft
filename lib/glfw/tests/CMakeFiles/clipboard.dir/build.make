@@ -110,7 +110,7 @@ tests/clipboard: tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o
 tests/clipboard: tests/CMakeFiles/clipboard.dir/build.make
 tests/clipboard: src/libglfw3.a
 tests/clipboard: /usr/lib/libm.so
-tests/clipboard: /usr/lib/librt.so
+tests/clipboard: /usr/lib/librt.a
 tests/clipboard: /usr/lib/libm.so
 tests/clipboard: tests/CMakeFiles/clipboard.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ati/Desktop/code/lol/lib/glfw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable clipboard"

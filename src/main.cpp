@@ -33,10 +33,10 @@ GLFWwindow* InitWindow()
     }
 
 
-    glfwWindowHint(GLFW_SAMPLES, 4);
+   // glfwWindowHint(GLFW_SAMPLES, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    //glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); // To make MacOS happy; should not be needed
+    //glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_FALSE); 
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     // Open a window and create its OpenGL context
@@ -54,6 +54,7 @@ GLFWwindow* InitWindow()
 	{
 
 		 std::cout << "Failed to initialize GLAD.\n";
+         glfwTerminate();
          return nullptr;
 	}
 
@@ -73,7 +74,7 @@ int main()
         return -1;
         
 
-    glm::vec3 poses[] = {
+  /*  glm::vec3 poses[] = {
         // front
         glm::vec3(-100.0f, -100.0f,1),
         glm::vec3(100.0f, -100.0f,1),
@@ -86,7 +87,15 @@ int main()
         glm::vec2(1.0f, 0.0f),
         glm::vec2(1.0f, 1.0f),
         glm::vec2(0.0f, 1.0f)
-    };
+    };*/
+
+float vert[]{
+-100.0f, -100.0f,1,0.0f, 0.0f,
+100.0f, -100.0f,1,1.0f, 0.0f,
+100.0f, 100.0f,1,1.0f, 1.0f,
+-100.0f, 100.0f,1,0.0f, 1.0f
+};
+
     unsigned int tris[] = {
         0, 1, 2,
         2, 3, 0,
@@ -101,7 +110,9 @@ int main()
         VertexBuffer vb = NULL;
         IndexBuffer ib = NULL;
 
-        CrazyCraft::Mesh::build(poses,uvs,tris,vb,ib);
+    vb = VertexBuffer(vert,sizeof(vert));
+    ib = IndexBuffer(tris,sizeof(tris));
+     //   CrazyCraft::Mesh::build(poses,uvs,tris,vb,ib);
     
 
      

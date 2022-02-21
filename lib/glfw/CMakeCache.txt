@@ -31,7 +31,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/usr/bin/cc
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -311,7 +311,7 @@ PKG_CONFIG_ARGN:STRING=
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
 //Path to a library.
-RT_LIBRARY:FILEPATH=/usr/lib/librt.so
+RT_LIBRARY:FILEPATH=/usr/lib/librt.a
 
 //Path to a file.
 X11_ICE_INCLUDE_PATH:PATH=/usr/include
@@ -624,11 +624,7 @@ CMAKE_HAVE_CONNECT:INTERNAL=1
 //Have function gethostbyname
 CMAKE_HAVE_GETHOSTBYNAME:INTERNAL=1
 //Test CMAKE_HAVE_LIBC_PTHREAD
-CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
-//Have library pthreads
-CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
-//Have library pthread
-CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Have include pthread.h
 CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Have function remove
@@ -764,12 +760,12 @@ MATH_LIBRARY-ADVANCED:INTERNAL=1
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-PKG_FONTCONFIG_CFLAGS:INTERNAL=-I/usr/include/freetype2;-I/usr/include/libpng16;-I/usr/include/harfbuzz;-I/usr/include/glib-2.0;-I/usr/lib/glib-2.0/include
+PKG_FONTCONFIG_CFLAGS:INTERNAL=-I/usr/include/freetype2;-I/usr/include/libpng16;-I/usr/include/harfbuzz;-I/usr/include/glib-2.0;-I/usr/lib/glib-2.0/include;-I/usr/include/sysprof-4;-pthread
 PKG_FONTCONFIG_CFLAGS_I:INTERNAL=
-PKG_FONTCONFIG_CFLAGS_OTHER:INTERNAL=
+PKG_FONTCONFIG_CFLAGS_OTHER:INTERNAL=-pthread
 PKG_FONTCONFIG_FOUND:INTERNAL=1
 PKG_FONTCONFIG_INCLUDEDIR:INTERNAL=/usr/include
-PKG_FONTCONFIG_INCLUDE_DIRS:INTERNAL=/usr/include/freetype2;/usr/include/libpng16;/usr/include/harfbuzz;/usr/include/glib-2.0;/usr/lib/glib-2.0/include
+PKG_FONTCONFIG_INCLUDE_DIRS:INTERNAL=/usr/include/freetype2;/usr/include/libpng16;/usr/include/harfbuzz;/usr/include/glib-2.0;/usr/lib/glib-2.0/include;/usr/include/sysprof-4
 PKG_FONTCONFIG_LDFLAGS:INTERNAL=-L/usr/lib;-lfontconfig;-lfreetype
 PKG_FONTCONFIG_LDFLAGS_OTHER:INTERNAL=
 PKG_FONTCONFIG_LIBDIR:INTERNAL=/usr/lib
@@ -781,20 +777,20 @@ PKG_FONTCONFIG_LIBS_OTHER:INTERNAL=
 PKG_FONTCONFIG_LIBS_PATHS:INTERNAL=
 PKG_FONTCONFIG_MODULE_NAME:INTERNAL=fontconfig
 PKG_FONTCONFIG_PREFIX:INTERNAL=/usr
-PKG_FONTCONFIG_STATIC_CFLAGS:INTERNAL=-I/usr/include/freetype2;-I/usr/include/libpng16;-I/usr/include/harfbuzz;-I/usr/include/glib-2.0;-I/usr/lib/glib-2.0/include
+PKG_FONTCONFIG_STATIC_CFLAGS:INTERNAL=-I/usr/include/freetype2;-I/usr/include/libpng16;-I/usr/include/harfbuzz;-I/usr/include/glib-2.0;-I/usr/lib/glib-2.0/include;-I/usr/include/sysprof-4;-pthread
 PKG_FONTCONFIG_STATIC_CFLAGS_I:INTERNAL=
-PKG_FONTCONFIG_STATIC_CFLAGS_OTHER:INTERNAL=
-PKG_FONTCONFIG_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/freetype2;/usr/include/libpng16;/usr/include/harfbuzz;/usr/include/glib-2.0;/usr/lib/glib-2.0/include
-PKG_FONTCONFIG_STATIC_LDFLAGS:INTERNAL=-L/usr/lib;-lfontconfig;-pthread;-lfreetype;-lbz2;-L/usr/lib;-L/usr/lib;-lz;-lpng16;-lm;-lm;-lz;-lharfbuzz;-pthread;-lm;-L/usr/lib;-lgraphite2;-lglib-2.0;-pthread;-lm;-L/usr/lib;-lpcre;-pthread;-lbrotlidec;-L/usr/lib;-lbrotlicommon;-L/usr/lib;-lexpat;-lm
+PKG_FONTCONFIG_STATIC_CFLAGS_OTHER:INTERNAL=-pthread
+PKG_FONTCONFIG_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/freetype2;/usr/include/libpng16;/usr/include/harfbuzz;/usr/include/glib-2.0;/usr/lib/glib-2.0/include;/usr/include/sysprof-4
+PKG_FONTCONFIG_STATIC_LDFLAGS:INTERNAL=-L/usr/lib;-lfontconfig;-pthread;-lfreetype;-lbz2;-L/usr/lib;-L/usr/lib;-lz;-lpng16;-lm;-lm;-lz;-lharfbuzz;-pthread;-lm;-L/usr/lib;-lgraphite2;-lglib-2.0;-pthread;-lm;-L/usr/lib;-lpcre;-lsysprof-capture-4;-pthread;-lbrotlidec;-L/usr/lib;-lbrotlicommon;-L/usr/lib;-lexpat;-lm
 PKG_FONTCONFIG_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-pthread;-pthread;-pthread
 PKG_FONTCONFIG_STATIC_LIBDIR:INTERNAL=
-PKG_FONTCONFIG_STATIC_LIBRARIES:INTERNAL=fontconfig;freetype;bz2;z;png16;m;m;z;harfbuzz;m;graphite2;glib-2.0;m;pcre;brotlidec;brotlicommon;expat;m
+PKG_FONTCONFIG_STATIC_LIBRARIES:INTERNAL=fontconfig;freetype;bz2;z;png16;m;m;z;harfbuzz;m;graphite2;glib-2.0;m;pcre;sysprof-capture-4;brotlidec;brotlicommon;expat;m
 PKG_FONTCONFIG_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib;/usr/lib;/usr/lib;/usr/lib;/usr/lib;/usr/lib;/usr/lib
 PKG_FONTCONFIG_STATIC_LIBS:INTERNAL=
 PKG_FONTCONFIG_STATIC_LIBS_L:INTERNAL=
 PKG_FONTCONFIG_STATIC_LIBS_OTHER:INTERNAL=
 PKG_FONTCONFIG_STATIC_LIBS_PATHS:INTERNAL=
-PKG_FONTCONFIG_VERSION:INTERNAL=2.13.94
+PKG_FONTCONFIG_VERSION:INTERNAL=2.13.96
 PKG_FONTCONFIG_fontconfig_INCLUDEDIR:INTERNAL=
 PKG_FONTCONFIG_fontconfig_LIBDIR:INTERNAL=
 PKG_FONTCONFIG_fontconfig_PREFIX:INTERNAL=
