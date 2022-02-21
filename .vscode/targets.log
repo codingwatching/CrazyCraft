@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Feb 20 17:22:14 2022
+# Make data base, printed on Mon Feb 21 14:53:44 2022
 
 # Variables
 
@@ -18,10 +18,11 @@ GDK_BACKEND = x11
 LC_ALL = C
 # environment
 NO_AT_BRIDGE = 1
+ 
 # makefile (from 'Makefile', line 10)
 SRC = $(wildcard src/*.cpp) $(wildcard src/**/*.cpp) $(wildcard src/*.cpp) $(wildcard src/**/**/*.cpp) $(wildcard src/**/**/**/*.cpp)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ae46d502-ba22-4c39-8819-f94423e20739.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-68517a41-4ea3-4384-9797-d627fac8cf88.sock
 # environment
 VSCODE_CWD = /home/ati
 # default
@@ -73,7 +74,7 @@ PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXn0Uf7h/agent.556
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXwpKzz1/agent.560
 # default
 .SHELLFLAGS := -c
 # environment
@@ -91,13 +92,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 803
+VSCODE_PID = 3171
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/512,unix/atiarch:/tmp/.ICE-unix/512
+SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/514,unix/atiarch:/tmp/.ICE-unix/514
 # automatic
 *F = $(notdir $*)
 # environment
@@ -169,7 +170,7 @@ MAKE_VERSION := 4.3
 # makefile (from 'Makefile', line 6)
 LDFLAGS = lib/glad/src/glad.o lib/glfw/src/libglfw3.a -ldl -lpthread -lGL
 # environment
-SSH_AGENT_PID = 557
+SSH_AGENT_PID = 561
 # environment
 _ = /usr/bin/make
 # makefile (from 'Makefile', line 12)
@@ -239,6 +240,7 @@ DOTNET_ROOT = /usr/share/dotnet
 # 1 implicit rules, 0 (0.0%) terminal.
 # Files
 
+ 
 # Not a target:
 src/vendor/imgui/imgui.o:
 #  Implicit rule search has not been done.
@@ -277,15 +279,10 @@ dirs:
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
- 
 # automatic
- 
 # @ := dirs
- 
 # automatic
- 
 # * := 
- 
 # automatic
 # < := 
 # automatic
@@ -433,6 +430,6 @@ src/vendor/imgui/imgui_demo.o:
 # strcache performance: lookups = 399 / hit rate = 13%
 # hash-table stats:
 # Load=346/8192=4%, Rehash=0, Collisions=8/399=2%
-# Finished Make data base on Sun Feb 20 17:22:14 2022
+# Finished Make data base on Mon Feb 21 14:53:44 2022
 
  
