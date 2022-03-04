@@ -7,7 +7,6 @@ class VertexBuffer
 
     public:
         VertexBuffer(const void* data, unsigned int size);
-        VertexBuffer(unsigned int idtocopy);
         ~VertexBuffer();
         unsigned int Getrendererid(); 
         void Bind() const;

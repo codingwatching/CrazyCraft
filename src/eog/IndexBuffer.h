@@ -8,7 +8,6 @@ class IndexBuffer
 
     public:
         IndexBuffer(const unsigned int* indices, unsigned int count);
-        IndexBuffer(unsigned int idtocopy);
         ~IndexBuffer();
         unsigned int Getrendererid(); 
         void Bind() const;

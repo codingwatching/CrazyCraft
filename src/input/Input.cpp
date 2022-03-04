@@ -17,13 +17,15 @@
            
 			glfwSetCursorPosCallback(Window, &Input::mouseCallback);
 			glfwSetMouseButtonCallback(Window, &Input::mouseButtonCallback);
-win = Window;
+			win = Window;
         }
 
 		void mouseCallback(GLFWwindow* window, double xpos, double ypos)
 		{
-			mouseX = (float)xpos;
-			mouseY = (float)ypos;
+			mouseX += (float)xpos - 10;
+			mouseY += (float)ypos - 10;
+			glfwSetCursorPos(window,10,10);
+
 		}
 
 		void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods)

@@ -66,106 +66,29 @@ GLFWwindow* InitWindow()
     return window;
 }
 
-int main()
-{
-    GLFWwindow* window = InitWindow();
-    if (!window)
-        return -1;
-        
+bool mousecap = true;
+glm::vec3 pos;
+glm::vec2 rot;
 
-  /*  glm::vec3 poses[] = {
-        // front
-        glm::vec3(-100.0f, -100.0f,1),
-        glm::vec3(100.0f, -100.0f,1),
-        glm::vec3(100.0f, 100.0f,1),
-        glm::vec3(-100.0f, 100.0f,1)
-      
-    };
-    glm::vec2 uvs[]{
-        glm::vec2(0.0f, 0.0f),
-        glm::vec2(1.0f, 0.0f),
-        glm::vec2(1.0f, 1.0f),
-        glm::vec2(0.0f, 1.0f)
-    };*/
+void input(GLFWwindow* window){
 
-float vert[]{
--100.0f, -100.0f,1,0.0f, 0.0f,
-100.0f, -100.0f,1,1.0f, 0.0f,
-100.0f, 100.0f,1,1.0f, 1.0f,
--100.0f, 100.0f,1,0.0f, 1.0f
-};
-
-    unsigned int tris[] = {
-        0, 1, 2,
-        2, 3, 0,
-
-    };
-
-
-    GLCall( glEnable(GL_BLEND) );
-    GLCall( glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA) );
-
-    VertexArray va;
-   VertexBuffer vb(vert,sizeof(vert));
-   IndexBuffer ib(tris,sizeof(tris));
-     //   CrazyCraft::Mesh::build(poses,uvs,tris,vb,ib);
-    
-
-     
-
-        glfwSetWindowSizeCallback(window, [](GLFWwindow* window, int width, int height)
+if (mousecap){
+          
+          if (Input::mouseY < -90)
             {
-                aspect.x = width;
-                aspect.y = height;
-                glViewport(0, 0, width, height);
-            });
+                Input::mouseY = -90;
+            }
 
+            if (Input::mouseY > 90)
+            {
+                Input::mouseY = 90;
+            }
 
-        // projection matrix
-        aspect.x = 960; 
-        aspect.y = 540;
-        glm::mat4 proj = glm::perspective<float>(45.0f,aspect.x /aspect.y, 1.0f, 10000.0f);
-
-        // view matrix
-        glm::mat4 ident = glm::mat4(1.0f);
-        glm::mat4 view = ident;
-
-        VertexBufferLayout layout;
-        layout.AddFloat(3);
-        layout.AddFloat(2);
-        glEnable(GL_DEPTH_TEST);
-        va.AddBuffer(vb, layout);
-
-        Shader shader("res/shaders/Basic.shader");
-        shader.Bind();
-        shader.SetUniform4f("u_Color", 0.0f, 0.3f, 0.8f, 1.0f);
-
-        Texture texture("res/textures/phone.png");
-        texture.Bind();
-        shader.SetUniform1i("u_Texture", 0);
-    
-        Renderer renderer;
-
-
-        IMGUI_CHECKVERSION();
-        ImGui::CreateContext();
-        ImGui_ImplGlfwGL3_Init(window, true);
-        ImGui::StyleColorsDark();
-
-        glm::vec3 pos;
-        glm::vec2 rot;
-        do {
-            glClearColor(0.5,0.5,1,1);
-            renderer.Clear();
-
-            ImGui_ImplGlfwGL3_NewFrame();
-
-        rot.x = (Input::mouseY - aspect.y / 2)  * (1 / (aspect.y / 2)) * 90;
-        rot.y = (Input::mouseX - aspect.x / 2)  * (1 / (aspect.x / 2)) * 180;
-
-
-
-
+            rot.x = Input::mouseY * 0.5;
+            rot.y = Input::mouseX * 0.5;
+             
+            
+        }
         glm::vec3 front;
         front.x = cos(glm::radians(rot.y)) * cos(glm::radians(rot.x));
         //front.y = sin(glm::radians(rot.x));
@@ -200,11 +123,111 @@ float vert[]{
          if (Input::isKeyDown(GLFW_KEY_SPACE)){
 
             pos += glm::vec3(0,1,0) * velocity;
+            
         }
          if (Input::isKeyDown(GLFW_KEY_ESCAPE)){
 
            glfwSetWindowShouldClose(window,GL_TRUE);
         }
+
+}
+
+int main()
+{
+    
+    GLFWwindow* window = InitWindow();
+    if (!window)
+        return -1;
+        
+
+  /*  glm::vec3 poses[] = {
+        // front
+        glm::vec3(-100.0f, -100.0f,1),
+        glm::vec3(100.0f, -100.0f,1),
+        glm::vec3(100.0f, 100.0f,1),
+        glm::vec3(-100.0f, 100.0f,1)
+      
+    };
+    glm::vec2 uvs[]{
+        glm::vec2(0.0f, 0.0f),
+        glm::vec2(1.0f, 0.0f),
+        glm::vec2(1.0f, 1.0f),
+        glm::vec2(0.0f, 1.0f)
+    };*/
+
+float vert[]{
+-50.0f, -50.0f,1,0.0f, 0.0f,
+50.0f, -50.0f,1,1.0f, 0.0f,
+50.0f, 50.0f,1,1.0f, 1.0f,
+-50.0f, 50.0f,1,0.0f, 1.0f
+};
+
+    unsigned int tris[] = {
+        0, 1, 2,
+        2, 3, 0,
+
+    };
+
+
+    GLCall( glEnable(GL_BLEND) );
+    GLCall( glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA) );
+
+    VertexArray va;
+   VertexBuffer vb(vert,sizeof(vert));
+   IndexBuffer ib(tris,sizeof(tris));
+     //   CrazyCraft::Mesh::build(poses,uvs,tris,vb,ib);
+    
+
+     
+
+        glfwSetWindowSizeCallback(window, [](GLFWwindow* window, int width, int height)
+            {
+                aspect.x = width;
+                aspect.y = height;
+                glViewport(-width, -height, width, height);
+            });
+
+
+        // projection matrix
+        aspect.x = 960; 
+        aspect.y = 540;
+        glm::mat4 proj = glm::perspective<float>(45.0f,aspect.x /aspect.y, 1.0f, 10000.0f);
+
+        // view matrix
+        glm::mat4 ident = glm::mat4(1.0f);
+        glm::mat4 view = ident;
+
+        VertexBufferLayout layout;
+        layout.AddFloat(3);
+        layout.AddFloat(2);
+        glEnable(GL_DEPTH_TEST);
+        va.AddBuffer(vb, layout);
+
+        Shader shader("res/shaders/Basic.shader");
+        shader.Bind();
+        shader.SetUniform4f("u_Color", 0.0f, 0.3f, 0.8f, 1.0f);
+
+        Texture texture("res/textures/phone.png");
+        texture.Bind();
+        shader.SetUniform1i("u_Texture", 0);
+    
+        Renderer renderer;
+
+
+        IMGUI_CHECKVERSION();
+        ImGui::CreateContext();
+        ImGui_ImplGlfwGL3_Init(window, true);
+        ImGui::StyleColorsDark();
+
+        
+        do {
+            glClearColor(0.5,0.5,1,1);
+            renderer.Clear();
+
+            ImGui_ImplGlfwGL3_NewFrame();
+
+            input(window);
+
             // model matrix
             proj = glm::perspective<float>(45.0f,aspect.x /aspect.y, 1.0f, 10000.0f);
             glm::mat4 model = glm::mat4(1.0f);
