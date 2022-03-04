@@ -1,4 +1,5 @@
 {
     "makefile.alwaysPreConfigure": true,
-    "makefile.loggingLevel": "Debug"
+    "makefile.loggingLevel": "Debug",
+    "C_Cpp.errorSquiggles": "Disabled"
 }

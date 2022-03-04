@@ -7,7 +7,6 @@
 #include "eog/VertexArray.h"
 #include "eog/IndexBuffer.h"
 #include "eog/Shader.h"
-#include "eog/Debug.h"
 
 #include "eog/Texture.h"
 #include "input/Input.h"
@@ -33,10 +32,10 @@ GLFWwindow* InitWindow()
     }
 
 
-   // glfwWindowHint(GLFW_SAMPLES, 4);
+    glfwWindowHint(GLFW_SAMPLES, 4);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    //glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_FALSE); 
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); 
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     // Open a window and create its OpenGL context
@@ -106,12 +105,9 @@ float vert[]{
     GLCall( glEnable(GL_BLEND) );
     GLCall( glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA) );
 
-        VertexArray va;
-        VertexBuffer vb = NULL;
-        IndexBuffer ib = NULL;
-
-    vb = VertexBuffer(vert,sizeof(vert));
-    ib = IndexBuffer(tris,sizeof(tris));
+    VertexArray va;
+   VertexBuffer vb(vert,sizeof(vert));
+   IndexBuffer ib(tris,sizeof(tris));
      //   CrazyCraft::Mesh::build(poses,uvs,tris,vb,ib);
     
 
@@ -205,9 +201,10 @@ float vert[]{
 
             pos += glm::vec3(0,1,0) * velocity;
         }
-        
-    
+         if (Input::isKeyDown(GLFW_KEY_ESCAPE)){
 
+           glfwSetWindowShouldClose(window,GL_TRUE);
+        }
             // model matrix
             proj = glm::perspective<float>(45.0f,aspect.x /aspect.y, 1.0f, 10000.0f);
             glm::mat4 model = glm::mat4(1.0f);
@@ -239,7 +236,7 @@ float vert[]{
             glfwPollEvents();
 
         
-        } // Check if the ESC key was pressed or the window was closed
+        } 
         while(!glfwWindowShouldClose(window));
     
 

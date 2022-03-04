@@ -6,11 +6,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Feb 21 14:53:44 2022
+# Make data base, printed on Fri Mar  4 13:59:22 2022
 
 # Variables
 
-# makefile (from 'Makefile', line 11)
+# makefile (from 'Makefile', line 13)
 OBJ = $(SRC:.cpp=.o)
 # environment
 GDK_BACKEND = x11
@@ -18,11 +18,10 @@ GDK_BACKEND = x11
 LC_ALL = C
 # environment
 NO_AT_BRIDGE = 1
- 
-# makefile (from 'Makefile', line 10)
+# makefile (from 'Makefile', line 12)
 SRC = $(wildcard src/*.cpp) $(wildcard src/**/*.cpp) $(wildcard src/*.cpp) $(wildcard src/**/**/*.cpp) $(wildcard src/**/**/**/*.cpp)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-68517a41-4ea3-4384-9797-d627fac8cf88.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-6917cf8f-9ace-4130-a22b-c53751217261.sock
 # environment
 VSCODE_CWD = /home/ati
 # default
@@ -74,7 +73,7 @@ PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXwpKzz1/agent.560
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXVdUCsG/agent.558
 # default
 .SHELLFLAGS := -c
 # environment
@@ -92,7 +91,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 3171
+VSCODE_PID = 16474
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -167,18 +166,18 @@ GTK_MODULES = canberra-gtk-module:canberra-gtk-module
 USER = ati
 # default
 MAKE_VERSION := 4.3
-# makefile (from 'Makefile', line 6)
+# makefile (from 'Makefile', line 8)
 LDFLAGS = lib/glad/src/glad.o lib/glfw/src/libglfw3.a -ldl -lpthread -lGL
 # environment
-SSH_AGENT_PID = 561
+SSH_AGENT_PID = 559
 # environment
 _ = /usr/bin/make
-# makefile (from 'Makefile', line 12)
+# makefile (from 'Makefile', line 14)
 BIN = bin
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
-# makefile (from 'Makefile', line 5)
-CFLAGS = -fpermissive -Ilib/glad/include -Ilib/glfw/include -Isrc -Isrc/vendor/  
+# makefile (from 'Makefile', line 7)
+CFLAGS = -O2 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Wno-pointer-arith -Wno-newline-eof -Wno-unused-parameter -Wno-gnu-statement-expression -Wno-gnu-compound-literal-initializer -Wno-gnu-zero-variadic-macro-arguments -Ilib/glad/include -Ilib/glfw/include -Isrc -Isrc/vendor/  
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -208,7 +207,7 @@ XDG_MENU_PREFIX = xfce-
 # environment
 DOTNET_ROOT = /usr/share/dotnet
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=8/136=6%
+# Load=98/1024=10%, Rehash=0, Collisions=8/140=6%
 
 # Pattern-specific Variable Values
 
@@ -221,7 +220,7 @@ DOTNET_ROOT = /usr/share/dotnet
 # src/vendor/glm/gtc (device 2051, inode 19137946): 39 files, no impossibilities.
 # src (device 2051, inode 18877355): 8 files, no impossibilities.
 # src/vendor/stb_image (device 2051, inode 19138358): 5 files, no impossibilities.
-# . (device 2051, inode 18879332): 9 files, no impossibilities.
+# . (device 2051, inode 18879332): 10 files, no impossibilities.
 # src/game (device 2051, inode 18877383): 3 files, no impossibilities.
 # src/vendor (device 2051, inode 19138300): 5 files, no impossibilities.
 # src/vendor/glm (device 2051, inode 19137821): 29 files, no impossibilities.
@@ -229,18 +228,17 @@ DOTNET_ROOT = /usr/share/dotnet
 # src/vendor/glm/gtx (device 2051, inode 19137987): 116 files, no impossibilities.
 # src/input (device 2051, inode 18877379): 5 files, no impossibilities.
 
-# 341 files, no impossibilities in 12 directories.
+# 342 files, no impossibilities in 12 directories.
 
 # Implicit Rules
 
 %.o: %.cpp
-#  recipe to execute (from 'Makefile', line 33):
+#  recipe to execute (from 'Makefile', line 35):
 	$(CC) -o $@ -c $< $(CFLAGS)
 
 # 1 implicit rules, 0 (0.0%) terminal.
 # Files
 
- 
 # Not a target:
 src/vendor/imgui/imgui.o:
 #  Implicit rule search has not been done.
@@ -251,7 +249,7 @@ game: src/main.o src/eog/IndexBuffer.o src/eog/Renderer.o src/eog/Shader.o src/e
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 30):
+#  recipe to execute (from 'Makefile', line 32):
 	$(CC) -o $(BIN)/game $^ $(LDFLAGS)
 
 # Not a target:
@@ -269,7 +267,7 @@ src/eog/Renderer.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-20 17:22:07.311981243
+#  Last modified 2022-02-23 18:12:44.935019013
 #  File has been updated.
 #  Successfully updated.
 
@@ -296,8 +294,9 @@ dirs:
 # automatic
 # | := 
 # variable set hash-table stats:
+ 
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
-#  recipe to execute (from 'Makefile', line 24):
+#  recipe to execute (from 'Makefile', line 26):
 	mkdir -p ./$(BIN)
 
 clean:
@@ -305,7 +304,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 36):
+#  recipe to execute (from 'Makefile', line 38):
 	rm -rf $(BIN) $(OBJ)
 
 # Not a target:
@@ -370,14 +369,14 @@ run: all
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 27):
+#  recipe to execute (from 'Makefile', line 29):
 	$(BIN)/game
 
 libs:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 20):
+#  recipe to execute (from 'Makefile', line 22):
 	cd lib/glad && $(CC) -o src/glad.o -Iinclude -c src/glad.c
 	cd lib/glfw && cmake . && make
 
@@ -424,12 +423,12 @@ src/vendor/imgui/imgui_demo.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 346 / storage = 5314 B / avg = 15 B
-# current buf: size = 8162 B / used = 5314 B / count = 346 / avg = 15 B
+# strcache buffers: 1 (0) / strings = 347 / storage = 5318 B / avg = 15 B
+# current buf: size = 8162 B / used = 5318 B / count = 347 / avg = 15 B
 
-# strcache performance: lookups = 399 / hit rate = 13%
+# strcache performance: lookups = 400 / hit rate = 13%
 # hash-table stats:
-# Load=346/8192=4%, Rehash=0, Collisions=8/399=2%
-# Finished Make data base on Mon Feb 21 14:53:44 2022
+# Load=347/8192=4%, Rehash=0, Collisions=8/400=2%
+# Finished Make data base on Fri Mar  4 13:59:22 2022
 
  
