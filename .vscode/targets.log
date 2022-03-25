@@ -1,23 +1,14 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 4.3
- 
 # Built for x86_64-pc-linux-gnu
- 
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
- 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
- 
 # This is free software: you are free to change and redistribute it.
- 
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
- 
-# Make data base, printed on Fri Mar  4 16:23:55 2022
- 
+# Make data base, printed on Fri Mar 25 19:08:34 2022
 
 # Variables
- 
 
 # makefile (from 'Makefile', line 13)
 OBJ = $(SRC:.cpp=.o)
@@ -30,7 +21,7 @@ NO_AT_BRIDGE = 1
 # makefile (from 'Makefile', line 12)
 SRC = $(wildcard src/*.cpp) $(wildcard src/**/*.cpp) $(wildcard src/*.cpp) $(wildcard src/**/**/*.cpp) $(wildcard src/**/**/**/*.cpp)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-8087971e-a1d2-4384-8dcd-c1f7cc731353.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-29174f72-a12c-4d8e-91f6-7222095b57ce.sock
 # environment
 VSCODE_CWD = /home/ati
 # default
@@ -82,7 +73,7 @@ PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXVdUCsG/agent.558
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXV2yx0c/agent.606
 # default
 .SHELLFLAGS := -c
 # environment
@@ -100,13 +91,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 20359
+VSCODE_PID = 4362
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/514,unix/atiarch:/tmp/.ICE-unix/514
+SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/560,unix/atiarch:/tmp/.ICE-unix/560
 # automatic
 *F = $(notdir $*)
 # environment
@@ -178,7 +169,7 @@ MAKE_VERSION := 4.3
 # makefile (from 'Makefile', line 8)
 LDFLAGS = lib/glad/src/glad.o lib/glfw/src/libglfw3.a -ldl -lpthread -lGL
 # environment
-SSH_AGENT_PID = 559
+SSH_AGENT_PID = 607
 # environment
 _ = /usr/bin/make
 # makefile (from 'Makefile', line 14)
@@ -232,12 +223,12 @@ DOTNET_ROOT = /usr/share/dotnet
 # . (device 2051, inode 18879332): 10 files, no impossibilities.
 # src/game (device 2051, inode 18877383): 3 files, no impossibilities.
 # src/vendor (device 2051, inode 19138300): 5 files, no impossibilities.
-# src/vendor/glm (device 2051, inode 19137821): 29 files, no impossibilities.
-# src/eog (device 2051, inode 18877357): 22 files, no impossibilities.
+# src/vendor/glm (device 2051, inode 19137821): 28 files, no impossibilities.
+# src/eog (device 2051, inode 18877357): 21 files, no impossibilities.
 # src/vendor/glm/gtx (device 2051, inode 19137987): 116 files, no impossibilities.
 # src/input (device 2051, inode 18877379): 5 files, no impossibilities.
 
-# 341 files, no impossibilities in 12 directories.
+# 339 files, no impossibilities in 12 directories.
 
 # Implicit Rules
 
@@ -294,9 +285,7 @@ dirs:
 # < := 
 # automatic
 # + := 
- 
 # automatic
- 
 # % := 
 # automatic
 # ^ := 
@@ -305,6 +294,7 @@ dirs:
 # automatic
 # | := 
 # variable set hash-table stats:
+ 
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
 #  recipe to execute (from 'Makefile', line 26):
 	mkdir -p ./$(BIN)
@@ -433,12 +423,12 @@ src/vendor/imgui/imgui_demo.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 346 / storage = 5303 B / avg = 15 B
-# current buf: size = 8162 B / used = 5303 B / count = 346 / avg = 15 B
+# strcache buffers: 1 (0) / strings = 344 / storage = 5267 B / avg = 15 B
+# current buf: size = 8162 B / used = 5267 B / count = 344 / avg = 15 B
 
-# strcache performance: lookups = 399 / hit rate = 13%
+# strcache performance: lookups = 397 / hit rate = 13%
 # hash-table stats:
-# Load=346/8192=4%, Rehash=0, Collisions=8/399=2%
-# Finished Make data base on Fri Mar  4 16:23:55 2022
+# Load=344/8192=4%, Rehash=0, Collisions=8/397=2%
+# Finished Make data base on Fri Mar 25 19:08:34 2022
 
  
