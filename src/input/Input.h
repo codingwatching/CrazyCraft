@@ -1,6 +1,5 @@
 #ifndef MINECRAFT_CLONE_INPUT_H
 #define MINECRAFT_CLONE_INPUT_H
-#include "eog/Renderer.h"
 
 	namespace Input
 	{

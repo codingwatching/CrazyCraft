@@ -505,7 +505,7 @@ STBIDEF int   stbi_zlib_decode_noheader_buffer(char *obuffer, int olen, const ch
 #define STBI_NO_ZLIB
 #endif
 
-
+#include <iostream>
 #include <stdarg.h>
 #include <stddef.h> // ptrdiff_t on osx
 #include <stdlib.h>
@@ -1160,7 +1160,9 @@ STBIDEF stbi_uc *stbi_load(char const *filename, int *x, int *y, int *comp, int 
 {
    FILE *f = stbi__fopen(filename, "rb");
    unsigned char *result;
-   if (!f) return stbi__errpuc("can't fopen", "Unable to open file");
+   if (!f) {
+      return nullptr;
+   }
    result = stbi_load_from_file(f,x,y,comp,req_comp);
    fclose(f);
    return result;
