@@ -311,11 +311,6 @@ int main()
     if (!window)
         return -1;    
 
-       
-
-
-
-
    Chunk ch;
 
     
@@ -328,11 +323,11 @@ int main()
 
     GLCall( glGenBuffers(1, &vb) );//VBO
     GLCall( glBindBuffer(GL_ARRAY_BUFFER, vb) );
-    GLCall( glBufferData(GL_ARRAY_BUFFER, sizeof(ch.verticies), &ch.verticies, GL_STATIC_DRAW) );
+    GLCall( glBufferData(GL_ARRAY_BUFFER,ch.verticies.size() * sizeof(Vertex) , ch.verticies.data(), GL_STATIC_DRAW) );
    
     GLCall( glGenBuffers(1, &ib) );//IBO
     GLCall( glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ib) );
-    GLCall( glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(ch.tris) * sizeof(unsigned int),&ch.tris, GL_STATIC_DRAW) );
+    GLCall( glBufferData(GL_ELEMENT_ARRAY_BUFFER, ch.tris.size() * sizeof(unsigned int),ch.tris.data(), GL_STATIC_DRAW) );
 
     glfwSetWindowSizeCallback(window, [](GLFWwindow* window, int width, int height)
         {
@@ -413,7 +408,7 @@ int main()
 
 
             GLCall( glBindVertexArray(va) );
-            GLCall( glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr) );
+            GLCall( glDrawElements(GL_TRIANGLES,ch.tris.size(), GL_UNSIGNED_INT, nullptr) );
 
 
             ImGui::DragFloat3("Camera Translation", &pos.x, 0.0f, 960.0f);
