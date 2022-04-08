@@ -1,21 +1,14 @@
-#include "eog/VertexBuffer.h"
-#include "eog/IndexBuffer.h"
 
-namespace CrazyCraft{
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <fstream>
+#include <array>
 
-namespace Sounds{
-    
-}
-namespace Blocks{
- 
-}
-namespace TexturePacker{
-    
-}
-namespace Sounds{
-    
-}
-namespace Mesh{
+#include "glm/glm.hpp"
+#include "glm/gtc/matrix_transform.hpp"
+struct Vertex{
+    glm::vec3 pos;
+    glm::vec2 uv;
+};
 
-}
-}

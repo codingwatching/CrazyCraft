@@ -1,18 +1,11 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-#include <iostream>
-#include <string>
-#include <sstream>
-#include <fstream>
-#include <array>
+#include <game/world/Chunk.h>
 
 #include "input/Input.h"
 
 #include "stb_image/stb_image.h"
-
-#include "glm/glm.hpp"
-#include "glm/gtc/matrix_transform.hpp"
 
 #include "imgui/imgui.h"
 #include "imgui/imgui_impl_glfw_gl3.h"
@@ -174,8 +167,8 @@ unsigned int CreateShader(const std::string& vertexShader, const std::string& fr
     return program;
 }
 
-
 glm::vec2 aspect;
+
 GLFWwindow* InitWindow()
 {
     // Initialise GLFW
@@ -213,9 +206,8 @@ GLFWwindow* InitWindow()
 
     std::cout << "Using openGL Version: " << glGetString(GL_VERSION) << std::endl;
 
-    // Ensure we can capture the escape key being pressed below
-            //glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
-          Input::loadCallbacks(window);
+            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
+            Input::loadCallbacks(window);
 
     return window;
 }
@@ -228,14 +220,14 @@ void input(GLFWwindow* window){
 
 if (mousecap){
           
-          if (Input::mouseY < -90)
+          if (Input::mouseY < -90*2)
             {
-                Input::mouseY = -90;
+                Input::mouseY = -90*2;
             }
 
-            if (Input::mouseY > 90)
+            if (Input::mouseY > 90*2)
             {
-                Input::mouseY = 90;
+                Input::mouseY = 90*2;
             }
 
             rot.x = Input::mouseY * 0.5;
@@ -307,10 +299,6 @@ void updateMatrix(unsigned int shader){
         std::cout << "No active uniform variable with name " << "u_MVP" << " found" << std::endl;
         GLCall( glUniformMatrix4fv(location, 1, GL_FALSE, &mvp[0][0]) );
 }
-struct Vertex{
-    glm::vec3 pos;
-    glm::vec2 uv;
-};
 struct Texture{
     unsigned int rid;
     int m_Width, m_Height, m_BPP;
@@ -323,24 +311,14 @@ int main()
     if (!window)
         return -1;    
 
-        std::array<Vertex,4> verticies;
+       
+
+
+
+
+   Chunk ch;
 
     
-     verticies[0]={glm::vec3(-100.0f, -100.0f,1),glm::vec2(0.0f, 0.0f)};
-     verticies[1]={glm::vec3(100.0f, -100.0f,1), glm::vec2(1.0f, 0.0f)};
-     verticies[2]={glm::vec3(100.0f, 100.0f,1),glm::vec2(1.0f, 1.0f)};
-     verticies[3]={glm::vec3(-100.0f, 100.0f,1),glm::vec2(0.0f, 1.0f)};
-    
-
-    unsigned int tris[] = {
-        0, 1, 2,
-        2, 3, 0,
-
-    };
-
-
-   
-
     unsigned int vb;
     unsigned int va;
     unsigned int ib;
@@ -350,11 +328,11 @@ int main()
 
     GLCall( glGenBuffers(1, &vb) );//VBO
     GLCall( glBindBuffer(GL_ARRAY_BUFFER, vb) );
-    GLCall( glBufferData(GL_ARRAY_BUFFER, sizeof(verticies), &verticies, GL_STATIC_DRAW) );
+    GLCall( glBufferData(GL_ARRAY_BUFFER, sizeof(ch.verticies), &ch.verticies, GL_STATIC_DRAW) );
    
     GLCall( glGenBuffers(1, &ib) );//IBO
     GLCall( glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ib) );
-    GLCall( glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(tris) * sizeof(unsigned int),tris, GL_STATIC_DRAW) );
+    GLCall( glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(ch.tris) * sizeof(unsigned int),&ch.tris, GL_STATIC_DRAW) );
 
     glfwSetWindowSizeCallback(window, [](GLFWwindow* window, int width, int height)
         {
@@ -422,7 +400,7 @@ int main()
         ImGui::CreateContext();
         ImGui_ImplGlfwGL3_Init(window, true);
         ImGui::StyleColorsDark();
-        
+
         do {
             glClearColor(0.5,0.5,1,1);
             GLCall( glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
@@ -433,8 +411,10 @@ int main()
 
             updateMatrix(shader);
 
+
             GLCall( glBindVertexArray(va) );
-            GLCall( glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr) );
+            GLCall( glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr) );
+
 
             ImGui::DragFloat3("Camera Translation", &pos.x, 0.0f, 960.0f);
             ImGui::DragFloat2("Camera Rotation", &rot.x, 0.0f, 960.0f);
@@ -448,7 +428,8 @@ int main()
             glfwPollEvents();
         } 
         while(!glfwWindowShouldClose(window));
-    
+
+  
 
     // Close OpenGL window and terminate GLFW
     ImGui_ImplGlfwGL3_Shutdown();

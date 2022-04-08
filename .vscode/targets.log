@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Apr  5 17:19:11 2022
+# Make data base, printed on Fri Apr  8 16:01:23 2022
 
 # Variables
 
@@ -21,7 +21,7 @@ NO_AT_BRIDGE = 1
 # makefile (from 'Makefile', line 12)
 SRC = $(wildcard src/*.cpp) $(wildcard src/**/*.cpp) $(wildcard src/*.cpp) $(wildcard src/**/**/*.cpp) $(wildcard src/**/**/**/*.cpp)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e2641b52-abc2-4783-a311-9d6e0fcf4dae.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-09bb0120-114f-4c59-a411-94412880c59f.sock
 # environment
 VSCODE_CWD = /home/ati
 # default
@@ -73,7 +73,7 @@ PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXkQd3dO/agent.624
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXO7nTnd/agent.666
 # default
 .SHELLFLAGS := -c
 # environment
@@ -91,13 +91,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 8697
+VSCODE_PID = 31279
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/566,unix/atiarch:/tmp/.ICE-unix/566
+SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/598,unix/atiarch:/tmp/.ICE-unix/598
 # automatic
 *F = $(notdir $*)
 # environment
@@ -171,7 +171,7 @@ MAKE_VERSION := 4.3
 # makefile (from 'Makefile', line 8)
 LDFLAGS = lib/glad/src/glad.o lib/glfw/src/libglfw3.a -ldl -lpthread -lGL
 # environment
-SSH_AGENT_PID = 625
+SSH_AGENT_PID = 667
 # environment
 _ = /usr/bin/make
 # makefile (from 'Makefile', line 15)
@@ -220,18 +220,17 @@ DOTNET_ROOT = /usr/share/dotnet
 # src/vendor/imgui (device 2051, inode 19138345): 18 files, no impossibilities.
 # src/vendor/glm/detail (device 2051, inode 19137824): 81 files, no impossibilities.
 # src/vendor/glm/gtc (device 2051, inode 19137946): 39 files, no impossibilities.
-# src/game/world (device 2051, inode 18878670): 8 files, no impossibilities.
-# src (device 2051, inode 18877355): 8 files, no impossibilities.
+# src/game/world (device 2051, inode 18878674): 9 files, no impossibilities.
+# src (device 2051, inode 18877355): 7 files, no impossibilities.
 # src/vendor/stb_image (device 2051, inode 19138358): 5 files, no impossibilities.
-# . (device 2051, inode 18879332): 10 files, no impossibilities.
+# . (device 2051, inode 18879332): 11 files, no impossibilities.
 # src/game (device 2051, inode 18877383): 4 files, no impossibilities.
 # src/vendor (device 2051, inode 19138300): 5 files, no impossibilities.
 # src/vendor/glm (device 2051, inode 19137821): 28 files, no impossibilities.
-# src/eog (device 2051, inode 18877357): 21 files, no impossibilities.
 # src/vendor/glm/gtx (device 2051, inode 19137987): 116 files, no impossibilities.
 # src/input (device 2051, inode 18877379): 5 files, no impossibilities.
 
-# 348 files, no impossibilities in 13 directories.
+# 328 files, no impossibilities in 12 directories.
 
 # Implicit Rules
 
@@ -249,7 +248,7 @@ src/vendor/imgui/imgui.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-game: src/main.o src/eog/IndexBuffer.o src/eog/Renderer.o src/eog/Shader.o src/eog/Texture.o src/eog/VertexArray.o src/eog/VertexBuffer.o src/input/Input.o src/main.o src/game/world/Chunk.o src/game/world/World.o src/vendor/imgui/imgui.o src/vendor/imgui/imgui_demo.o src/vendor/imgui/imgui_draw.o src/vendor/imgui/imgui_impl_glfw_gl3.o src/vendor/stb_image/stb_image.o src/vendor/glm/detail/glm.o
+game: src/main.o src/input/Input.o src/main.o src/game/world/Chunk.o src/game/world/World.o src/vendor/imgui/imgui.o src/vendor/imgui/imgui_demo.o src/vendor/imgui/imgui_draw.o src/vendor/imgui/imgui_impl_glfw_gl3.o src/vendor/stb_image/stb_image.o src/vendor/glm/detail/glm.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -263,12 +262,6 @@ src/input/Input.o:
 #  File has not been updated.
 
 # Not a target:
-src/eog/Renderer.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 src/game/world/World.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -277,9 +270,8 @@ src/game/world/World.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-03-28 15:54:20.908499363
+#  Last modified 2022-04-05 17:45:36.13084428
 #  File has been updated.
- 
 #  Successfully updated.
 
 dirs:
@@ -302,6 +294,7 @@ dirs:
 # ^ := 
 # automatic
 # ? := 
+ 
 # automatic
 # | := 
 # variable set hash-table stats:
@@ -316,18 +309,6 @@ clean:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 41):
 	rm -rf $(BIN) $(OBJ)
-
-# Not a target:
-src/eog/VertexBuffer.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-src/eog/Shader.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
 
 # Not a target:
 src/vendor/imgui/imgui_draw.o:
@@ -349,12 +330,6 @@ src/vendor/imgui/imgui_impl_glfw_gl3.o:
 
 # Not a target:
 .DEFAULT:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-src/eog/IndexBuffer.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -403,12 +378,6 @@ src/vendor/stb_image/stb_image.o:
 #  File has not been updated.
 
 # Not a target:
-src/eog/VertexArray.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 .SUFFIXES:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -420,31 +389,25 @@ src/eog/VertexArray.o:
 #  File has not been updated.
 
 # Not a target:
-src/eog/Texture.o:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 src/vendor/imgui/imgui_demo.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=26/1024=3%, Rehash=0, Collisions=0/65=0%
+# Load=20/1024=2%, Rehash=0, Collisions=0/53=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 354 / storage = 5386 B / avg = 15 B
-# current buf: size = 8162 B / used = 5386 B / count = 354 / avg = 15 B
+# strcache buffers: 1 (0) / strings = 329 / storage = 5036 B / avg = 15 B
+# current buf: size = 8162 B / used = 5036 B / count = 329 / avg = 15 B
 
-# strcache performance: lookups = 409 / hit rate = 13%
+# strcache performance: lookups = 382 / hit rate = 13%
 # hash-table stats:
-# Load=354/8192=4%, Rehash=0, Collisions=9/409=2%
-# Finished Make data base on Tue Apr  5 17:19:11 2022
+# Load=329/8192=4%, Rehash=0, Collisions=7/382=2%
+# Finished Make data base on Fri Apr  8 16:01:23 2022
 
  

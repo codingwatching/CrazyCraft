@@ -1,8 +1,5 @@
 #include "Input.h"
 
-
-
-
 	namespace Input
 	{
 		GLFWwindow* win;
@@ -13,19 +10,14 @@
 		float mouseScrollY = 0.0f;
 
 
-        void loadCallbacks(GLFWwindow* Window){
-           
-			glfwSetCursorPosCallback(Window, &Input::mouseCallback);
-			glfwSetMouseButtonCallback(Window, &Input::mouseButtonCallback);
-			win = Window;
-        }
+     
 
 		void mouseCallback(GLFWwindow* window, double xpos, double ypos)
 		{
-			mouseX += (float)xpos - 10;
-			mouseY += (float)ypos - 10;
-			glfwSetCursorPos(window,10,10);
-
+			mouseY += ypos - 10;
+            mouseX += xpos - 10;
+            
+            glfwSetCursorPos(window,10,10);
 		}
 
 		void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods)
@@ -35,13 +27,19 @@
 				mouseButtonPressedData[button] = (action == GLFW_PRESS);
 			}
 		}
-
+   		
 		void mouseScrollCallback(GLFWwindow* window, double xoffset, double yoffset)
 		{
 			mouseScrollX = (float)xoffset;
 			mouseScrollY = (float)yoffset;
 		}
-
+		void loadCallbacks(GLFWwindow* Window){
+           
+			glfwSetCursorPosCallback(Window, &mouseCallback);
+			glfwSetMouseButtonCallback(Window, &mouseButtonCallback);
+			glfwSetScrollCallback(Window, &mouseScrollCallback);
+			win = Window;
+        }
 		bool isKeyDown(int key )
 		{
 			if (key >= 0 && key < GLFW_KEY_LAST)

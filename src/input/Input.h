@@ -1,6 +1,7 @@
 #ifndef MINECRAFT_CLONE_INPUT_H
 #define MINECRAFT_CLONE_INPUT_H
 
+#include <GLFW/glfw3.h>
 	namespace Input
 	{
 		extern bool keyPressedData[GLFW_KEY_LAST];
