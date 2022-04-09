@@ -3,7 +3,7 @@
 Chunk::Chunk(){
 
 for(int i = 0;i <= 24;i++)
-    verticies.push_back({voxpos[i],grassuv[i]});
+    verticies.push_back(Vertex(voxpos[i],grassuv[i]));
 
 for(int i = 0;i <= 36;i++)
     tris.push_back(voxtris[i]);

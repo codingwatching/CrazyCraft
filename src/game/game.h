@@ -10,5 +10,9 @@
 struct Vertex{
     glm::vec3 pos;
     glm::vec2 uv;
+    Vertex( glm::vec3 _pos,glm::vec2 _uv){
+        pos = _pos;
+        uv = _uv; 
+    }
 };
 

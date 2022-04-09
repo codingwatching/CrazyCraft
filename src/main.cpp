@@ -100,7 +100,7 @@ struct ShaderProgramSource ParseShader(const std::string& filepath)
 std::cout << ss[0].str() << std::endl;
 std::cout << ss[1].str() << std::endl;
 
-    register ShaderProgramSource s = { ss[0].str(), ss[1].str() };
+    ShaderProgramSource s = { ss[0].str(), ss[1].str() };
     return s;
 }
 
@@ -206,7 +206,7 @@ GLFWwindow* InitWindow()
 
     std::cout << "Using openGL Version: " << glGetString(GL_VERSION) << std::endl;
 
-            glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
+           // glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
             Input::loadCallbacks(window);
 
     return window;
@@ -280,6 +280,7 @@ if (mousecap){
 glm::mat4 proj;
 glm::mat4 ident;
 glm::mat4 view;
+
 
 void updateMatrix(unsigned int shader){
    // model matrix
