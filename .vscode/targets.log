@@ -5,13 +5,13 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Sat Apr  9 12:38:48 2022
+# Make data base, printed on Sat Apr  9 12:48:35 2022
 
 # Variables
 
 # makefile (from 'Makefile', line 14)
- 
 OBJ = $(SRC:.cpp=.o)
 # environment
 GDK_BACKEND = x11
@@ -204,7 +204,7 @@ SUFFIXES :=
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
 # makefile (from 'Makefile', line 3)
-CC = g++
+CC = clang++
 # environment
 XDG_MENU_PREFIX = xfce-
 # environment
@@ -220,8 +220,10 @@ DOTNET_ROOT = /usr/share/dotnet
 
 # src/vendor/imgui (device 2051, inode 19138345): 18 files, no impossibilities.
 # src/vendor/glm/detail (device 2051, inode 19137824): 81 files, no impossibilities.
+ 
 # src/vendor/glm/gtc (device 2051, inode 19137946): 39 files, no impossibilities.
 # src/game/world (device 2051, inode 18878674): 9 files, no impossibilities.
+ 
 # src (device 2051, inode 18877355): 7 files, no impossibilities.
 # src/vendor/stb_image (device 2051, inode 19138358): 5 files, no impossibilities.
 # . (device 2051, inode 18879332): 11 files, no impossibilities.
@@ -271,7 +273,7 @@ src/game/world/World.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-09 12:38:42.444465908
+#  Last modified 2022-04-09 12:48:23.018167915
 #  File has been updated.
 #  Successfully updated.
 
@@ -332,7 +334,6 @@ src/vendor/imgui/imgui_impl_glfw_gl3.o:
 .DEFAULT:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 
 # Not a target:
@@ -404,11 +405,12 @@ src/vendor/imgui/imgui_demo.o:
 # No general ('VPATH' variable) search path.
 
 # strcache buffers: 1 (0) / strings = 329 / storage = 5036 B / avg = 15 B
+ 
 # current buf: size = 8162 B / used = 5036 B / count = 329 / avg = 15 B
 
 # strcache performance: lookups = 382 / hit rate = 13%
 # hash-table stats:
 # Load=329/8192=4%, Rehash=0, Collisions=7/382=2%
-# Finished Make data base on Sat Apr  9 12:38:48 2022
+# Finished Make data base on Sat Apr  9 12:48:35 2022
 
  

@@ -1,6 +1,6 @@
 UNAME_S = $(shell uname -s)
 
-CC = g++
+CC = clang++
 CFLAGS = -std=c++17 -O2 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing
 CFLAGS += -Wno-pointer-arith -Wno-newline-eof -Wno-unused-parameter -Wno-gnu-statement-expression
 CFLAGS += -Wno-gnu-compound-literal-initializer 

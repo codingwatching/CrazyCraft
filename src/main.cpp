@@ -193,6 +193,7 @@ GLFWwindow* InitWindow()
         return nullptr;
 
     }
+
     glfwMakeContextCurrent(window);
 
     // Initialize GLAD
@@ -357,14 +358,14 @@ int main()
                                    sizeof(Vertex),(int*)(sizeof(float)*3)));
         
         unsigned int shader;
-        ShaderProgramSource source = ParseShader("res/shaders/Basic.shader");
+        ShaderProgramSource source = ParseShader("../res/shaders/Basic.shader");
         shader = CreateShader(source.VertexSource, source.FragmentSource);
         GLCall( glUseProgram(shader) );
        
         //texture start
         Texture tex;
         stbi_set_flip_vertically_on_load(1);
-        tex.m_LocalBuffer = stbi_load("res/textures/minecraft.png", &tex.m_Width, &tex.m_Height, &tex.m_BPP, 4);
+        tex.m_LocalBuffer = stbi_load("../res/textures/minecraft.png", &tex.m_Width, &tex.m_Height, &tex.m_BPP, 4);
         if (!tex.m_LocalBuffer){
           std::cout << "[Error]can't load texture at: " << "res/textures/minecraft.png" << std::endl;
 
