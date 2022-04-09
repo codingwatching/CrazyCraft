@@ -1,34 +1,34 @@
 glm::vec3 voxpos[24]{
     //front
-    glm::vec3(-50.0f, -50.0f,-50),
-    glm::vec3(50.0f, -50.0f,-50),
     glm::vec3(50.0f, 50.0f,-50),
-    glm::vec3(-50.0f, 50.0f,-50),
+    glm::vec3(50.0f, 50.0f,-50),
+    glm::vec3(50.0f, 50.0f,-50),
+    glm::vec3(50.0f, 50.0f,-50),
     //back
-    glm::vec3(-50.0f, -50.0f,50),
-    glm::vec3(50.0f, -50.0f,50),
     glm::vec3(50.0f, 50.0f,50),
-    glm::vec3(-50.0f, 50.0f,50),
+    glm::vec3(50.0f, 50.0f,50),
+    glm::vec3(50.0f, 50.0f,50),
+    glm::vec3(50.0f, 50.0f,50),
     //side
-    glm::vec3(50.0f, -50.0f,50),
-    glm::vec3(50.0f, -50.0f,-50),
-    glm::vec3(50.0f, 50.0f,-50),
+    glm::vec3(50.0f, 50.0f,50),
+    glm::vec3(50.0f, 50.0f,50),
+    glm::vec3(50.0f, 50.0f,50),
     glm::vec3(50.0f, 50.0f,50),
     //another side
-    glm::vec3(-50.0f, -50.0f,-50),
-    glm::vec3(-50.0f, -50.0f,50),
     glm::vec3(-50.0f, 50.0f,50),
-    glm::vec3(-50.0f, 50.0f,-50),
+    glm::vec3(-50.0f, 50.0f,50),
+    glm::vec3(-50.0f, 50.0f,50),
+    glm::vec3(-50.0f, 50.0f,50),
     //top
-    glm::vec3(-50.0f, 50.0f,50),
-    glm::vec3(-50.0f, 50.0f,-50),
-    glm::vec3(50.0f, 50.0f,-50),
+    glm::vec3(50.0f, 50.0f,50),
+    glm::vec3(50.0f, 50.0f,50),
+    glm::vec3(50.0f, 50.0f,50),
     glm::vec3(50.0f, 50.0f,50),
     //bottom
-    glm::vec3(-50.0f, -50.0f,50),
-    glm::vec3(-50.0f, -50.0f,-50),
-    glm::vec3(50.0f, -50.0f,-50),
-    glm::vec3(50.0f, -50.0f,50)
+    glm::vec3(50.0f, 50.0f,50),
+    glm::vec3(50.0f, 50.0f,50),
+    glm::vec3(50.0f, 50.0f,50),
+    glm::vec3(50.0f, 50.0f,50)
 };
 unsigned int voxtris[36] = {0, 1, 2,
             2, 3, 0,
