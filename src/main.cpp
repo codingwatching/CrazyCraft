@@ -242,8 +242,11 @@ if (mousecap){
         front.z = sin(glm::radians(rot.y)) * cos(glm::radians(rot.x));
         front = glm::normalize(front);
         glm::vec3  right = glm::normalize(glm::cross(front, glm::vec3(0,1,0))); 
-       
+        float sbonus = 3.;
         float velocity = 2.5f;
+        if(Input::isKeyDown(GLFW_KEY_LEFT_CONTROL) ||Input::isKeyDown(GLFW_KEY_RIGHT_CONTROL)){
+            velocity += sbonus;
+        }
         if (Input::isKeyDown(GLFW_KEY_W)){
 
             pos -= right * velocity;
@@ -344,10 +347,9 @@ int main()
 
         // view matrix
         ident = glm::mat4(1.0f);
-        
         glEnable(GL_DEPTH_TEST);//enable stuff
-        GLCall( glEnable(GL_BLEND) );
-        GLCall( glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA) );
+        glEnable(GL_BLEND);
+        glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
         GLCall( glEnableVertexAttribArray(0) );//first argument
         GLCall( glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE,

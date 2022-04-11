@@ -1,13 +1,22 @@
 #include "Chunk.h"
+#include "block.h"
 #include "game/world/Voxeldata.h"
 
-bool isBlock(int x,int y ,int z){
- std::cout << y << std::endl;
- if(x < 0||x > 16||y < 0||y > 16||z < 0||z > 16) return false;
-
+unsigned char getBlock(int x,int y ,int z){
+if(x < 0||x > 16||y < 0||y > 16||z < 0||z > 16) return 0;
 srand(x*z-x+z);
 
- return (y <= rand() % 16);
+ if(y <= rand() % 16){
+return 1;
+ }else{
+return 0;
+ }
+
+}
+
+bool isBlock(int x,int y ,int z){
+
+return getBlock(x,y,z);
 
 }
 
