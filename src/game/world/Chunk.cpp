@@ -1,6 +1,9 @@
 #include "Chunk.h"
-#include "block.h"
 #include "game/world/Voxeldata.h"
+
+
+static int TextureAtlasSizeInBlocks = 4;
+static float NormalizedBlockTextureSize = 0;
 
 unsigned char getBlock(int x,int y ,int z){
 if(x < 0||x > 16||y < 0||y > 16||z < 0||z > 16) return 0;
@@ -19,7 +22,7 @@ return getBlock(x,y,z);
 
 }
 
-glm::vec2 getuv(Crazycraft::Texture textureID,int VertexID,int Faceid){
+ glm::vec2 getuv(Crazycraft::Texture textureID,int VertexID,int Faceid){
             float y = textureID.Gett(Faceid) / TextureAtlasSizeInBlocks;
             float x = textureID.Gett(Faceid) - (y * TextureAtlasSizeInBlocks);
 
@@ -48,9 +51,9 @@ unsigned int tricount = 0;
 for(int x = 0;x <= 16;x++){
     for(int y = 0;y <= 16;y++){
         for(int z = 0;z <= 16;z++){
-
         if (isBlock(x,y,z)){
 
+            Crazycraft::Block block = bd.getBlockData(getBlock(x,y,z));
 
             if (!isBlock(x,y,z-1)){
 
@@ -183,7 +186,8 @@ void Chunk::render(){
 }
 
 Chunk::Chunk(){
-
-
+bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(0,0,0,0,0,0)));
+bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(1,1,1,1,3,2)));
+ NormalizedBlockTextureSize = 1. / (float)TextureAtlasSizeInBlocks;
 }
 

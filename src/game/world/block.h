@@ -1,5 +1,6 @@
 namespace Crazycraft{
 
+
     struct Texture
     {
         public:
@@ -76,8 +77,11 @@ namespace Crazycraft{
         Block getBlockData(int b){
             return bdata[b];
         }
-
-       
+        BlockDefs(){
+          
+        }
     };
+
+      
 
 }

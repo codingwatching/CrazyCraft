@@ -1,6 +1,5 @@
 
-int TextureAtlasSizeInBlocks = 4;
-float NormalizedBlockTextureSize = 1. / (float)TextureAtlasSizeInBlocks;
+
 
 
 unsigned int voxtris[36] = {0, 1, 2,
