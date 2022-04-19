@@ -5,8 +5,9 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Mon Apr 11 16:31:31 2022
+# Make data base, printed on Tue Apr 19 14:52:11 2022
 
 # Variables
 
@@ -21,7 +22,7 @@ NO_AT_BRIDGE = 1
 # makefile (from 'Makefile', line 12)
 SRC = $(wildcard src/*.cpp) $(wildcard src/**/*.cpp) $(wildcard src/*.cpp) $(wildcard src/**/**/*.cpp) $(wildcard src/**/**/**/*.cpp)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-644c61a8-c1f4-4a2a-a36d-4aa01463ddda.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-6e758502-15ac-41b3-a88f-7fa2a9fcc0f4.sock
 # environment
 VSCODE_CWD = /home/ati
 # default
@@ -73,7 +74,7 @@ PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXzXGw14/agent.707
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXXkWpH0o/agent.705
 # default
 .SHELLFLAGS := -c
 # environment
@@ -91,13 +92,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 23108
+VSCODE_PID = 12337
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/642,unix/atiarch:/tmp/.ICE-unix/642
+SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/628,unix/atiarch:/tmp/.ICE-unix/628
 # automatic
 *F = $(notdir $*)
 # environment
@@ -171,7 +172,7 @@ MAKE_VERSION := 4.3
 # makefile (from 'Makefile', line 8)
 LDFLAGS = lib/glad/src/glad.o lib/glfw/src/libglfw3.a -ldl -lpthread -lGL
 # environment
-SSH_AGENT_PID = 708
+SSH_AGENT_PID = 706
 # environment
 _ = /usr/bin/make
 # makefile (from 'Makefile', line 15)
@@ -179,7 +180,7 @@ BIN = bin
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # makefile (from 'Makefile', line 7)
-CFLAGS = -std=c++17 -O2 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Wno-pointer-arith -Wno-newline-eof -Wno-unused-parameter -Wno-gnu-statement-expression -Wno-gnu-compound-literal-initializer  -Ilib/glad/include -Ilib/glfw/include -Isrc -Isrc/vendor/  
+CFLAGS = -std=c++17 -O2 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Wparentheses -Wno-pointer-arith -Wno-newline-eof -Wno-unused-parameter -Wno-gnu-statement-expression -Wno-gnu-compound-literal-initializer  -Ilib/glad/include -Ilib/glfw/include -Isrc -Isrc/vendor/  
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -270,7 +271,7 @@ src/game/world/World.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-09 12:48:23.018167915
+#  Last modified 2022-04-19 14:52:07.951188627
 #  File has been updated.
 #  Successfully updated.
 
@@ -295,7 +296,6 @@ dirs:
 # automatic
 # ? := 
 # automatic
- 
 # | := 
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
@@ -408,6 +408,6 @@ src/vendor/imgui/imgui_demo.o:
 # strcache performance: lookups = 382 / hit rate = 13%
 # hash-table stats:
 # Load=329/8192=4%, Rehash=0, Collisions=7/382=2%
-# Finished Make data base on Mon Apr 11 16:31:31 2022
+# Finished Make data base on Tue Apr 19 14:52:11 2022
 
  

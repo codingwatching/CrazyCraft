@@ -4,14 +4,13 @@
 
 unsigned char getBlock(int x,int y ,int z){
 if(x < 0||x > 16||y < 0||y > 16||z < 0||z > 16) return 0;
-srand(x*z-x+z);
+srand(x*y*z-x+y+z);
 
- if(y <= rand() % 16){
+ if(14 < rand() % 16){
 return 1;
  }else{
 return 0;
  }
-
 }
 
 bool isBlock(int x,int y ,int z){
@@ -20,15 +19,39 @@ return getBlock(x,y,z);
 
 }
 
-Chunk::Chunk(){
-   unsigned int tricount = 0;
+glm::vec2 getuv(Crazycraft::Texture textureID,int VertexID,int Faceid){
+            float y = textureID.Gett(Faceid) / TextureAtlasSizeInBlocks;
+            float x = textureID.Gett(Faceid) - (y * TextureAtlasSizeInBlocks);
+
+            x *= NormalizedBlockTextureSize;
+            y *= NormalizedBlockTextureSize;
+
+            y = 1. - y - NormalizedBlockTextureSize;
+
+            if(VertexID == 0)
+                return glm::vec2(x + NormalizedBlockTextureSize, y + NormalizedBlockTextureSize);
+            if(VertexID == 0)
+                return glm::vec2(x, y + NormalizedBlockTextureSize);
+            if(VertexID == 0)
+                return glm::vec2(x, y);
+            if(VertexID == 0)
+                return glm::vec2(x + NormalizedBlockTextureSize, y);
+            
+}
+
+void Chunk::generate(){
+
+}
+void Chunk::UpdateRenderData(){
+unsigned int tricount = 0;
 
 for(int x = 0;x <= 16;x++){
     for(int y = 0;y <= 16;y++){
         for(int z = 0;z <= 16;z++){
 
         if (isBlock(x,y,z)){
-             std::cout << "Block at :"<< x << " "  << y << " " << z << " " << std::endl;
+
+
             if (!isBlock(x,y,z-1)){
 
                
@@ -131,5 +154,36 @@ for(int x = 0;x <= 16;x++){
     }   
 }
 }
+
+unsigned int vb;
+
+    GLCall( glGenVertexArrays(1, &rd.vao) );//VAO
+    GLCall( glBindVertexArray(rd.vao) );
+
+    GLCall( glGenBuffers(1, &vb) );//VBO
+    GLCall( glBindBuffer(GL_ARRAY_BUFFER, vb) );
+    GLCall( glBufferData(GL_ARRAY_BUFFER,verticies.size() * sizeof(Vertex) , verticies.data(), GL_STATIC_DRAW) );
+   
+    GLCall( glGenBuffers(1, &rd.ibo) );//IBO
+    GLCall( glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, rd.ibo) );
+    GLCall( glBufferData(GL_ELEMENT_ARRAY_BUFFER, tris.size() * sizeof(unsigned int),tris.data(), GL_STATIC_DRAW) );
+
+    GLCall( glEnableVertexAttribArray(0) );//first argument
+        GLCall( glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE,sizeof(Vertex),(int*)0));
+        
+    GLCall( glEnableVertexAttribArray(1) );//second argument
+        GLCall( glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE,sizeof(Vertex),(int*)(sizeof(float)*3)));
+
+}
+
+void Chunk::render(){
+    GLCall( glBindVertexArray(rd.vao) );
+    GLCall( glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, rd.ibo) );
+    GLCall( glDrawElements(GL_TRIANGLES,tris.size(), GL_UNSIGNED_INT, nullptr) );
+}
+
+Chunk::Chunk(){
+
+
 }
 

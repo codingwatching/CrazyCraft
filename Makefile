@@ -1,7 +1,7 @@
 UNAME_S = $(shell uname -s)
 
 CC = clang++
-CFLAGS = -std=c++17 -O2 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing
+CFLAGS = -std=c++17 -O2 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Wparentheses
 CFLAGS += -Wno-pointer-arith -Wno-newline-eof -Wno-unused-parameter -Wno-gnu-statement-expression
 CFLAGS += -Wno-gnu-compound-literal-initializer 
 CFLAGS += -Ilib/glad/include -Ilib/glfw/include -Isrc -Isrc/vendor/  

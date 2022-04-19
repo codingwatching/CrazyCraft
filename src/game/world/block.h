@@ -2,6 +2,7 @@ namespace Crazycraft{
 
     struct Texture
     {
+        public:
         unsigned char front;
         unsigned char back;
         unsigned char left;
@@ -26,18 +27,38 @@ namespace Crazycraft{
         up = _up;
         down = _down;
         }
+        int Gett(int FaceId){
+            switch (FaceId)
+            {
+            case 0:
+                return front;
+            case 1:
+                return back;
+            case 2:
+                return left;
+            case 3:
+                return right;
+            case 4:
+                return up;
+            case 5:
+                return down;
+
+            default:
+                break;
+            }
+        }
 
     };
     
 
     struct Block{
-
+        public:
         std::string name;
         char maxstack;
 
         Texture textures;
 
-        Block(std::string newname,char newmaxstack,Texture t){
+        Block(std::string newname,char newmaxstack,Texture t = Texture()){
             textures = t;
             name = newname;
             maxstack = newmaxstack;
@@ -45,19 +66,15 @@ namespace Crazycraft{
 
     };
 
-    class Blocks{
+    class BlockDefs{
         private:
-        static std::vector<Block> blocksi;
-        Blocks(){}
+        static std::vector<Block> bdata;
         public:
         void addBlock(Block b){
-                blocksi.push_back(b);
+            bdata.push_back(b);
         }
-        Block getBlock(int b){
-            return blocksi[b];
-        }
-        Blocks getInstance(){
-          return Blocks();
+        Block getBlockData(int b){
+            return bdata[b];
         }
 
        

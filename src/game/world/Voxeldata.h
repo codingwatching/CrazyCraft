@@ -1,3 +1,8 @@
+
+int TextureAtlasSizeInBlocks = 4;
+float NormalizedBlockTextureSize = 1. / (float)TextureAtlasSizeInBlocks;
+
+
 unsigned int voxtris[36] = {0, 1, 2,
             2, 3, 0,
             4, 5, 6,
