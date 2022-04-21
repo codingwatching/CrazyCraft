@@ -1,27 +1,44 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 4.3
+ 
 # Built for x86_64-pc-linux-gnu
+ 
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
+ 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ 
 # This is free software: you are free to change and redistribute it.
+ 
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Tue Apr 19 15:19:35 2022
+ 
+# Make data base, printed on Thu Apr 21 13:18:58 2022
+ 
 
 # Variables
+ 
 
+ 
 # makefile (from 'Makefile', line 14)
+ 
 OBJ = $(SRC:.cpp=.o)
+ 
 # environment
+ 
 GDK_BACKEND = x11
+ 
 # environment
+ 
 LC_ALL = C
+ 
 # environment
+ 
 NO_AT_BRIDGE = 1
 # makefile (from 'Makefile', line 12)
 SRC = $(wildcard src/*.cpp) $(wildcard src/**/*.cpp) $(wildcard src/*.cpp) $(wildcard src/**/**/*.cpp) $(wildcard src/**/**/**/*.cpp)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a50b49ab-6d75-44b1-9b11-1404007d8a28.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-270ed08a-9331-4370-ada8-e807b8ae7952.sock
 # environment
 VSCODE_CWD = /home/ati
 # default
@@ -49,7 +66,7 @@ VSCODE_LOG_STACK = false
 # environment
 VSCODE_CODE_CACHE_PATH = /home/ati/.config/Code/CachedData/dfd34e8260c270da74b5c2d86d61aee4b6d56977
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
 # environment
 LANG = C
 # environment
@@ -69,11 +86,9 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
-PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
-# environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXXkWpH0o/agent.705
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXX7pas64/agent.768
 # default
 .SHELLFLAGS := -c
 # environment
@@ -81,7 +96,7 @@ XDG_CONFIG_DIRS = /etc/xdg
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
-XDG_SESSION_DESKTOP = XFCE
+XDG_SESSION_DESKTOP = xfce
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST := Makefile
 # automatic
@@ -89,13 +104,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 21738
+VSCODE_PID = 1117
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/628,unix/atiarch:/tmp/.ICE-unix/628
+SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/713,unix/atiarch:/tmp/.ICE-unix/713
 # automatic
 *F = $(notdir $*)
 # environment
@@ -121,7 +136,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/bin:/home/ati/.dotnet/tools:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/lib/jvm/default/bin
+PATH = /usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/home/ati/.dotnet/tools:/var/lib/flatpak/exports/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/usr/lib/jvm/default/bin
 # default
 MAKEFILES := 
 # environment
@@ -153,7 +168,7 @@ LOGNAME = ati
 # makefile (from 'Makefile', line 13)
 H = $(wildcard src/*.h) $(wildcard src/**/*.h) $(wildcard src/*.h) $(wildcard src/**/**/*.h) $(wildcard src/**/**/**/*.h)
 # environment
-XDG_VTNR = 1
+XDG_VTNR = 7
 # makefile
 .DEFAULT_GOAL := all
 # environment
@@ -167,7 +182,7 @@ MAKE_VERSION := 4.3
 # makefile (from 'Makefile', line 8)
 LDFLAGS = lib/glad/src/glad.o lib/glfw/src/libglfw3.a -ldl -lpthread -lGL
 # environment
-SSH_AGENT_PID = 706
+SSH_AGENT_PID = 769
 # environment
 _ = /usr/bin/make
 # makefile (from 'Makefile', line 15)
@@ -196,6 +211,8 @@ PANEL_GDK_CORE_DEVICE_EVENTS = 0
 <F = $(notdir $<)
 # default
 SUFFIXES := 
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/ati
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
 # makefile (from 'Makefile', line 3)
@@ -204,8 +221,10 @@ CC = clang++
 XDG_MENU_PREFIX = xfce-
 # environment
 DOTNET_ROOT = /usr/share/dotnet
+# environment
+GDMSESSION = xfce
 # variable set hash-table stats:
-# Load=97/1024=9%, Rehash=0, Collisions=7/139=5%
+# Load=98/1024=10%, Rehash=0, Collisions=7/140=5%
 
 # Pattern-specific Variable Values
 
@@ -216,25 +235,24 @@ DOTNET_ROOT = /usr/share/dotnet
 # src/vendor/imgui (device 2051, inode 19138345): 18 files, no impossibilities.
 # src/vendor/glm/detail (device 2051, inode 19137824): 81 files, no impossibilities.
 # src/vendor/glm/gtc (device 2051, inode 19137946): 39 files, no impossibilities.
-# src/game/world (device 2051, inode 18878674): 10 files, no impossibilities.
-# src (device 2051, inode 18877355): 8 files, no impossibilities.
+# src/game/world (device 2051, inode 18878674): 12 files, no impossibilities.
+# src (device 2051, inode 18877355): 9 files, no impossibilities.
 # src/vendor/stb_image (device 2051, inode 19138358): 5 files, no impossibilities.
-# . (device 2051, inode 18879332): 11 files, no impossibilities.
+# . (device 2051, inode 18879332): 12 files, no impossibilities.
 # src/game (device 2051, inode 18877383): 4 files, no impossibilities.
 # src/vendor (device 2051, inode 19138300): 5 files, no impossibilities.
 # src/vendor/glm (device 2051, inode 19137821): 28 files, no impossibilities.
 # src/vendor/glm/gtx (device 2051, inode 19137987): 116 files, no impossibilities.
-# src/opengl (device 2051, inode 18879419): 6 files, no impossibilities.
+# src/opengl (device 2051, inode 18879419): 7 files, no impossibilities.
 # src/input (device 2051, inode 18877379): 5 files, no impossibilities.
 
-# 336 files, no impossibilities in 13 directories.
+# 341 files, no impossibilities in 13 directories.
 
 # Implicit Rules
 
 %.o: %.cpp
 #  recipe to execute (from 'Makefile', line 36):
 	$(CC) -o $@ -c $< $(CFLAGS)
-	
 
 # 1 implicit rules, 0 (0.0%) terminal.
 # Files
@@ -245,7 +263,7 @@ src/vendor/imgui/imgui.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-game: src/main.o src/input/Input.o src/main.o src/game/world/Chunk.o src/game/world/World.o src/vendor/imgui/imgui.o src/vendor/imgui/imgui_demo.o src/vendor/imgui/imgui_draw.o src/vendor/imgui/imgui_impl_glfw_gl3.o src/vendor/stb_image/stb_image.o src/vendor/glm/detail/glm.o
+game: src/main.o src/input/Input.o src/main.o src/game/world/Chunk.o src/game/world/World.o src/game/world/block.o src/vendor/imgui/imgui.o src/vendor/imgui/imgui_demo.o src/vendor/imgui/imgui_draw.o src/vendor/imgui/imgui_impl_glfw_gl3.o src/vendor/stb_image/stb_image.o src/vendor/glm/detail/glm.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -267,13 +285,12 @@ src/game/world/World.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-19 14:52:07.951188627
+#  Last modified 2022-04-20 17:43:07.640201767
 #  File has been updated.
 #  Successfully updated.
 
 dirs:
 #  Implicit rule search has not been done.
- 
 #  Implicit/static pattern stem: ''
 #  File does not exist.
 #  File has been updated.
@@ -294,8 +311,11 @@ dirs:
 # ? := 
 # automatic
 # | := 
+ 
 # variable set hash-table stats:
+ 
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
+ 
 #  recipe to execute (from 'Makefile', line 27):
 	mkdir -p ./$(BIN)
 
@@ -304,7 +324,7 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 41):
+#  recipe to execute (from 'Makefile', line 39):
 	rm -rf $(BIN) $(OBJ)
 
 # Not a target:
@@ -369,6 +389,12 @@ src/game/world/Chunk.o:
 #  File has not been updated.
 
 # Not a target:
+src/game/world/block.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 src/vendor/stb_image/stb_image.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -392,19 +418,19 @@ src/vendor/imgui/imgui_demo.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=20/1024=2%, Rehash=0, Collisions=0/53=0%
+# Load=21/1024=2%, Rehash=0, Collisions=0/55=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 336 / storage = 5099 B / avg = 15 B
-# current buf: size = 8162 B / used = 5099 B / count = 336 / avg = 15 B
+# strcache buffers: 1 (0) / strings = 342 / storage = 5168 B / avg = 15 B
+# current buf: size = 8162 B / used = 5168 B / count = 342 / avg = 15 B
 
-# strcache performance: lookups = 391 / hit rate = 14%
+# strcache performance: lookups = 397 / hit rate = 13%
 # hash-table stats:
-# Load=336/8192=4%, Rehash=0, Collisions=7/391=2%
-# Finished Make data base on Tue Apr 19 15:19:35 2022
+# Load=342/8192=4%, Rehash=0, Collisions=7/397=2%
+# Finished Make data base on Thu Apr 21 13:18:58 2022
 
  

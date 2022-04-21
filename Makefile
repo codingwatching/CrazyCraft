@@ -35,7 +35,5 @@ game: $(OBJ)
 %.o: %.cpp
 	$(CC) -o $@ -c $< $(CFLAGS)
 
-	
-
 clean:
 	rm -rf $(BIN) $(OBJ)

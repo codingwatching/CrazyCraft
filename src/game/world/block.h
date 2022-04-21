@@ -47,6 +47,7 @@ namespace Crazycraft{
             default:
                 break;
             }
+        return 0;
         }
 
     };
@@ -56,30 +57,24 @@ namespace Crazycraft{
         public:
         std::string name;
         char maxstack;
+        bool isTransparent;
 
         Texture textures;
 
-        Block(std::string newname,char newmaxstack,Texture t = Texture()){
+        Block(std::string newname,char newmaxstack,Texture t = Texture(),bool _isTransparent=false){
             textures = t;
             name = newname;
             maxstack = newmaxstack;
+            isTransparent = _isTransparent;
         }
 
     };
 
     class BlockDefs{
-        private:
-        static std::vector<Block> bdata;
+        std::vector<Block> bdata;
         public:
-        void addBlock(Block b){
-            bdata.push_back(b);
-        }
-        Block getBlockData(int b){
-            return bdata[b];
-        }
-        BlockDefs(){
-          
-        }
+        void addBlock(Block b);
+        Block getBlockData(int b);
     };
 
       
