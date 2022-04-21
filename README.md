@@ -1,3 +1,3 @@
 
 # CrazyCraft
-this game is kinda infunctional
+this game is infunctional
