@@ -1,44 +1,27 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 4.3
- 
 # Built for x86_64-pc-linux-gnu
- 
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
- 
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
- 
 # This is free software: you are free to change and redistribute it.
- 
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
- 
-# Make data base, printed on Thu Apr 21 13:18:58 2022
- 
+# Make data base, printed on Sun Apr 24 11:30:59 2022
 
 # Variables
- 
 
- 
 # makefile (from 'Makefile', line 14)
- 
 OBJ = $(SRC:.cpp=.o)
- 
 # environment
- 
 GDK_BACKEND = x11
- 
 # environment
- 
 LC_ALL = C
- 
 # environment
- 
 NO_AT_BRIDGE = 1
 # makefile (from 'Makefile', line 12)
 SRC = $(wildcard src/*.cpp) $(wildcard src/**/*.cpp) $(wildcard src/*.cpp) $(wildcard src/**/**/*.cpp) $(wildcard src/**/**/**/*.cpp)
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-270ed08a-9331-4370-ada8-e807b8ae7952.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-00db6733-0421-4445-b640-171e8995e36c.sock
 # environment
 VSCODE_CWD = /home/ati
 # default
@@ -51,6 +34,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 .VARIABLES := 
 # environment
 PWD = /home/ati/Desktop/code/lol
+ 
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -82,13 +66,13 @@ CURDIR := /home/ati/Desktop/code/lol
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-XXXXXX7pas64/agent.768
+SSH_AUTH_SOCK = /tmp/ssh-XXXXXX5spE89/agent.733
 # default
 .SHELLFLAGS := -c
 # environment
@@ -104,13 +88,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 1117
+VSCODE_PID = 16931
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/713,unix/atiarch:/tmp/.ICE-unix/713
+SESSION_MANAGER = local/atiarch:@/tmp/.ICE-unix/668,unix/atiarch:/tmp/.ICE-unix/668
 # automatic
 *F = $(notdir $*)
 # environment
@@ -182,7 +166,7 @@ MAKE_VERSION := 4.3
 # makefile (from 'Makefile', line 8)
 LDFLAGS = lib/glad/src/glad.o lib/glfw/src/libglfw3.a -ldl -lpthread -lGL
 # environment
-SSH_AGENT_PID = 769
+SSH_AGENT_PID = 734
 # environment
 _ = /usr/bin/make
 # makefile (from 'Makefile', line 15)
@@ -232,21 +216,21 @@ GDMSESSION = xfce
 
 # Directories
 
-# src/vendor/imgui (device 2051, inode 19138345): 18 files, no impossibilities.
-# src/vendor/glm/detail (device 2051, inode 19137824): 81 files, no impossibilities.
+# src/vendor/imgui (device 2051, inode 19138345): 14 files, no impossibilities.
+# src/vendor/glm/detail (device 2051, inode 19137824): 80 files, no impossibilities.
 # src/vendor/glm/gtc (device 2051, inode 19137946): 39 files, no impossibilities.
-# src/game/world (device 2051, inode 18878674): 12 files, no impossibilities.
-# src (device 2051, inode 18877355): 9 files, no impossibilities.
-# src/vendor/stb_image (device 2051, inode 19138358): 5 files, no impossibilities.
-# . (device 2051, inode 18879332): 12 files, no impossibilities.
+# src/game/world (device 2051, inode 18878674): 9 files, no impossibilities.
+# src (device 2051, inode 18877355): 8 files, no impossibilities.
+# src/vendor/stb_image (device 2051, inode 19138358): 4 files, no impossibilities.
+# . (device 2051, inode 18879332): 11 files, no impossibilities.
 # src/game (device 2051, inode 18877383): 4 files, no impossibilities.
 # src/vendor (device 2051, inode 19138300): 5 files, no impossibilities.
 # src/vendor/glm (device 2051, inode 19137821): 28 files, no impossibilities.
 # src/vendor/glm/gtx (device 2051, inode 19137987): 116 files, no impossibilities.
 # src/opengl (device 2051, inode 18879419): 7 files, no impossibilities.
-# src/input (device 2051, inode 18877379): 5 files, no impossibilities.
+# src/input (device 2051, inode 18877379): 4 files, no impossibilities.
 
-# 341 files, no impossibilities in 13 directories.
+# 329 files, no impossibilities in 13 directories.
 
 # Implicit Rules
 
@@ -285,7 +269,7 @@ src/game/world/World.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-20 17:43:07.640201767
+#  Last modified 2022-04-24 11:30:41.263529361
 #  File has been updated.
 #  Successfully updated.
 
@@ -311,11 +295,8 @@ dirs:
 # ? := 
 # automatic
 # | := 
- 
 # variable set hash-table stats:
- 
 # Load=8/32=25%, Rehash=0, Collisions=1/12=8%
- 
 #  recipe to execute (from 'Makefile', line 27):
 	mkdir -p ./$(BIN)
 
@@ -425,12 +406,12 @@ src/vendor/imgui/imgui_demo.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 342 / storage = 5168 B / avg = 15 B
-# current buf: size = 8162 B / used = 5168 B / count = 342 / avg = 15 B
+# strcache buffers: 1 (0) / strings = 330 / storage = 5051 B / avg = 15 B
+# current buf: size = 8162 B / used = 5051 B / count = 330 / avg = 15 B
 
-# strcache performance: lookups = 397 / hit rate = 13%
+# strcache performance: lookups = 385 / hit rate = 14%
 # hash-table stats:
-# Load=342/8192=4%, Rehash=0, Collisions=7/397=2%
-# Finished Make data base on Thu Apr 21 13:18:58 2022
+# Load=330/8192=4%, Rehash=0, Collisions=7/385=2%
+# Finished Make data base on Sun Apr 24 11:30:59 2022
 
  

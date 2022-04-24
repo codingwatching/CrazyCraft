@@ -56,8 +56,6 @@ for(int x = 0;x <= 16;x++){
         Crazycraft::Block b = bd.getBlockData(getBlock(x,y,z));
         if (getBlock(x,y,z)){
 
-            Crazycraft::Block block = bd.getBlockData(getBlock(x,y,z));
-
             if(isBlockTransparent(x,y,z)){//generating transparent block data
 
                 if (!getBlock(x,y,z-1)){

@@ -1,6 +1,10 @@
-make game --dry-run --always-make --keep-going --print-directory
+make all --dry-run --keep-going --print-directory
 make: Entering directory '/home/ati/Desktop/code/lol'
+mkdir -p ./bin
+cd lib/glad && clang++ -o src/glad.o -Iinclude -c src/glad.c
+cd lib/glfw && cmake . && make
 clang++ -o src/main.o -c src/main.cpp -std=c++17 -O2 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Wparentheses -Wno-pointer-arith -Wno-newline-eof -Wno-unused-parameter -Wno-gnu-statement-expression -Wno-gnu-compound-literal-initializer  -Ilib/glad/include -Ilib/glfw/include -Isrc -Isrc/vendor/  
+ 
 clang++ -o src/input/Input.o -c src/input/Input.cpp -std=c++17 -O2 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Wparentheses -Wno-pointer-arith -Wno-newline-eof -Wno-unused-parameter -Wno-gnu-statement-expression -Wno-gnu-compound-literal-initializer  -Ilib/glad/include -Ilib/glfw/include -Isrc -Isrc/vendor/  
 clang++ -o src/game/world/Chunk.o -c src/game/world/Chunk.cpp -std=c++17 -O2 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Wparentheses -Wno-pointer-arith -Wno-newline-eof -Wno-unused-parameter -Wno-gnu-statement-expression -Wno-gnu-compound-literal-initializer  -Ilib/glad/include -Ilib/glfw/include -Isrc -Isrc/vendor/  
 clang++ -o src/game/world/World.o -c src/game/world/World.cpp -std=c++17 -O2 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Wparentheses -Wno-pointer-arith -Wno-newline-eof -Wno-unused-parameter -Wno-gnu-statement-expression -Wno-gnu-compound-literal-initializer  -Ilib/glad/include -Ilib/glfw/include -Isrc -Isrc/vendor/  
