@@ -1,4 +1,3 @@
 
 # CrazyCraft
-
-a minecraft clone
+this game is infunctional
