@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ati/Desktop/code/lol/lib/glfw
+CMAKE_SOURCE_DIR = /home/ati/Desktop/code/lol
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ati/Desktop/code/lol/lib/glfw
+CMAKE_BINARY_DIR = /home/ati/Desktop/code/lol
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ati/Desktop/code/lol/lib/glfw && $(CMAKE_COMMAND) -E cmake_progress_start /home/ati/Desktop/code/lol/lib/glfw/CMakeFiles /home/ati/Desktop/code/lol/lib/glfw/docs//CMakeFiles/progress.marks
-	cd /home/ati/Desktop/code/lol/lib/glfw && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ati/Desktop/code/lol/lib/glfw/CMakeFiles 0
+	cd /home/ati/Desktop/code/lol && $(CMAKE_COMMAND) -E cmake_progress_start /home/ati/Desktop/code/lol/CMakeFiles /home/ati/Desktop/code/lol/lib/glfw/docs//CMakeFiles/progress.marks
+	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glfw/docs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ati/Desktop/code/lol/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ati/Desktop/code/lol/lib/glfw && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/clean
+	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glfw/docs/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,31 +148,31 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ati/Desktop/code/lol/lib/glfw && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/preinstall
+	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glfw/docs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ati/Desktop/code/lol/lib/glfw && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/preinstall
+	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glfw/docs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ati/Desktop/code/lol/lib/glfw && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ati/Desktop/code/lol && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-docs/CMakeFiles/docs.dir/rule:
-	cd /home/ati/Desktop/code/lol/lib/glfw && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 docs/CMakeFiles/docs.dir/rule
-.PHONY : docs/CMakeFiles/docs.dir/rule
+lib/glfw/docs/CMakeFiles/docs.dir/rule:
+	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glfw/docs/CMakeFiles/docs.dir/rule
+.PHONY : lib/glfw/docs/CMakeFiles/docs.dir/rule
 
 # Convenience name for target.
-docs: docs/CMakeFiles/docs.dir/rule
+docs: lib/glfw/docs/CMakeFiles/docs.dir/rule
 .PHONY : docs
 
 # fast build rule for target.
 docs/fast:
-	cd /home/ati/Desktop/code/lol/lib/glfw && $(MAKE) $(MAKESILENT) -f docs/CMakeFiles/docs.dir/build.make docs/CMakeFiles/docs.dir/build
+	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f lib/glfw/docs/CMakeFiles/docs.dir/build.make lib/glfw/docs/CMakeFiles/docs.dir/build
 .PHONY : docs/fast
 
 # Help Target
@@ -199,6 +199,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ati/Desktop/code/lol/lib/glfw && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ati/Desktop/code/lol && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

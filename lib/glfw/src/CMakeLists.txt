@@ -1,7 +1,7 @@
 
 add_library(glfw ${GLFW_LIBRARY_TYPE}
-                 "${GLFW_SOURCE_DIR}/include/GLFW/glfw3.h"
-                 "${GLFW_SOURCE_DIR}/include/GLFW/glfw3native.h"
+                 "${GLFW_SOURCE_DIR}/../include/GLFW/glfw3.h"
+                 "${GLFW_SOURCE_DIR}/../include/GLFW/glfw3native.h"
                  internal.h platform.h mappings.h
                  context.c init.c input.c monitor.c platform.c vulkan.c window.c
                  egl_context.c osmesa_context.c null_platform.h null_joystick.h

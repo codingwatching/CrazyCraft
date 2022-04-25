@@ -10,6 +10,9 @@
 #include "block.h"
 class Chunk{
     private:
+    std::vector<float> noiseOutput;
+    glm::ivec3 pos;
+    glm::ivec3 dimensions = glm::ivec3(16,16,16);
     Renderdata rd;
     Renderdata transparent_rd;
     std::vector<Vertex> verticies;
@@ -20,7 +23,7 @@ class Chunk{
     public:
     unsigned char getBlock(int x,int y ,int z);
     bool isBlockTransparent(int x,int y ,int z);
-    Chunk();
+    Chunk(glm::ivec3 _pos);
     void generate();
     void UpdateRenderData();
     void render();

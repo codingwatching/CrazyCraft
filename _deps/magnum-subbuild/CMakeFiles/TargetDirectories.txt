@@ -1,0 +1,3 @@
+/home/ati/Desktop/code/lol/_deps/magnum-subbuild/CMakeFiles/magnum-populate.dir
+/home/ati/Desktop/code/lol/_deps/magnum-subbuild/CMakeFiles/edit_cache.dir
+/home/ati/Desktop/code/lol/_deps/magnum-subbuild/CMakeFiles/rebuild_cache.dir

@@ -1,15 +1,20 @@
 #include "Chunk.h"
 #include <opengl/debug.h>
 #include "game/world/Voxeldata.h"
+#include <FastNoise/FastNoise.h>
 
 static int TextureAtlasSizeInBlocks = 16;
 float NormalizedBlockTextureSize = 0;
 
 unsigned char Chunk::getBlock(int x,int y ,int z){
 if(x < 0||x > 16||y < 0||y > 16||z < 0||z > 16) return 0;
-srand(x*z-x+z);
+int l = 4+(noiseOutput[(((x + pos.x * dimensions.x) * dimensions.y)+(z+ pos.z * dimensions.z))])*2;
 
- return (rand() % 4);
+if(y <= l-1)
+    return 2;
+if(y == l)
+    return 1;
+return 0;
 
 }
 
@@ -60,10 +65,10 @@ for(int x = 0;x <= 16;x++){
 
                 if (!getBlock(x,y,z-1)){
 
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z-1),getuv(b.textures,0,0)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z-1),getuv(b.textures,1,0)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z-1),getuv(b.textures,2,0)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z-1),getuv(b.textures,3,0)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,0,0)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,1,0)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,2,0)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,3,0)));
                 transparent_tris.push_back(transparent_tricount);
                 transparent_tris.push_back(transparent_tricount+1);
                 transparent_tris.push_back(transparent_tricount+2);
@@ -76,10 +81,10 @@ for(int x = 0;x <= 16;x++){
              if (!getBlock(x,y,z+1)){
 
                
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z),getuv(b.textures,0,1)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z),getuv(b.textures,1,1)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z),getuv(b.textures,2,1)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z),getuv(b.textures,3,1)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,0,1)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,1,1)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,2,1)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,3,1)));
                 transparent_tris.push_back(transparent_tricount);
                 transparent_tris.push_back(transparent_tricount+1);
                 transparent_tris.push_back(transparent_tricount+2);
@@ -92,10 +97,10 @@ for(int x = 0;x <= 16;x++){
             if (!getBlock(x+1,y,z)){
 
                
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z),getuv(b.textures,0,2)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z-1),getuv(b.textures,1,2)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z-1),getuv(b.textures,2,2)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z),getuv(b.textures,3,2)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,0,2)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,1,2)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,2,2)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,3,2)));
                 transparent_tris.push_back(transparent_tricount);
                 transparent_tris.push_back(transparent_tricount+1);
                 transparent_tris.push_back(transparent_tricount+2);
@@ -108,10 +113,10 @@ for(int x = 0;x <= 16;x++){
              if (!getBlock(x-1,y,z)){
 
                
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z-1),getuv(b.textures,0,3)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z),getuv(b.textures,1,3)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z),getuv(b.textures,2,3)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z-1),getuv(b.textures,3,3)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,0,3)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,1,3)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,2,3)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,3,3)));
                 transparent_tris.push_back(transparent_tricount);
                 transparent_tris.push_back(transparent_tricount+1);
                 transparent_tris.push_back(transparent_tricount+2);
@@ -124,10 +129,10 @@ for(int x = 0;x <= 16;x++){
              if (!getBlock(x,y+1,z)){
 
                
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z),getuv(b.textures,0,4)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z-1),getuv(b.textures,1,4)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z-1),getuv(b.textures,2,4)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z),getuv(b.textures,3,4)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,0,4)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,1,4)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,2,4)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,3,4)));
                 transparent_tris.push_back(transparent_tricount);
                 transparent_tris.push_back(transparent_tricount+1);
                 transparent_tris.push_back(transparent_tricount+2);
@@ -140,10 +145,10 @@ for(int x = 0;x <= 16;x++){
              if (!getBlock(x,y-1,z)){
 
                
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z),getuv(b.textures,0,5)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z-1),getuv(b.textures,1,5)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z-1),getuv(b.textures,2,5)));
-                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z),getuv(b.textures,3,5)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,0,5)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,1,5)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,2,5)));
+                transparent_verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,3,5)));
                 transparent_tris.push_back(transparent_tricount);
                 transparent_tris.push_back(transparent_tricount+1);
                 transparent_tris.push_back(transparent_tricount+2);
@@ -160,10 +165,10 @@ for(int x = 0;x <= 16;x++){
             if (isBlockTransparent(x,y,z-1)){
 
                
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z-1),getuv(b.textures,0,0)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z-1),getuv(b.textures,1,0)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z-1),getuv(b.textures,2,0)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z-1),getuv(b.textures,3,0)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,0,0)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,1,0)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,2,0)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,3,0)));
                 tris.push_back(tricount);
                 tris.push_back(tricount+1);
                 tris.push_back(tricount+2);
@@ -176,10 +181,10 @@ for(int x = 0;x <= 16;x++){
              if (isBlockTransparent(x,y,z+1)){
 
                
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z),getuv(b.textures,0,1)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z),getuv(b.textures,1,1)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z),getuv(b.textures,2,1)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z),getuv(b.textures,3,1)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,0,1)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,1,1)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,2,1)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,3,1)));
                 tris.push_back(tricount);
                 tris.push_back(tricount+1);
                 tris.push_back(tricount+2);
@@ -192,10 +197,10 @@ for(int x = 0;x <= 16;x++){
             if (isBlockTransparent(x+1,y,z)){
 
                
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z),getuv(b.textures,0,2)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z-1),getuv(b.textures,1,2)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z-1),getuv(b.textures,2,2)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z),getuv(b.textures,3,2)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,0,2)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,1,2)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,2,2)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,3,2)));
                 tris.push_back(tricount);
                 tris.push_back(tricount+1);
                 tris.push_back(tricount+2);
@@ -208,10 +213,10 @@ for(int x = 0;x <= 16;x++){
              if (isBlockTransparent(x-1,y,z)){
 
                
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z-1),getuv(b.textures,0,3)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z),getuv(b.textures,1,3)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z),getuv(b.textures,2,3)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z-1),getuv(b.textures,3,3)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,0,3)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,1,3)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,2,3)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,3,3)));
                 tris.push_back(tricount);
                 tris.push_back(tricount+1);
                 tris.push_back(tricount+2);
@@ -224,10 +229,10 @@ for(int x = 0;x <= 16;x++){
              if (isBlockTransparent(x,y+1,z)){
 
                
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z),getuv(b.textures,0,4)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z-1),getuv(b.textures,1,4)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z-1),getuv(b.textures,2,4)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z),getuv(b.textures,3,4)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,0,4)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,1,4)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,2,4)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,3,4)));
                 tris.push_back(tricount);
                 tris.push_back(tricount+1);
                 tris.push_back(tricount+2);
@@ -240,10 +245,10 @@ for(int x = 0;x <= 16;x++){
              if (isBlockTransparent(x,y-1,z)){
 
                
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z),getuv(b.textures,0,5)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z-1),getuv(b.textures,1,5)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z-1),getuv(b.textures,2,5)));
-                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z),getuv(b.textures,3,5)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,0,5)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x-1,y-1,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,1,5)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z-1)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,2,5)));
+                verticies.push_back(Vertex( glm::vec3(50.0f, 50.0f,50)*glm::vec3(x,y-1,z)+(glm::vec3)(pos*(dimensions*glm::ivec3(50, 50,50))),getuv(b.textures,3,5)));
                 tris.push_back(tricount);
                 tris.push_back(tricount+1);
                 tris.push_back(tricount+2);
@@ -314,11 +319,16 @@ void Chunk::render(){
     GLCall( glDrawElements(GL_TRIANGLES,transparent_tris.size(), GL_UNSIGNED_INT, nullptr) );
 }
 
-Chunk::Chunk(){
+Chunk::Chunk(glm::ivec3 _pos){
 bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(0,0,0,0,0,0),true));
 bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(1,1,1,1,3,2)));
 bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(2,2,2,2,2,2)));
 bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(33,33,33,33,33,33),true));
  NormalizedBlockTextureSize = 1. / (float)TextureAtlasSizeInBlocks;
+ pos = _pos;
+noiseOutput = std::vector<float>(32*16);
+auto fnGenerator = FastNoise::New<FastNoise::Simplex>();
+// Generate a 16 x 16 x 16 area of noise
+fnGenerator->GenUniformGrid2D(noiseOutput.data(), 0, 0, 32, 16, 0.2f,122);
 }
 
