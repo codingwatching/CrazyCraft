@@ -326,9 +326,9 @@ bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(2,2,2,2,2,2)));
 bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(33,33,33,33,33,33),true));
  NormalizedBlockTextureSize = 1. / (float)TextureAtlasSizeInBlocks;
  pos = _pos;
-noiseOutput = std::vector<float>(32*16);
+noiseOutput = std::vector<float>(16*16);
 auto fnGenerator = FastNoise::New<FastNoise::Simplex>();
 // Generate a 16 x 16 x 16 area of noise
-fnGenerator->GenUniformGrid2D(noiseOutput.data(), 0, 0, 32, 16, 0.2f,122);
+fnGenerator->GenUniformGrid2D(noiseOutput.data(), 0, 0, 16, 16, 0.2f,122);
 }
 
