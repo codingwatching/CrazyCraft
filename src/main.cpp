@@ -7,11 +7,8 @@
 
 int main()
 {
-    
-    GLFWwindow* window = InitWindow();
-    if (!window)
-        return -1;    
 
+<<<<<<< HEAD
     Camera c;
 /*
    Chunk ch(glm::ivec3(0,0,0));
@@ -28,50 +25,77 @@ w.update_chunks();
             aspect.y = height;
             glViewport(0, 0, width, height);
         });
+=======
+	GLFWwindow *window = InitWindow();
+	if (!window)
+		return -1;
 
-        //aspect ratio
-        aspect.x = 960; 
-        aspect.y = 540;
+	Camera c;
 
-       Init();
+	Chunk ch(glm::ivec3(0, 0, 0));
+	Chunk ch2(glm::ivec3(1, 0, 0));
 
-        IMGUI_CHECKVERSION();
-        ImGui::CreateContext();
-        ImGui_ImplGlfwGL3_Init(window, true);
-        ImGui::StyleColorsDark();
+	ch.UpdateRenderData();
+	ch2.UpdateRenderData();
+>>>>>>> dcc73c6af57133fbb685f8aaa93188ae4b277588
 
-        do {
-            glClearColor(0.5,0.5,1,1);
-            GLCall( glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
+	glfwSetWindowSizeCallback(window, [](GLFWwindow *window, int width, int height)
+	{
+		aspect.x = width;
+		aspect.y = height;
+		glViewport(0, 0, width, height);
+	});
 
-            //ImGui_ImplGlfwGL3_NewFrame();
+	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
-            c.input(window);
+	//aspect ratio
+	aspect.x = 960;
+	aspect.y = 540;
 
-            c.updateMatrix(shader,aspect);
+	Init();
 
+	IMGUI_CHECKVERSION();
+	ImGui::CreateContext();
+	ImGui_ImplGlfwGL3_Init(window, true);
+	ImGui::StyleColorsDark();
+
+	do
+	{
+		glClearColor(0.5, 0.5, 1, 1);
+		GLCall(glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
+
+		//ImGui_ImplGlfwGL3_NewFrame();
+
+<<<<<<< HEAD
             //ch.render();
             //ch2.render();
             w.render();
+=======
+		c.input(window);
+>>>>>>> dcc73c6af57133fbb685f8aaa93188ae4b277588
 
-            //ImGui::DragFloat3("Camera Translation", &c.pos.x, 0.0f, 960.0f);
-            //ImGui::DragFloat2("Camera Rotation", &c.rot.x, 0.0f, 960.0f);
-            //ImGui::Text("Application average: %.1f FPS", ImGui::GetIO().Framerate);
+		c.updateMatrix(shader, aspect);
 
-            //ImGui::Render();
-            //ImGui_ImplGlfwGL3_RenderDrawData(ImGui::GetDrawData());
+		ch.render();
+		ch2.render();
 
-            // Swap buffers
-            glfwSwapBuffers(window);
-            glfwPollEvents();
-        } 
-        while(!glfwWindowShouldClose(window));
+		//ImGui::DragFloat3("Camera Translation", &c.pos.x, 0.0f, 960.0f);
+		//ImGui::DragFloat2("Camera Rotation", &c.rot.x, 0.0f, 960.0f);
+		//ImGui::Text("Application average: %.1f FPS", ImGui::GetIO().Framerate);
 
-  
+		//ImGui::Render();
+		//ImGui_ImplGlfwGL3_RenderDrawData(ImGui::GetDrawData());
 
-    // Close OpenGL window and terminate GLFW
-    ImGui_ImplGlfwGL3_Shutdown();
-    ImGui::DestroyContext();
-    glfwTerminate();
-    return 0;
+		// Swap buffers
+		glfwSwapBuffers(window);
+		glfwPollEvents();
+	} while (!glfwWindowShouldClose(window));
+
+
+
+	// Close OpenGL window and terminate GLFW
+	ImGui_ImplGlfwGL3_Shutdown();
+	ImGui::DestroyContext();
+	glfwTerminate();
+	return 0;
 }
