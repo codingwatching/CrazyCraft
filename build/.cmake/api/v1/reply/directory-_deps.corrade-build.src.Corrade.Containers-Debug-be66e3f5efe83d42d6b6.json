@@ -1,0 +1,73 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/corrade-src/src/Corrade/Containers/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/Corrade/Containers",
+			"paths" : 
+			[
+				"build/_deps/corrade-src/src/Corrade/Containers/AnyReference.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/Array.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/ArrayTuple.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/ArrayView.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/ArrayViewStl.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/ArrayViewStlSpan.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/BigEnumSet.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/BigEnumSet.hpp",
+				"build/_deps/corrade-src/src/Corrade/Containers/constructHelpers.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/Containers.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/EnumSet.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/EnumSet.hpp",
+				"build/_deps/corrade-src/src/Corrade/Containers/GrowableArray.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/initializeHelpers.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/LinkedList.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/MoveReference.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/Optional.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/OptionalStl.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/Pair.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/PairStl.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/Pointer.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/PointerStl.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/Reference.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/ScopeGuard.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/sequenceHelpers.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/StaticArray.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/StridedArrayView.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/String.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/StringStl.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/StringView.h",
+				"build/_deps/corrade-src/src/Corrade/Containers/Tags.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/corrade-build/src/Corrade/Containers",
+		"source" : "build/_deps/corrade-src/src/Corrade/Containers"
+	}
+}

@@ -1,0 +1,100 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/magnum-src/src/Magnum/GL/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 229,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 233,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Debug/lib/libMagnumGL-d.a"
+			],
+			"targetId" : "MagnumGL::@268806c9b7125e0d5796",
+			"targetIndex" : 12,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/Magnum/GL",
+			"paths" : 
+			[
+				"build/_deps/magnum-src/src/Magnum/GL/AbstractFramebuffer.h",
+				"build/_deps/magnum-src/src/Magnum/GL/AbstractObject.h",
+				"build/_deps/magnum-src/src/Magnum/GL/AbstractQuery.h",
+				"build/_deps/magnum-src/src/Magnum/GL/AbstractShaderProgram.h",
+				"build/_deps/magnum-src/src/Magnum/GL/AbstractTexture.h",
+				"build/_deps/magnum-src/src/Magnum/GL/Attribute.h",
+				"build/_deps/magnum-src/src/Magnum/GL/Buffer.h",
+				"build/_deps/magnum-src/src/Magnum/GL/Context.h",
+				"build/_deps/magnum-src/src/Magnum/GL/CubeMapTexture.h",
+				"build/_deps/magnum-src/src/Magnum/GL/DefaultFramebuffer.h",
+				"build/_deps/magnum-src/src/Magnum/GL/Extensions.h",
+				"build/_deps/magnum-src/src/Magnum/GL/Framebuffer.h",
+				"build/_deps/magnum-src/src/Magnum/GL/GL.h",
+				"build/_deps/magnum-src/src/Magnum/GL/Mesh.h",
+				"build/_deps/magnum-src/src/Magnum/GL/MeshView.h",
+				"build/_deps/magnum-src/src/Magnum/GL/OpenGL.h",
+				"build/_deps/magnum-src/src/Magnum/GL/PixelFormat.h",
+				"build/_deps/magnum-src/src/Magnum/GL/Renderbuffer.h",
+				"build/_deps/magnum-src/src/Magnum/GL/RenderbufferFormat.h",
+				"build/_deps/magnum-src/src/Magnum/GL/Renderer.h",
+				"build/_deps/magnum-src/src/Magnum/GL/Sampler.h",
+				"build/_deps/magnum-src/src/Magnum/GL/Shader.h",
+				"build/_deps/magnum-src/src/Magnum/GL/Texture.h",
+				"build/_deps/magnum-src/src/Magnum/GL/TextureFormat.h",
+				"build/_deps/magnum-src/src/Magnum/GL/TimeQuery.h",
+				"build/_deps/magnum-src/src/Magnum/GL/Version.h",
+				"build/_deps/magnum-src/src/Magnum/GL/visibility.h",
+				"build/_deps/magnum-src/src/Magnum/GL/PipelineStatisticsQuery.h",
+				"build/_deps/magnum-src/src/Magnum/GL/RectangleTexture.h",
+				"build/_deps/magnum-src/src/Magnum/GL/BufferImage.h",
+				"build/_deps/magnum-src/src/Magnum/GL/PrimitiveQuery.h",
+				"build/_deps/magnum-src/src/Magnum/GL/TextureArray.h",
+				"build/_deps/magnum-src/src/Magnum/GL/TransformFeedback.h",
+				"build/_deps/magnum-src/src/Magnum/GL/DebugOutput.h",
+				"build/_deps/magnum-src/src/Magnum/GL/BufferTexture.h",
+				"build/_deps/magnum-src/src/Magnum/GL/BufferTextureFormat.h",
+				"build/_deps/magnum-src/src/Magnum/GL/CubeMapTextureArray.h",
+				"build/_deps/magnum-src/src/Magnum/GL/ImageFormat.h",
+				"build/_deps/magnum-src/src/Magnum/GL/MultisampleTexture.h",
+				"build/_deps/magnum-src/src/Magnum/GL/SampleQuery.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/magnum-build/src/Magnum/GL",
+		"source" : "build/_deps/magnum-src/src/Magnum/GL"
+	}
+}

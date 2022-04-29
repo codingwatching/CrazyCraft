@@ -1,0 +1,72 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"corrade_add_resource"
+		],
+		"files" : 
+		[
+			"build/_deps/corrade-src/modules/UseCorrade.cmake",
+			"lib/FastNoise2/NoiseTool/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 95,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 507,
+				"parent" : 1
+			}
+		]
+	},
+	"id" : "NoiseTool_RESOURCES-dependencies::@2862938415d0b586912a",
+	"name" : "NoiseTool_RESOURCES-dependencies",
+	"paths" : 
+	{
+		"build" : "lib/FastNoise2/NoiseTool",
+		"source" : "lib/FastNoise2/NoiseTool"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"path" : "lib/FastNoise2/NoiseTool/VertexLight.frag",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "lib/FastNoise2/NoiseTool/VertexLight.vert",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"path" : "_deps/imgui-src/misc/fonts/DroidSans.ttf",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "UTILITY"
+}

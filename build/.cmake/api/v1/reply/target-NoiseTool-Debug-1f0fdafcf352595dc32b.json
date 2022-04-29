@@ -1,0 +1,687 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Debug/bin/NoiseTool"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"target_link_options",
+			"target_link_libraries",
+			"set_target_properties",
+			"find_package",
+			"set_property",
+			"include",
+			"add_compile_definitions",
+			"include_directories",
+			"target_include_directories",
+			"_imgui_setup_source_file"
+		],
+		"files" : 
+		[
+			"lib/FastNoise2/NoiseTool/CMakeLists.txt",
+			"lib/FastNoise2/CMakeLists.txt",
+			"build/_deps/magnum-src/modules/FindGLFW.cmake",
+			"build/_deps/magnum-src/src/Magnum/Platform/CMakeLists.txt",
+			"build/_deps/glfw-src/src/CMakeLists.txt",
+			"build/_deps/magnum-src/src/Magnum/CMakeLists.txt",
+			"build/_deps/magnum-src/src/Magnum/GL/CMakeLists.txt",
+			"build/_deps/corrade-src/modules/UseCorrade.cmake",
+			"build/_deps/magnum-integration-src/modules/FindCorrade.cmake",
+			"build/_deps/magnum-integration-src/modules/FindMagnum.cmake",
+			"CMakeLists.txt",
+			"build/_deps/magnum-integration-src/modules/FindImGui.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 97,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 82,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 126,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 110,
+				"parent" : 0
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 222,
+				"parent" : 6
+			},
+			{
+				"file" : 2,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 64,
+				"parent" : 8
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 110,
+				"parent" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 253,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 248,
+				"parent" : 6
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 176,
+				"parent" : 14
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 6,
+				"line" : 219,
+				"parent" : 16
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"file" : 9,
+				"parent" : 18
+			},
+			{
+				"command" : 5,
+				"file" : 9,
+				"line" : 241,
+				"parent" : 19
+			},
+			{
+				"file" : 8,
+				"parent" : 20
+			},
+			{
+				"command" : 7,
+				"file" : 8,
+				"line" : 619,
+				"parent" : 21
+			},
+			{
+				"file" : 7,
+				"parent" : 22
+			},
+			{
+				"command" : 6,
+				"file" : 7,
+				"line" : 303,
+				"parent" : 23
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 8,
+				"file" : 10,
+				"line" : 24,
+				"parent" : 25
+			},
+			{
+				"command" : 9,
+				"file" : 10,
+				"line" : 26,
+				"parent" : 25
+			},
+			{
+				"command" : 9,
+				"file" : 10,
+				"line" : 27,
+				"parent" : 25
+			},
+			{
+				"command" : 9,
+				"file" : 10,
+				"line" : 28,
+				"parent" : 25
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 107,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 81,
+				"parent" : 0
+			},
+			{
+				"file" : 11,
+				"parent" : 31
+			},
+			{
+				"command" : 11,
+				"file" : 11,
+				"line" : 214,
+				"parent" : 32
+			},
+			{
+				"command" : 6,
+				"file" : 11,
+				"line" : 126,
+				"parent" : 33
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 24,
+					"define" : "CORRADE_IS_DEBUG_BUILD"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "FASTNOISE_STATIC_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "IMGUI_USER_CONFIG=\"Magnum/ImGuiIntegration/visibility.h\""
+				},
+				{
+					"backtrace" : 26,
+					"define" : "_DEBUG"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 27,
+					"path" : "/home/ati/Desktop/code/lol/src"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/ati/Desktop/code/lol/lib/include"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "/home/ati/Desktop/code/lol/src/vendor"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/imnodes-src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/lib/FastNoise2/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-src/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-build/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/corrade-src/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/corrade-build/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/glfw-src/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-src/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-build/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/robinhoodhashing-src/src/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/imgui-src"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				},
+				{
+					"fragment" : " -Wno-old-style-cast -Wno-double-promotion -Wno-zero-as-null-pointer-constant"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 24,
+					"define" : "CORRADE_IS_DEBUG_BUILD"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "FASTNOISE_STATIC_LIB"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "IMGUI_USER_CONFIG=\"Magnum/ImGuiIntegration/visibility.h\""
+				},
+				{
+					"backtrace" : 26,
+					"define" : "_DEBUG"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 27,
+					"path" : "/home/ati/Desktop/code/lol/src"
+				},
+				{
+					"backtrace" : 28,
+					"path" : "/home/ati/Desktop/code/lol/lib/include"
+				},
+				{
+					"backtrace" : 29,
+					"path" : "/home/ati/Desktop/code/lol/src/vendor"
+				},
+				{
+					"backtrace" : 30,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/imnodes-src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/lib/FastNoise2/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-src/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-build/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/corrade-src/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/corrade-build/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/glfw-src/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-src/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-build/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/robinhoodhashing-src/src/include"
+				},
+				{
+					"backtrace" : 5,
+					"isSystem" : true,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/imgui-src"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				7
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "FastNoise::@db431847d84473d01def"
+		},
+		{
+			"id" : "NoiseTool_RESOURCES-dependencies::@2862938415d0b586912a"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "CorradeUtility::@d61cb7e2700672687a0d"
+		},
+		{
+			"id" : "corrade-rc::@d61cb7e2700672687a0d"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "glfw::@fa9f4482d3a2b070f206"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "Magnum::@08832d1b930bd6ed3754"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "MagnumGlfwApplication::@9d917e4c3e870e6bd6de"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "MagnumGL::@268806c9b7125e0d5796"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "MagnumSceneGraph::@dcc1f6dd026d7d586bb0"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "MagnumShaders::@345b51b54e6d589d835a"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "MagnumImGuiIntegration::@6f02723c3fa996db52b9"
+		}
+	],
+	"id" : "NoiseTool::@2862938415d0b586912a",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "bin"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-pthread",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,::::::::::::::",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "Debug/lib/libFastNoiseD.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "Debug/lib/libMagnumGlfwApplication-d.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "Debug/lib/libMagnumShaders-d.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "Debug/lib/libMagnumSceneGraph-d.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "Debug/lib/libMagnumImGuiIntegration-d.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "Debug/lib/libglfw3.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/usr/lib/librt.a",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "/usr/lib/libX11.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "/usr/lib/libGLX.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "Debug/lib/libMagnumShaders-d.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 12,
+				"fragment" : "Debug/lib/libMagnumGL-d.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "Debug/lib/libMagnum-d.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "Debug/lib/libCorradeUtility-d.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "/usr/lib/libOpenGL.so",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "NoiseTool",
+	"nameOnDisk" : "NoiseTool",
+	"paths" : 
+	{
+		"build" : "lib/FastNoise2/NoiseTool",
+		"source" : "lib/FastNoise2/NoiseTool"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				7
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/FastNoise2/NoiseTool/NoiseToolApp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/FastNoise2/NoiseTool/FastNoiseNodeEditor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/FastNoise2/NoiseTool/MeshNoisePreview.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/FastNoise2/NoiseTool/NoiseTexture.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/imnodes-src/imnodes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/FastNoise2/NoiseTool/resource_NoiseTool_RESOURCES.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/FastNoise2/NoiseTool/resource_NoiseTool_RESOURCES.cpp.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 1,
+			"path" : "build/_deps/imgui-src/misc/cpp/imgui_stdlib.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

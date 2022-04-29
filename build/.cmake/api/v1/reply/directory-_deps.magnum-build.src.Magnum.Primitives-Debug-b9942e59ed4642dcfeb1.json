@@ -1,0 +1,75 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/magnum-src/src/Magnum/Primitives/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 86,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 90,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Debug/lib/libMagnumPrimitives-d.a"
+			],
+			"targetId" : "MagnumPrimitives::@e49b507f48cfc33072da",
+			"targetIndex" : 23,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/Magnum/Primitives",
+			"paths" : 
+			[
+				"build/_deps/magnum-src/src/Magnum/Primitives/Axis.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/Capsule.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/Circle.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/Crosshair.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/Cone.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/Cube.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/Cylinder.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/Gradient.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/Grid.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/Icosphere.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/Line.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/Plane.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/Square.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/UVSphere.h",
+				"build/_deps/magnum-src/src/Magnum/Primitives/visibility.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/magnum-build/src/Magnum/Primitives",
+		"source" : "build/_deps/magnum-src/src/Magnum/Primitives"
+	}
+}

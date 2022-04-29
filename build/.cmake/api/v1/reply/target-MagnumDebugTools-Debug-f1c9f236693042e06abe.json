@@ -1,0 +1,404 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "Debug/lib/libMagnumDebugTools-d.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"target_link_libraries",
+			"set_property",
+			"include",
+			"find_package",
+			"add_compile_options",
+			"add_compile_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"build/_deps/magnum-src/src/Magnum/DebugTools/CMakeLists.txt",
+			"build/_deps/corrade-src/modules/UseCorrade.cmake",
+			"build/_deps/magnum-src/modules/FindCorrade.cmake",
+			"build/_deps/magnum-src/CMakeLists.txt",
+			"build/_deps/magnum-src/src/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 121,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 149,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 141,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 132,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 139,
+				"parent" : 0
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 59,
+				"parent" : 6
+			},
+			{
+				"file" : 2,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 616,
+				"parent" : 8
+			},
+			{
+				"file" : 1,
+				"parent" : 9
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 298,
+				"parent" : 10
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 30,
+				"parent" : 12
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 303,
+				"parent" : 10
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 24,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 26,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 27,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 28,
+				"parent" : 15
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fPIC"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-Wold-style-cast"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-Winit-self"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-Werror=return-type"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-Wmissing-declarations"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-Wpedantic"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-fvisibility=hidden"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-fvisibility-inlines-hidden"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-Wzero-as-null-pointer-constant"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 13,
+					"fragment" : "-fno-strict-aliasing"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 14,
+					"define" : "CORRADE_IS_DEBUG_BUILD"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_DEBUG"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 17,
+					"path" : "/home/ati/Desktop/code/lol/src"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/ati/Desktop/code/lol/lib/include"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "/home/ati/Desktop/code/lol/src/vendor"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-src/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-build/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/corrade-src/src"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/corrade-build/src"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				8
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "CorradePluginManager::@1dacf0984bb0815dbf95"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "CorradeUtility::@d61cb7e2700672687a0d"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "Magnum::@08832d1b930bd6ed3754"
+		},
+		{
+			"id" : "MagnumDebugToolsObjects::@19fbc3dc881203512736"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "MagnumGL::@268806c9b7125e0d5796"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "MagnumPrimitives::@e49b507f48cfc33072da"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "MagnumSceneGraph::@dcc1f6dd026d7d586bb0"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "MagnumShaders::@345b51b54e6d589d835a"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "MagnumTrade::@bc05f17fb260e1e89f6c"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Magnum/DebugTools"
+	},
+	"id" : "MagnumDebugTools::@19fbc3dc881203512736",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"name" : "MagnumDebugTools",
+	"nameOnDisk" : "libMagnumDebugTools-d.a",
+	"paths" : 
+	{
+		"build" : "_deps/magnum-build/src/Magnum/DebugTools",
+		"source" : "build/_deps/magnum-src/src/Magnum/DebugTools"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				8
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/DebugTools/CMakeFiles/MagnumDebugToolsObjects.dir/ColorMap.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/DebugTools/CMakeFiles/MagnumDebugToolsObjects.dir/Profiler.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/DebugTools/CMakeFiles/MagnumDebugToolsObjects.dir/ResourceManager.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/DebugTools/CMakeFiles/MagnumDebugToolsObjects.dir/Screenshot.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/DebugTools/CMakeFiles/MagnumDebugToolsObjects.dir/TextureImage.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/DebugTools/CMakeFiles/MagnumDebugToolsObjects.dir/BufferData.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/DebugTools/CMakeFiles/MagnumDebugToolsObjects.dir/ForceRenderer.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/DebugTools/CMakeFiles/MagnumDebugToolsObjects.dir/ObjectRenderer.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/magnum-src/src/Magnum/DebugTools/FrameProfiler.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

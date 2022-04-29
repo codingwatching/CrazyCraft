@@ -1,0 +1,170 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"lib/FastNoise2/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 82,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 92,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 96,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 100,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 108,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 115,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Debug/lib/libFastNoiseD.a"
+			],
+			"targetId" : "FastNoise::@db431847d84473d01def",
+			"targetIndex" : 6,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"Debug/bin/NoiseTool"
+			],
+			"targetId" : "NoiseTool::@2862938415d0b586912a",
+			"targetIndex" : 32,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/FastSIMD",
+			"paths" : 
+			[
+				"lib/FastNoise2/src/../include/FastSIMD/FastSIMD.h",
+				"lib/FastNoise2/src/../include/FastSIMD/FastSIMD_Config.h",
+				"lib/FastNoise2/src/../include/FastSIMD/FastSIMD_Export.h",
+				"lib/FastNoise2/src/../include/FastSIMD/FunctionList.h",
+				"lib/FastNoise2/src/../include/FastSIMD/InlInclude.h",
+				"lib/FastNoise2/src/../include/FastSIMD/SIMDTypeList.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/FastNoise",
+			"paths" : 
+			[
+				"lib/FastNoise2/src/../include/FastNoise/FastNoise.h",
+				"lib/FastNoise2/src/../include/FastNoise/FastNoise_C.h",
+				"lib/FastNoise2/src/../include/FastNoise/FastNoise_Config.h",
+				"lib/FastNoise2/src/../include/FastNoise/FastNoise_Export.h",
+				"lib/FastNoise2/src/../include/FastNoise/Metadata.h",
+				"lib/FastNoise2/src/../include/FastNoise/SmartNode.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include/FastNoise/Generators",
+			"paths" : 
+			[
+				"lib/FastNoise2/src/../include/FastNoise/Generators/BasicGenerators.h",
+				"lib/FastNoise2/src/../include/FastNoise/Generators/Blends.h",
+				"lib/FastNoise2/src/../include/FastNoise/Generators/Cellular.h",
+				"lib/FastNoise2/src/../include/FastNoise/Generators/DomainWarp.h",
+				"lib/FastNoise2/src/../include/FastNoise/Generators/DomainWarpFractal.h",
+				"lib/FastNoise2/src/../include/FastNoise/Generators/Fractal.h",
+				"lib/FastNoise2/src/../include/FastNoise/Generators/Generator.h",
+				"lib/FastNoise2/src/../include/FastNoise/Generators/Modifiers.h",
+				"lib/FastNoise2/src/../include/FastNoise/Generators/Perlin.h",
+				"lib/FastNoise2/src/../include/FastNoise/Generators/Simplex.h",
+				"lib/FastNoise2/src/../include/FastNoise/Generators/Value.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/FastNoise2",
+			"paths" : 
+			[
+				"build/lib/FastNoise2/generated/FastNoise2Config.cmake",
+				"build/lib/FastNoise2/generated/FastNoise2ConfigVersion.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/FastNoise2",
+			"exportName" : "FastNoise2Targets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "FastNoise::@db431847d84473d01def",
+					"index" : 6
+				},
+				{
+					"id" : "NoiseTool::@2862938415d0b586912a",
+					"index" : 32
+				}
+			],
+			"paths" : 
+			[
+				"lib/FastNoise2/CMakeFiles/Export/lib/cmake/FastNoise2/FastNoise2Targets.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "lib/FastNoise2",
+		"source" : "lib/FastNoise2"
+	}
+}

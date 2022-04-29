@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/magnum-build/src/MagnumExternal",
+		"source" : "build/_deps/magnum-src/src/MagnumExternal"
+	}
+}

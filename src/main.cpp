@@ -1,4 +1,5 @@
-#include <game/world/Chunk.h>
+//#include <game/world/Chunk.h>
+#include <game/world/World.h>
 #include <important.h>
 
 #include "imgui/imgui.h"
@@ -12,13 +13,15 @@ int main()
         return -1;    
 
     Camera c;
-
+/*
    Chunk ch(glm::ivec3(0,0,0));
    Chunk ch2(glm::ivec3(1,0,0));
 
     ch.UpdateRenderData();
     ch2.UpdateRenderData();
-
+*/
+World w;
+w.update_chunks();
     glfwSetWindowSizeCallback(window, [](GLFWwindow* window, int width, int height)
         {
             aspect.x = width;
@@ -47,8 +50,9 @@ int main()
 
             c.updateMatrix(shader,aspect);
 
-            ch.render();
-            ch2.render();
+            //ch.render();
+            //ch2.render();
+            w.render();
 
             //ImGui::DragFloat3("Camera Translation", &c.pos.x, 0.0f, 960.0f);
             //ImGui::DragFloat2("Camera Rotation", &c.rot.x, 0.0f, 960.0f);

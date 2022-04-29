@@ -1,5 +1,6 @@
 CMakeFiles/main.dir/src/main.cpp.o: \
  /home/ati/Desktop/code/lol/src/main.cpp /usr/include/stdc-predef.h \
+ /home/ati/Desktop/code/lol/src/game/world/World.h \
  /home/ati/Desktop/code/lol/src/game/world/Chunk.h \
  /usr/include/c++/11.2.0/iostream \
  /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++config.h \

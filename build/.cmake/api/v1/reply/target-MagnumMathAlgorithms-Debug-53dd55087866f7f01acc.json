@@ -1,0 +1,80 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"build/_deps/magnum-src/src/Magnum/Math/Algorithms/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"folder" : 
+	{
+		"name" : "Magnum/Math/Algorithms"
+	},
+	"id" : "MagnumMathAlgorithms::@c60f0862e301360d5c44",
+	"name" : "MagnumMathAlgorithms",
+	"paths" : 
+	{
+		"build" : "_deps/magnum-build/src/Magnum/Math/Algorithms",
+		"source" : "build/_deps/magnum-src/src/Magnum/Math/Algorithms"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Math/Algorithms/GaussJordan.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Math/Algorithms/GramSchmidt.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Math/Algorithms/KahanSum.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Math/Algorithms/Qr.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Math/Algorithms/Svd.h",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "UTILITY"
+}

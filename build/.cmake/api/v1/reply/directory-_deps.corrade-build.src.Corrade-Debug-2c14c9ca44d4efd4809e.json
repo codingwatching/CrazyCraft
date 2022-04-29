@@ -1,0 +1,61 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/corrade-src/src/Corrade/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 73,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/Corrade",
+			"paths" : 
+			[
+				"build/_deps/corrade-src/src/Corrade/Corrade.h",
+				"build/_deps/corrade-src/src/Corrade/Tags.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/Corrade",
+			"paths" : 
+			[
+				"build/_deps/corrade-build/src/Corrade/configure.h",
+				"build/_deps/corrade-build/src/Corrade/version.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/corrade-build/src/Corrade",
+		"source" : "build/_deps/corrade-src/src/Corrade"
+	}
+}

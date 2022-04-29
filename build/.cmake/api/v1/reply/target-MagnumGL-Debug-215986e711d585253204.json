@@ -1,0 +1,639 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "Debug/lib/libMagnumGL-d.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"target_link_libraries",
+			"set_property",
+			"include",
+			"find_package",
+			"add_compile_options",
+			"add_compile_definitions",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"build/_deps/magnum-src/src/Magnum/GL/CMakeLists.txt",
+			"build/_deps/corrade-src/modules/UseCorrade.cmake",
+			"build/_deps/magnum-src/modules/FindCorrade.cmake",
+			"build/_deps/magnum-src/CMakeLists.txt",
+			"build/_deps/magnum-src/src/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 197,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 229,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 210,
+				"parent" : 0
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 59,
+				"parent" : 4
+			},
+			{
+				"file" : 2,
+				"parent" : 5
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 616,
+				"parent" : 6
+			},
+			{
+				"file" : 1,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 298,
+				"parent" : 8
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 30,
+				"parent" : 10
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 303,
+				"parent" : 8
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 7,
+				"file" : 5,
+				"line" : 24,
+				"parent" : 13
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 26,
+				"parent" : 13
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 27,
+				"parent" : 13
+			},
+			{
+				"command" : 8,
+				"file" : 5,
+				"line" : 28,
+				"parent" : 13
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fPIC"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wold-style-cast"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Winit-self"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Werror=return-type"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wmissing-declarations"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wpedantic"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fvisibility=hidden"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fvisibility-inlines-hidden"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wzero-as-null-pointer-constant"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-fno-strict-aliasing"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 12,
+					"define" : "CORRADE_IS_DEBUG_BUILD"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "_DEBUG"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 15,
+					"path" : "/home/ati/Desktop/code/lol/src"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/ati/Desktop/code/lol/lib/include"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "/home/ati/Desktop/code/lol/src/vendor"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-src/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-build/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/corrade-src/src"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/corrade-build/src"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "CorradeUtility::@d61cb7e2700672687a0d"
+		},
+		{
+			"id" : "MagnumFlextGLObjects::@1ca828f8d89a21e91efc"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "Magnum::@08832d1b930bd6ed3754"
+		},
+		{
+			"id" : "MagnumGLObjects::@268806c9b7125e0d5796"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Magnum/GL"
+	},
+	"id" : "MagnumGL::@268806c9b7125e0d5796",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"name" : "MagnumGL",
+	"nameOnDisk" : "libMagnumGL-d.a",
+	"paths" : 
+	{
+		"build" : "_deps/magnum-build/src/Magnum/GL",
+		"source" : "build/_deps/magnum-src/src/Magnum/GL"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/AbstractObject.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/AbstractQuery.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Buffer.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Context.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/DefaultFramebuffer.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Framebuffer.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/OpenGL.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Renderbuffer.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Renderer.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Shader.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Texture.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/TextureFormat.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Version.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/BufferState.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/ContextState.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/FramebufferState.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/MeshState.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/QueryState.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/RendererState.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/ShaderProgramState.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/ShaderState.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/State.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/TextureState.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/driverSpecific.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/maxTextureSize.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/RectangleTexture.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/PrimitiveQuery.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/TextureArray.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/TransformFeedback.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/TransformFeedbackState.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/DebugOutput.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/Implementation/DebugState.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/BufferTexture.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/CubeMapTextureArray.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/GL/CMakeFiles/MagnumGLObjects.dir/MultisampleTexture.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/MagnumExternal/OpenGL/GL/CMakeFiles/MagnumFlextGLObjects.dir/flextGL.cpp.o",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/magnum-src/src/Magnum/GL/AbstractFramebuffer.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/magnum-src/src/Magnum/GL/AbstractShaderProgram.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/magnum-src/src/Magnum/GL/AbstractTexture.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/magnum-src/src/Magnum/GL/Attribute.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/magnum-src/src/Magnum/GL/CubeMapTexture.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/magnum-src/src/Magnum/GL/Mesh.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/magnum-src/src/Magnum/GL/MeshView.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/magnum-src/src/Magnum/GL/PixelFormat.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/magnum-src/src/Magnum/GL/Sampler.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "build/_deps/magnum-src/src/Magnum/GL/BufferImage.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

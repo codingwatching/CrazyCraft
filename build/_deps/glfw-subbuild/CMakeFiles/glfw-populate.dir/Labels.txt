@@ -1,0 +1,14 @@
+# Target labels
+ glfw-populate
+# Source files and their labels
+/home/ati/Desktop/code/lol/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate
+/home/ati/Desktop/code/lol/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate.rule
+/home/ati/Desktop/code/lol/build/_deps/glfw-subbuild/CMakeFiles/glfw-populate-complete.rule
+/home/ati/Desktop/code/lol/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-build.rule
+/home/ati/Desktop/code/lol/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-configure.rule
+/home/ati/Desktop/code/lol/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-download.rule
+/home/ati/Desktop/code/lol/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-install.rule
+/home/ati/Desktop/code/lol/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-mkdir.rule
+/home/ati/Desktop/code/lol/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-patch.rule
+/home/ati/Desktop/code/lol/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-test.rule
+/home/ati/Desktop/code/lol/build/_deps/glfw-subbuild/glfw-populate-prefix/src/glfw-populate-stamp/glfw-populate-update.rule

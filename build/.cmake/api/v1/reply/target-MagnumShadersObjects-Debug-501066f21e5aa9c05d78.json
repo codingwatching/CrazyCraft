@@ -1,0 +1,394 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "_deps/magnum-build/src/Magnum/Shaders/CMakeFiles/MagnumShadersObjects.dir/./resource_MagnumShaders_RESOURCES_GL.cpp.o"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"set_property",
+			"include",
+			"find_package",
+			"add_compile_options",
+			"add_compile_definitions",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"build/_deps/magnum-src/src/Magnum/Shaders/CMakeLists.txt",
+			"build/_deps/corrade-src/modules/UseCorrade.cmake",
+			"build/_deps/magnum-src/modules/FindCorrade.cmake",
+			"build/_deps/magnum-src/CMakeLists.txt",
+			"build/_deps/magnum-src/src/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 71,
+				"parent" : 0
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 59,
+				"parent" : 2
+			},
+			{
+				"file" : 2,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 616,
+				"parent" : 4
+			},
+			{
+				"file" : 1,
+				"parent" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 298,
+				"parent" : 6
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 4,
+				"line" : 30,
+				"parent" : 8
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 303,
+				"parent" : 6
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 5,
+				"line" : 24,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 26,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 27,
+				"parent" : 11
+			},
+			{
+				"command" : 6,
+				"file" : 5,
+				"line" : 28,
+				"parent" : 11
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 81,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fPIC"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wold-style-cast"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Winit-self"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Werror=return-type"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wmissing-declarations"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wpedantic"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fvisibility=hidden"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fvisibility-inlines-hidden"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wzero-as-null-pointer-constant"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wdouble-promotion"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-fno-strict-aliasing"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 10,
+					"define" : "CORRADE_IS_DEBUG_BUILD"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "_DEBUG"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 13,
+					"path" : "/home/ati/Desktop/code/lol/src"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "/home/ati/Desktop/code/lol/lib/include"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "/home/ati/Desktop/code/lol/src/vendor"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-src/src"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/magnum-build/src"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/corrade-src/src"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "/home/ati/Desktop/code/lol/build/_deps/corrade-build/src"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "corrade-rc::@d61cb7e2700672687a0d"
+		},
+		{
+			"id" : "MagnumShaders_RESOURCES_GL-dependencies::@345b51b54e6d589d835a"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Magnum/Shaders"
+	},
+	"id" : "MagnumShadersObjects::@345b51b54e6d589d835a",
+	"name" : "MagnumShadersObjects",
+	"paths" : 
+	{
+		"build" : "_deps/magnum-build/src/Magnum/Shaders",
+		"source" : "build/_deps/magnum-src/src/Magnum/Shaders"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				17
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/Shaders/resource_MagnumShaders_RESOURCES_GL.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/DistanceFieldVector.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/DistanceFieldVectorGL.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/Flat.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/FlatGL.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/Generic.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/GenericGL.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/MeshVisualizer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/MeshVisualizerGL.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/Phong.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/PhongGL.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/Shaders.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/Vector.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/VectorGL.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/VertexColorGL.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/visibility.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "build/_deps/magnum-src/src/Magnum/Shaders/VertexColor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/_deps/magnum-build/src/Magnum/Shaders/resource_MagnumShaders_RESOURCES_GL.cpp.rule",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

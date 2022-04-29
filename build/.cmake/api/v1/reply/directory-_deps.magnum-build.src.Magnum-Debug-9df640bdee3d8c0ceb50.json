@@ -1,0 +1,96 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"build/_deps/magnum-src/src/Magnum/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 179,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 183,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 184,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"Debug/lib/libMagnum-d.a"
+			],
+			"targetId" : "Magnum::@08832d1b930bd6ed3754",
+			"targetIndex" : 7,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/Magnum",
+			"paths" : 
+			[
+				"build/_deps/magnum-src/src/Magnum/AbstractResourceLoader.h",
+				"build/_deps/magnum-src/src/Magnum/British.h",
+				"build/_deps/magnum-src/src/Magnum/DimensionTraits.h",
+				"build/_deps/magnum-src/src/Magnum/FileCallback.h",
+				"build/_deps/magnum-src/src/Magnum/Image.h",
+				"build/_deps/magnum-src/src/Magnum/ImageView.h",
+				"build/_deps/magnum-src/src/Magnum/Magnum.h",
+				"build/_deps/magnum-src/src/Magnum/Mesh.h",
+				"build/_deps/magnum-src/src/Magnum/PixelFormat.h",
+				"build/_deps/magnum-src/src/Magnum/PixelStorage.h",
+				"build/_deps/magnum-src/src/Magnum/Resource.h",
+				"build/_deps/magnum-src/src/Magnum/ResourceManager.h",
+				"build/_deps/magnum-src/src/Magnum/Sampler.h",
+				"build/_deps/magnum-src/src/Magnum/Tags.h",
+				"build/_deps/magnum-src/src/Magnum/Timeline.h",
+				"build/_deps/magnum-src/src/Magnum/Types.h",
+				"build/_deps/magnum-src/src/Magnum/VertexFormat.h",
+				"build/_deps/magnum-src/src/Magnum/visibility.h",
+				"build/_deps/magnum-src/src/Magnum/Array.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/Magnum",
+			"paths" : 
+			[
+				"build/_deps/magnum-build/src/Magnum/configure.h",
+				"build/_deps/magnum-build/src/Magnum/version.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/magnum-build/src/Magnum",
+		"source" : "build/_deps/magnum-src/src/Magnum"
+	}
+}

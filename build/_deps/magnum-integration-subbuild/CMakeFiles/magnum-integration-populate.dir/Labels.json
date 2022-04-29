@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-subbuild/CMakeFiles/magnum-integration-populate"
+		},
+		{
+			"file" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-subbuild/CMakeFiles/magnum-integration-populate.rule"
+		},
+		{
+			"file" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-subbuild/CMakeFiles/magnum-integration-populate-complete.rule"
+		},
+		{
+			"file" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-subbuild/magnum-integration-populate-prefix/src/magnum-integration-populate-stamp/magnum-integration-populate-build.rule"
+		},
+		{
+			"file" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-subbuild/magnum-integration-populate-prefix/src/magnum-integration-populate-stamp/magnum-integration-populate-configure.rule"
+		},
+		{
+			"file" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-subbuild/magnum-integration-populate-prefix/src/magnum-integration-populate-stamp/magnum-integration-populate-download.rule"
+		},
+		{
+			"file" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-subbuild/magnum-integration-populate-prefix/src/magnum-integration-populate-stamp/magnum-integration-populate-install.rule"
+		},
+		{
+			"file" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-subbuild/magnum-integration-populate-prefix/src/magnum-integration-populate-stamp/magnum-integration-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-subbuild/magnum-integration-populate-prefix/src/magnum-integration-populate-stamp/magnum-integration-populate-patch.rule"
+		},
+		{
+			"file" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-subbuild/magnum-integration-populate-prefix/src/magnum-integration-populate-stamp/magnum-integration-populate-test.rule"
+		},
+		{
+			"file" : "/home/ati/Desktop/code/lol/build/_deps/magnum-integration-subbuild/magnum-integration-populate-prefix/src/magnum-integration-populate-stamp/magnum-integration-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"magnum-integration-populate"
+		],
+		"name" : "magnum-integration-populate"
+	}
+}
