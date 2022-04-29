@@ -1,34 +1,28 @@
 cmake_minimum_required(VERSION 3.10)
 
 # set the project name
-project(Tutorial)
+project(CrazyCraft)
 
 
 # specify the C++ standard
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
-file (GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "src/*.cpp" "src/*/*.cpp" "src/*/*/*.cpp" "src/*/*/*/*.cpp")
-file (GLOB_RECURSE HEADERS CONFIGURE_DEPENDS "src/*.h" "src/*/*.h" "src/*/*/*.h" "src/*/*/*/*.h" "src/*.hpp" "src/*/*.hpp" "src/*/*/*.hpp" "src/*/*/*/*.hpp")
+set(CMAKE_POLICY_DEFAULT_CMP0077 NEW)
 
-set (INCLUDE_DIRS "")
-foreach (_headerFile ${HEADERS})
-    get_filename_component(_dir ${_headerFile} PATH)
-    list (APPEND INCLUDE_DIRS ${_dir})
-endforeach()
-list (REMOVE_DUPLICATES INCLUDE_DIRS)
+set(RUNTIME_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin CACHE PATH "Directory for dlls and binaries")
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin CACHE PATH "Directory for binaries")
+set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin CACHE PATH "Directory for dlls")
 
-add_executable(main ${SOURCES})
-target_include_directories(main PRIVATE ${INCLUDE_DIRS})
+IF(NOT DEFINED CMAKE_RUNTIME_OUTPUT_DIRECTORY)
+	set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin CACHE PATH "Directory for dlls and binaries")
+endif()
 
-add_compile_definitions(_DEBUG)
+add_subdirectory(lib)
 
-include_directories("src")
-include_directories("lib/include")
-include_directories("src/vendor")
-add_subdirectory(lib/FastNoise2)
-add_subdirectory(lib/glad)
+file(GLOB_RECURSE PROJECT_SOURCE_FILES src/*.hpp src/*.h src/*.cpp)
+add_executable(CrazyCraft ${PROJECT_SOURCE_FILES})
+target_include_directories(CrazyCraft PUBLIC src)
+target_include_directories(CrazyCraft PUBLIC src/vendor)
 
-target_link_libraries(main PRIVATE glfw)
-target_link_libraries(main PRIVATE glad)
-target_link_libraries(main PRIVATE FastNoise2)
+target_link_libraries(CrazyCraft PUBLIC glad glfw glm FastNoise)

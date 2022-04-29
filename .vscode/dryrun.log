@@ -1,5 +1,0 @@
-make game --dry-run --keep-going --print-directory
-make: Entering directory '/home/ati/Desktop/code/lol'
-clang++ -o bin/game src/main.o src/input/Input.o src/game/world/Chunk.o src/game/world/World.o src/game/world/block.o src/vendor/imgui/imgui.o src/vendor/imgui/imgui_demo.o src/vendor/imgui/imgui_draw.o src/vendor/imgui/imgui_impl_glfw_gl3.o src/vendor/stb_image/stb_image.o src/vendor/glm/detail/glm.o lib/glad/src/glad.o lib/glfw/src/libglfw3.a lib/FastNoise2/lib/libFastNoise.so -ldl -lpthread -lGL
-make: Leaving directory '/home/ati/Desktop/code/lol'
- 
