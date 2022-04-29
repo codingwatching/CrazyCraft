@@ -1,0 +1,9 @@
+[submodule "glfw"]
+	path = lib/glfw
+	url = git@github.com:glfw/glfw.git
+[submodule "FastNoise2"]
+	path = lib/FastNoise2
+	url = git@github.com:Auburn/FastNoise2.git
+[submodule "glm"]
+	path = lib/glm
+	url = git@github.com:g-truc/glm.git

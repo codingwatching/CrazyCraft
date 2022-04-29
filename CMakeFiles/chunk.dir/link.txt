@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/chunk.dir/src/game/world/Chunk.cpp.o -o bin/chunk 
