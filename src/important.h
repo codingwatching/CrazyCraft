@@ -19,13 +19,13 @@ void Init()
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 
-	ShaderProgramSource source = ParseShader("res/shaders/Basic.shader");
+	ShaderProgramSource source = ParseShader("../res/shaders/Basic.shader");
 	shader = CreateShader(source.VertexSource, source.FragmentSource);
 	GLCall(glUseProgram(shader));
        
 
 	Texture tex;
-	tex.parse("res/textures/minecraft.png");
+	tex.parse("../res/textures/minecraft.png");
 
 	tex.bind(0);
 

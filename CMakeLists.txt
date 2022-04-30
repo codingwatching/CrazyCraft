@@ -24,5 +24,7 @@ file(GLOB_RECURSE PROJECT_SOURCE_FILES src/*.hpp src/*.h src/*.cpp)
 add_executable(CrazyCraft ${PROJECT_SOURCE_FILES})
 target_include_directories(CrazyCraft PUBLIC src)
 target_include_directories(CrazyCraft PUBLIC src/vendor)
+target_include_directories(CrazyCraft PUBLIC src/game)
+target_include_directories(CrazyCraft PUBLIC src/game/world)
 
 target_link_libraries(CrazyCraft PUBLIC glad glfw glm FastNoise)

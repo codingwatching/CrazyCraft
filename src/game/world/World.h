@@ -8,8 +8,4 @@ void update_chunks();
 void set_render_distance(int new_dist);
 void render();
 
-class World
-{
-
-
 };

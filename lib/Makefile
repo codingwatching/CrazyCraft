@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ati/Desktop/code/lol && $(CMAKE_COMMAND) -E cmake_progress_start /home/ati/Desktop/code/lol/CMakeFiles /home/ati/Desktop/code/lol/lib/glad//CMakeFiles/progress.marks
-	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glad/all
+	cd /home/ati/Desktop/code/lol && $(CMAKE_COMMAND) -E cmake_progress_start /home/ati/Desktop/code/lol/CMakeFiles /home/ati/Desktop/code/lol/lib//CMakeFiles/progress.marks
+	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ati/Desktop/code/lol/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glad/clean
+	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,56 +148,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glad/preinstall
+	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glad/preinstall
+	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
 	cd /home/ati/Desktop/code/lol && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-# Convenience name for target.
-lib/glad/CMakeFiles/glad.dir/rule:
-	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/glad/CMakeFiles/glad.dir/rule
-.PHONY : lib/glad/CMakeFiles/glad.dir/rule
-
-# Convenience name for target.
-glad: lib/glad/CMakeFiles/glad.dir/rule
-.PHONY : glad
-
-# fast build rule for target.
-glad/fast:
-	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f lib/glad/CMakeFiles/glad.dir/build.make lib/glad/CMakeFiles/glad.dir/build
-.PHONY : glad/fast
-
-src/glad.o: src/glad.c.o
-.PHONY : src/glad.o
-
-# target to build an object file
-src/glad.c.o:
-	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f lib/glad/CMakeFiles/glad.dir/build.make lib/glad/CMakeFiles/glad.dir/src/glad.c.o
-.PHONY : src/glad.c.o
-
-src/glad.i: src/glad.c.i
-.PHONY : src/glad.i
-
-# target to preprocess a source file
-src/glad.c.i:
-	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f lib/glad/CMakeFiles/glad.dir/build.make lib/glad/CMakeFiles/glad.dir/src/glad.c.i
-.PHONY : src/glad.c.i
-
-src/glad.s: src/glad.c.s
-.PHONY : src/glad.s
-
-# target to generate assembly for a file
-src/glad.c.s:
-	cd /home/ati/Desktop/code/lol && $(MAKE) $(MAKESILENT) -f lib/glad/CMakeFiles/glad.dir/build.make lib/glad/CMakeFiles/glad.dir/src/glad.c.s
-.PHONY : src/glad.c.s
 
 # Help Target
 help:
@@ -211,10 +173,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... glad"
-	@echo "... src/glad.o"
-	@echo "... src/glad.i"
-	@echo "... src/glad.s"
 .PHONY : help
 
 
