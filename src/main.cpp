@@ -8,24 +8,6 @@
 int main()
 {
 
-<<<<<<< HEAD
-    Camera c;
-/*
-   Chunk ch(glm::ivec3(0,0,0));
-   Chunk ch2(glm::ivec3(1,0,0));
-
-    ch.UpdateRenderData();
-    ch2.UpdateRenderData();
-*/
-World w;
-w.update_chunks();
-    glfwSetWindowSizeCallback(window, [](GLFWwindow* window, int width, int height)
-        {
-            aspect.x = width;
-            aspect.y = height;
-            glViewport(0, 0, width, height);
-        });
-=======
 	GLFWwindow *window = InitWindow();
 	if (!window)
 		return -1;
@@ -37,7 +19,7 @@ w.update_chunks();
 
 	ch.UpdateRenderData();
 	ch2.UpdateRenderData();
->>>>>>> dcc73c6af57133fbb685f8aaa93188ae4b277588
+
 
 	glfwSetWindowSizeCallback(window, [](GLFWwindow *window, int width, int height)
 	{
@@ -65,14 +47,8 @@ w.update_chunks();
 		GLCall(glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
 
 		//ImGui_ImplGlfwGL3_NewFrame();
-
-<<<<<<< HEAD
-            //ch.render();
-            //ch2.render();
-            w.render();
-=======
 		c.input(window);
->>>>>>> dcc73c6af57133fbb685f8aaa93188ae4b277588
+
 
 		c.updateMatrix(shader, aspect);
 
