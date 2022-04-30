@@ -371,7 +371,7 @@ void Chunk::render()
 	GLCall(glDrawElements(GL_TRIANGLES, transparent_tris.size(), GL_UNSIGNED_INT, nullptr));
 }
 
-<<<<<<< HEAD
+
 Chunk::Chunk(glm::ivec3 _pos){
 bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(0,0,0,0,0,0),true));
 bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(1,1,1,1,3,2)));
@@ -383,19 +383,4 @@ noiseOutput = std::vector<float>(16*16);
 auto fnGenerator = FastNoise::New<FastNoise::Simplex>();
 // Generate a 16 x 16 x 16 area of noise
 fnGenerator->GenUniformGrid2D(noiseOutput.data(), 0, 0, 16, 16, 0.2f,122);
-=======
-Chunk::Chunk(glm::ivec3 _pos)
-{
-	bd.addBlock(Crazycraft::Block("E", 1, Crazycraft::Texture(0, 0, 0, 0, 0, 0), true));
-	bd.addBlock(Crazycraft::Block("E", 1, Crazycraft::Texture(1, 1, 1, 1, 3, 2)));
-	bd.addBlock(Crazycraft::Block("E", 1, Crazycraft::Texture(2, 2, 2, 2, 2, 2)));
-	bd.addBlock(Crazycraft::Block("E", 1, Crazycraft::Texture(33, 33, 33, 33, 33, 33), true));
-	NormalizedBlockTextureSize = 1. / (float) TextureAtlasSizeInBlocks;
-	pos = _pos;
-	noiseOutput = std::vector<float>(32 * 16);
-	auto fnGenerator = FastNoise::New<FastNoise::Simplex>();
-// Generate a 16 x 16 x 16 area of noise
-	fnGenerator->GenUniformGrid2D(noiseOutput.data(), 0, 0, 32, 16, 0.2f, 122);
->>>>>>> dcc73c6af57133fbb685f8aaa93188ae4b277588
 }
-
