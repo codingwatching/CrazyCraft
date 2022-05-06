@@ -1,49 +1,10 @@
-
-
-
-unsigned int voxtris[36] = {0, 1, 2,
-                            2, 3, 0,
-                            4, 5, 6,
-                            6, 7, 4,
-                            8, 9, 10,
-                            10, 11, 8,
-                            12, 13, 14,
-                            14, 15, 12,
-                            16, 17, 18,
-                            18, 19, 16,
-                            20, 21, 22,
-                            22, 23, 20
-};
-
-glm::vec2 grassuv[24]{
-	//front
-	glm::vec2(0.0f, 0.9375f),
-	glm::vec2(0.0625f, 0.9375),
-	glm::vec2(0.0625f, 1.),
-	glm::vec2(0.0f, 1.),
-	//back
-	glm::vec2(0.0f, 0.9375f),
-	glm::vec2(0.0625f, 0.9375),
-	glm::vec2(0.0625f, 1.),
-	glm::vec2(0.0f, 1.),
-	//side
-	glm::vec2(0.0f, 0.9375f),
-	glm::vec2(0.0625f, 0.9375),
-	glm::vec2(0.0625f, 1.),
-	glm::vec2(0.0f, 1.),
-	//another side
-	glm::vec2(0.0f, 0.9375f),
-	glm::vec2(0.0625f, 0.9375),
-	glm::vec2(0.0625f, 1.),
-	glm::vec2(0.0f, 1.),
-	//top
-	glm::vec2(0.125, 0.9375),
-	glm::vec2(0.1875, 0.9375),
-	glm::vec2(0.1875, 1.),
-	glm::vec2(0.125, 1.),
-	//bottom
-	glm::vec2(0.0625, 0.9375),
-	glm::vec2(0.125, 0.9375),
-	glm::vec2(0.125, 1.),
-	glm::vec2(0.0625, 1.)
+Crazycraft::BlockModel cube =
+{
+{{{{glm::vec3(0,1,0),glm::vec2(0,0)},{glm::vec3(1,1,0),glm::vec2(0,0)},{glm::vec3(0,1,1),glm::vec2(0,0)},{glm::vec3(1,1,1),glm::vec2(0,0)},true}}},//up face
+{{{{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},true}}},//down face
+{{{{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},true}}},//left face
+{{{{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},true}}},//right face
+{{{{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},true}}},//front face
+{{{{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},true}}},//back face
+{{{{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},{glm::vec3(0,0,0),glm::vec2(0,0)},true}}}//mid face
 };

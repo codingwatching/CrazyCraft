@@ -9,11 +9,11 @@ float NormalizedBlockTextureSize = 0;
 unsigned char Chunk::getBlock(int x, int y, int z)
 {
 	if (x < 0 || x > 16 || y < 0 || y > 16 || z < 0 || z > 16) return 0;
-	int l = 4 + (noiseOutput[(((x + pos.x * dimensions.x) * dimensions.y) + (z + pos.z * dimensions.z))]) * 2;
+	//int l = 4 + (noiseOutput[(((x + pos.x * dimensions.x) * dimensions.y) + (z + pos.z * dimensions.z))]) * 2;
 
-	if (y <= l - 1)
+	if (y <= 1 - 1)
 		return 2;
-	if (y == l)
+	if (y == 1)
 		return 1;
 	return 0;
 
@@ -21,9 +21,7 @@ unsigned char Chunk::getBlock(int x, int y, int z)
 
 bool Chunk::isBlockTransparent(int x, int y, int z)
 {
-
 	return bd.getBlockData(getBlock(x, y, z)).isTransparent;
-
 }
 
 glm::vec2 getuv(Crazycraft::Texture texture, int VertexID, int Faceid)
@@ -71,7 +69,7 @@ void Chunk::UpdateRenderData()
 				if (getBlock(x, y, z))
 				{
 
-					if (isBlockTransparent(x, y, z))
+/*					if (isBlockTransparent(x, y, z))
 					{//generating transparent block data
 
 						if (!getBlock(x, y, z - 1))
@@ -311,11 +309,35 @@ void Chunk::UpdateRenderData()
 						}
 					}
 
+				}*/
+				if (isBlockTransparent(x, y, z))
+				{//generating transparent block data
+
+						for(int f;f <= 6;f++){
+							
+						
+
+						}
+					
+				}
+				else //generating non-transparent block data
+				{
+
+						for(int f;f <= 6;f++){
+							
+							
+
+						}
+
+				}
+
 				}
 
 			}
 		}
 	}
+
+
 
 //generating transparent render data
 	unsigned int transparent_vb;

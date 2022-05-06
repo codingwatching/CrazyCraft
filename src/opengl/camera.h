@@ -15,15 +15,19 @@ struct Camera
 		rot = {0, 0};
 	}
 
-	void input(GLFWwindow* window)
+	void input(GLFWwindow *window)
 	{
-		rot.x += Input::mouseY * 0.1f;
-		rot.y += Input::mouseX * 0.1f;
+		rot.x = Input::mouseY;
+		rot.y = Input::mouseX;
 
+		if (rot.x > 90)
+			rot.x = 90;
+		if (rot.x < -90)
+			rot.x = -90;
 
 		glm::vec3 front;
 		front.x = cos(glm::radians(rot.y)) * cos(glm::radians(rot.x));
-		//front.y = sin(glm::radians(rot.x));
+		// front.y = sin(glm::radians(rot.x));
 		front.z = sin(glm::radians(rot.y)) * cos(glm::radians(rot.x));
 		front = glm::normalize(front);
 		glm::vec3 right = glm::normalize(glm::cross(front, glm::vec3(0, 1, 0)));
@@ -53,7 +57,6 @@ struct Camera
 		if (Input::isKeyDown(GLFW_KEY_D))
 		{
 
-
 			pos += front * velocity;
 		}
 		if (Input::isKeyDown(GLFW_KEY_LEFT_SHIFT))
@@ -65,7 +68,6 @@ struct Camera
 		{
 
 			pos += glm::vec3(0, 1, 0) * velocity;
-
 		}
 		if (Input::isKeyDown(GLFW_KEY_ESCAPE))
 		{
@@ -73,11 +75,7 @@ struct Camera
 			glfwSetWindowShouldClose(window, GL_TRUE);
 		}
 
-		Input::mouseX = 0;
-		Input::mouseY = 0;
-
 	}
-
 
 	void updateMatrix(unsigned int shader, glm::vec2 aspect)
 	{
@@ -87,7 +85,7 @@ struct Camera
 
 		view = glm::rotate(ident, glm::radians(rot.x), {1, 0, 0});
 		view = glm::rotate(view, glm::radians(rot.y), {0, 1, 0});
-		//view = glm::rotate(view, glm::radians(rot.z), {0, 0, 1});
+		// view = glm::rotate(view, glm::radians(rot.z), {0, 0, 1});
 
 		view = glm::translate(view, -pos);
 
@@ -95,8 +93,9 @@ struct Camera
 
 		GLCall(int location = glGetUniformLocation(shader, "u_MVP"));
 		if (location == -1)
-			std::cout << "No active uniform variable with name " << "u_MVP" << " found" << std::endl;
+			std::cout << "No active uniform variable with name "
+					  << "u_MVP"
+					  << " found" << std::endl;
 		GLCall(glUniformMatrix4fv(location, 1, GL_FALSE, &mvp[0][0]));
 	}
-
 };

@@ -86,5 +86,59 @@ namespace Crazycraft
 		Block getBlockData(int b);
 	};
 
+struct Face{
+Vertex tl;
+Vertex tr;
+Vertex bl;
+Vertex br;
+bool isSolid;
+};
+struct BlockModel
+{
+	std::vector<Face> up;
+	std::vector<Face> down;
+	std::vector<Face> left;
+	std::vector<Face> right;
+	std::vector<Face> front;
+	std::vector<Face> back;
+	std::vector<Face> mid;
+	Face getf(int f){
+		switch (f)
+		{
+		case 0:
+
+		case 1:
+
+		case 2:
+
+		case 3:
+
+		case 4:
+
+		case 5:
+
+		
+		}
+	}
+	glm::vec3 getfdir(int f){
+		
+	switch (f)
+	{
+		case 0:
+
+		case 1:
+
+		case 2:
+
+		case 3:
+
+		case 4:
+
+		case 5:
+
+	}
+
+	}
+};
 
 }

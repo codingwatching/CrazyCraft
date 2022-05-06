@@ -15,10 +15,10 @@ int main()
 	Camera c;
 
 	Chunk ch(glm::ivec3(0, 0, 0));
-	Chunk ch2(glm::ivec3(1, 0, 0));
+	//Chunk ch2(glm::ivec3(1, 0, 0));
 
 	ch.UpdateRenderData();
-	ch2.UpdateRenderData();
+	//ch2.UpdateRenderData();
 
 
 	glfwSetWindowSizeCallback(window, [](GLFWwindow *window, int width, int height)
@@ -53,7 +53,7 @@ int main()
 		c.updateMatrix(shader, aspect);
 
 		ch.render();
-		ch2.render();
+		//ch2.render();
 
 		//ImGui::DragFloat3("Camera Translation", &c.pos.x, 0.0f, 960.0f);
 		//ImGui::DragFloat2("Camera Rotation", &c.rot.x, 0.0f, 960.0f);

@@ -1,4 +1,5 @@
 #include "Input.h"
+#include <iostream>
 #include "glm/glm.hpp"
 
 namespace Input
@@ -22,10 +23,12 @@ namespace Input
 			delta = currentMousePos - lastMousePos;
 
 			lastMousePos = currentMousePos;
+			
 		}
+		//std::cout << delta.x << " " << delta.y << std::endl;
 
-		mouseX = delta.x;
-		mouseY = delta.y;
+		mouseX += delta.x;
+		mouseY += delta.y;
 	}
 
 	void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods)
@@ -44,7 +47,6 @@ namespace Input
 
 	void loadCallbacks(GLFWwindow* Window)
 	{
-
 		glfwSetCursorPosCallback(Window, &mouseCallback);
 		glfwSetMouseButtonCallback(Window, &mouseButtonCallback);
 		glfwSetScrollCallback(Window, &mouseScrollCallback);
