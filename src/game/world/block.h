@@ -1,3 +1,4 @@
+#include <opengl/debug.h>
 namespace Crazycraft
 {
 
@@ -92,6 +93,15 @@ Vertex tr;
 Vertex bl;
 Vertex br;
 bool isSolid;
+Face(Vertex _tl,Vertex _tr,Vertex _bl,Vertex _br,bool _isSolid){
+tl = _tl;
+tr = _tr;
+bl = _bl;
+br = _br;
+isSolid = _isSolid;
+}
+Face(){
+}
 };
 struct BlockModel
 {
@@ -102,40 +112,48 @@ struct BlockModel
 	std::vector<Face> front;
 	std::vector<Face> back;
 	std::vector<Face> mid;
-	Face getf(int f){
+
+	std::vector<Face> getfaces(int f){
 		switch (f)
 		{
-		case 0:
-
-		case 1:
-
-		case 2:
-
-		case 3:
-
-		case 4:
-
-		case 5:
+			case 0:
+				return front;
+			case 1:
+				return back;
+			case 2:
+				return left;
+			case 3:
+				return right;
+			case 4:
+				return up;
+			case 5:
+				return down;
+			case 6:
+				return mid;
+			default:
+				ASSERT(false);
 
 		
 		}
 	}
-	glm::vec3 getfdir(int f){
+	glm::vec3 getfacedir(int f){
 		
 	switch (f)
 	{
 		case 0:
-
+	return glm::vec3(0,0,0);
 		case 1:
-
+	return glm::vec3(0,0,0);
 		case 2:
-
+	return glm::vec3(0,0,0);
 		case 3:
-
+	return glm::vec3(0,0,0);
 		case 4:
-
+	return glm::vec3(0,0,0);
 		case 5:
-
+	return glm::vec3(0,0,0);
+		default:
+	ASSERT(false);
 	}
 
 	}

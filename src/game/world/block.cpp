@@ -7,7 +7,6 @@
 
 
 #include<game/game.h>
-#include <opengl/debug.h>
 #include "block.h"
 
 namespace Crazycraft

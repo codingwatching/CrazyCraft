@@ -184,6 +184,10 @@
 				"role" : "flags"
 			},
 			{
+				"fragment" : "-L/usr/lib64/gcc/x86_64-pc-linux-gnu/11.2.0",
+				"role" : "libraryPath"
+			},
+			{
 				"backtrace" : 2,
 				"fragment" : "bin/libglad.a",
 				"role" : "libraries"

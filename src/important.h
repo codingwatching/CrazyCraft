@@ -3,7 +3,6 @@
 
 #define _DEBUG
 
-#include <opengl/debug.h>
 #include <opengl/shader.h>
 #include <opengl/window.h>
 #include <opengl/texture.h>
@@ -21,7 +20,7 @@ void Init()
 
 	ShaderProgramSource source = ParseShader("../res/shaders/Basic.shader");
 	shader = CreateShader(source.VertexSource, source.FragmentSource);
-	GLCall(glUseProgram(shader));
+	glUseProgram(shader);
        
 
 	Texture tex;
@@ -32,7 +31,7 @@ void Init()
 	GLCall(int location = glGetUniformLocation(shader, "u_Texture"));
 	if (location == -1)
 		std::cout << "No active uniform variable with name " << "u_Texture" << " found" << std::endl;
-	GLCall(glUniform1i(location, 0));
+	glUniform1i(location, 0);
 }
 
 #endif

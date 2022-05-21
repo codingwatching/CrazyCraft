@@ -24,5 +24,10 @@ struct Vertex
 		pos = _pos;
 		uv = _uv;
 	}
+	Vertex()
+	{
+		pos = glm::vec3(0,0,0);
+		uv = glm::vec2(0,0);
+	}
 };
 

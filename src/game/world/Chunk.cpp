@@ -1,5 +1,4 @@
 #include "Chunk.h"
-#include <opengl/debug.h>
 #include "game/world/Voxeldata.h"
 #include <FastNoise/FastNoise.h>
 
@@ -69,7 +68,7 @@ void Chunk::UpdateRenderData()
 				if (getBlock(x, y, z))
 				{
 
-/*					if (isBlockTransparent(x, y, z))
+					if (isBlockTransparent(x, y, z))
 					{//generating transparent block data
 
 						if (!getBlock(x, y, z - 1))
@@ -309,15 +308,21 @@ void Chunk::UpdateRenderData()
 						}
 					}
 
-				}*/
+				}
+				/*Crazycraft::Face face;
+				glm::vec3 facevector;
 				if (isBlockTransparent(x, y, z))
 				{//generating transparent block data
 
+					
 						for(int f;f <= 6;f++){
 							
+							cube.getfacedir(124);
+
+						}	
 						
 
-						}
+						
 					
 				}
 				else //generating non-transparent block data
@@ -325,13 +330,13 @@ void Chunk::UpdateRenderData()
 
 						for(int f;f <= 6;f++){
 							
-							
+							cube.getfacedir(124);
 
 						}
 
 				}
 
-				}
+				}*/
 
 			}
 		}

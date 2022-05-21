@@ -140,6 +140,7 @@ build CMakeFiles/CrazyCraft.dir/src/vendor/stb_image/stb_image.cpp.o: CXX_COMPIL
 build bin/CrazyCraft: CXX_EXECUTABLE_LINKER__CrazyCraft_Debug CMakeFiles/CrazyCraft.dir/src/game/world/Chunk.cpp.o CMakeFiles/CrazyCraft.dir/src/game/world/World.cpp.o CMakeFiles/CrazyCraft.dir/src/game/world/block.cpp.o CMakeFiles/CrazyCraft.dir/src/input/Input.cpp.o CMakeFiles/CrazyCraft.dir/src/main.cpp.o CMakeFiles/CrazyCraft.dir/src/vendor/imgui/imgui.cpp.o CMakeFiles/CrazyCraft.dir/src/vendor/imgui/imgui_demo.cpp.o CMakeFiles/CrazyCraft.dir/src/vendor/imgui/imgui_draw.cpp.o CMakeFiles/CrazyCraft.dir/src/vendor/imgui/imgui_impl_glfw_gl3.cpp.o CMakeFiles/CrazyCraft.dir/src/vendor/stb_image/stb_image.cpp.o | bin/libglad.a bin/libglfw3.a bin/libFastNoiseD.a /usr/lib/librt.a /usr/lib/libm.so || bin/libFastNoiseD.a bin/libglad.a bin/libglfw3.a
   FLAGS = -g
   LINK_LIBRARIES = bin/libglad.a  bin/libglfw3.a  bin/libFastNoiseD.a  /usr/lib/librt.a  -lm  -ldl
+  LINK_PATH = -L/usr/lib64/gcc/x86_64-pc-linux-gnu/11.2.0
   OBJECT_DIR = CMakeFiles/CrazyCraft.dir
   POST_BUILD = :
   PRE_LINK = :

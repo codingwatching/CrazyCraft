@@ -1,4 +1,4 @@
-#define ASSERT(x) if (!(x)) assert(false)
+#define ASSERT(x) if(!(x)) assert(false)
 
 void inline GLClearError()
 {
@@ -44,8 +44,8 @@ bool inline GLCheckError(std::string loc)
 }
 
 
-#ifdef _DEBUG
+//#ifdef _DEBUG
 #define GLCall(x) GLClearError(); x; ASSERT(GLCheckError(#x))
-#else
-#define GLCall(x) x
-#endif
+//#else
+//#define GLCall(x) x
+//#endif
