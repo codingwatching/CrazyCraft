@@ -5,6 +5,10 @@ struct Camera
 	glm::mat4 proj;
 	glm::mat4 ident;
 	glm::mat4 view;
+bool s = true;
+unsigned int shader;
+unsigned int invshader;
+int ftimer = 0;
 
 	Camera()
 	{
@@ -13,17 +17,29 @@ struct Camera
 
 		pos = {0, 0, 0};
 		rot = {0, 0};
+	ShaderProgramSource source = ParseShader("../res/shaders/Basic.shader");
+	shader = CreateShader(source.VertexSource, source.FragmentSource);
+	ShaderProgramSource invsource = ParseShader("../res/shaders/Cinvert.shader");
+	invshader = CreateShader(invsource.VertexSource, invsource.FragmentSource);
+	glUseProgram(shader);
+
+		GLCall(int location = glGetUniformLocation(shader, "u_Texture"));
+	if (location == -1)
+		std::cout << "No active uniform variable with name " << "u_Texture" << " found" << std::endl;
+	glUniform1i(location, 0);
 	}
 
 	void input(GLFWwindow *window)
 	{
-		rot.x = Input::mouseY;
-		rot.y = Input::mouseX;
+	
+		if (Input::mouseY > 90)
+			Input::mouseY = 90;
+		if (Input::mouseY< -90)
+			Input::mouseY = -90;
 
-		if (rot.x > 90)
-			rot.x = 90;
-		if (rot.x < -90)
-			rot.x = -90;
+	rot.x = Input::mouseY;
+	rot.y = Input::mouseX;
+
 
 		glm::vec3 front;
 		front.x = cos(glm::radians(rot.y)) * cos(glm::radians(rot.x));
@@ -72,12 +88,25 @@ struct Camera
 		if (Input::isKeyDown(GLFW_KEY_ESCAPE))
 		{
 
-			glfwSetWindowShouldClose(window, GL_TRUE);
+				glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 		}
+		if (Input::isKeyDown(GLFW_KEY_F4))
+		{
+if(ftimer > 10){
+			s = !s;
+ftimer = 0;
+}
 
+				if(s){
+				glUseProgram(shader);
+				}else{
+				glUseProgram(invshader);
+				}
+		}
+	ftimer++;
 	}
 
-	void updateMatrix(unsigned int shader, glm::vec2 aspect)
+	void updateMatrix(glm::vec2 aspect)
 	{
 		// model matrix
 		proj = glm::perspective<float>(45.0f, aspect.x / aspect.y, 1.0f, 10000.0f);

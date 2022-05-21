@@ -34,6 +34,7 @@ int main()
 	aspect.x = 960;
 	aspect.y = 540;
 
+
 	Init();
 
 	IMGUI_CHECKVERSION();
@@ -50,7 +51,7 @@ int main()
 		c.input(window);
 
 
-		c.updateMatrix(shader, aspect);
+		c.updateMatrix(aspect);
 
 		ch.render();
 		//ch2.render();
