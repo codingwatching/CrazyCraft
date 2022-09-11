@@ -14,10 +14,14 @@ int main()
 
 	Camera c;
 
-	Chunk ch(glm::ivec3(0, 0, 0));
+	World w;
+
+	w.update_chunks();
+
+	//Chunk ch(glm::ivec3(0, 0, 0));
 	//Chunk ch2(glm::ivec3(1, 0, 0));
 
-	ch.UpdateRenderData();
+	//ch.UpdateRenderData();
 	//ch2.UpdateRenderData();
 
 
@@ -34,7 +38,6 @@ int main()
 	aspect.x = 960;
 	aspect.y = 540;
 
-
 	Init();
 
 	IMGUI_CHECKVERSION();
@@ -47,21 +50,22 @@ int main()
 		glClearColor(0.5, 0.5, 1, 1);
 		GLCall(glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT));
 
-		//ImGui_ImplGlfwGL3_NewFrame();
+		ImGui_ImplGlfwGL3_NewFrame();
 		c.input(window);
 
 
 		c.updateMatrix(aspect);
 
-		ch.render();
+		//ch.render();
 		//ch2.render();
+		w.render();
 
-		//ImGui::DragFloat3("Camera Translation", &c.pos.x, 0.0f, 960.0f);
-		//ImGui::DragFloat2("Camera Rotation", &c.rot.x, 0.0f, 960.0f);
-		//ImGui::Text("Application average: %.1f FPS", ImGui::GetIO().Framerate);
+		ImGui::DragFloat3("Camera Translation", &c.pos.x, 0.0f, 960.0f);
+		ImGui::DragFloat2("Camera Rotation", &c.rot.x, 0.0f, 960.0f);
+		ImGui::Text("Application average: %.1f FPS", ImGui::GetIO().Framerate);
 
-		//ImGui::Render();
-		//ImGui_ImplGlfwGL3_RenderDrawData(ImGui::GetDrawData());
+		ImGui::Render();
+		ImGui_ImplGlfwGL3_RenderDrawData(ImGui::GetDrawData());
 
 		// Swap buffers
 		glfwSwapBuffers(window);

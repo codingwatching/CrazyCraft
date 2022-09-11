@@ -17,6 +17,7 @@ int ftimer = 0;
 
 		pos = {0, 0, 0};
 		rot = {0, 0};
+
 	ShaderProgramSource source = ParseShader("../res/shaders/Basic.shader");
 	shader = CreateShader(source.VertexSource, source.FragmentSource);
 	ShaderProgramSource invsource = ParseShader("../res/shaders/Cinvert.shader");
@@ -43,7 +44,7 @@ int ftimer = 0;
 
 		glm::vec3 front;
 		front.x = cos(glm::radians(rot.y)) * cos(glm::radians(rot.x));
-		// front.y = sin(glm::radians(rot.x));
+		front.y = sin(glm::radians(rot.x));
 		front.z = sin(glm::radians(rot.y)) * cos(glm::radians(rot.x));
 		front = glm::normalize(front);
 		glm::vec3 right = glm::normalize(glm::cross(front, glm::vec3(0, 1, 0)));
@@ -92,10 +93,10 @@ int ftimer = 0;
 		}
 		if (Input::isKeyDown(GLFW_KEY_F4))
 		{
-if(ftimer > 10){
-			s = !s;
-ftimer = 0;
-}
+		if(ftimer > 10){
+					s = !s;
+		ftimer = 0;
+		}
 
 				if(s){
 				glUseProgram(shader);
