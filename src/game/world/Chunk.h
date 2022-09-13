@@ -1,18 +1,20 @@
+#ifndef __CHUNK_H__
+#define __CHUNK_H__
+
 #include <iostream>
-#include <string>
-#include <sstream>
-#include <fstream>
 #include <vector>
-#include <array>
 
 
 #include<game/game.h>
 #include "block.h"
+class Chunk;// frick this complex clusterf***
+
+#include <game/world/World.h>
 
 class Chunk
 {
 private:
-	std::vector<float> noiseOutput;
+	World parent;
 	glm::ivec3 pos;
 	glm::ivec3 dimensions = glm::ivec3(16, 16, 16);
 	Renderdata rd;
@@ -21,13 +23,12 @@ private:
 	std::vector<Vertex> transparent_verticies;
 	std::vector<unsigned int> tris;
 	std::vector<unsigned int> transparent_tris;
-	Crazycraft::BlockDefs bd;
 public:
 	unsigned char getBlock(int x, int y, int z);
 
 	bool isBlockTransparent(int x, int y, int z);
 
-	Chunk(glm::ivec3 _pos);
+	Chunk(glm::ivec3 _pos,World parent);
 
 	void generate();
 
@@ -36,3 +37,4 @@ public:
 	void render();
 
 };
+#endif // __CHUNK_H__

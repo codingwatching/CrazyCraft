@@ -185,20 +185,11 @@ CMakeFiles/CrazyCraft.dir/src/game/world/Chunk.cpp.o: src/game/world/Chunk.cpp \
   /usr/include/c++/12.1.0/bits/ostream.tcc \
   /usr/include/c++/12.1.0/istream \
   /usr/include/c++/12.1.0/bits/istream.tcc \
-  /usr/include/c++/12.1.0/sstream \
-  /usr/include/c++/12.1.0/bits/sstream.tcc \
-  /usr/include/c++/12.1.0/fstream \
-  /usr/include/c++/12.1.0/bits/codecvt.h \
-  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
-  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
-  /usr/include/c++/12.1.0/bits/fstream.tcc \
   /usr/include/c++/12.1.0/vector \
   /usr/include/c++/12.1.0/bits/stl_uninitialized.h \
   /usr/include/c++/12.1.0/bits/stl_vector.h \
   /usr/include/c++/12.1.0/bits/stl_bvector.h \
   /usr/include/c++/12.1.0/bits/vector.tcc \
-  /usr/include/c++/12.1.0/array \
-  /usr/include/c++/12.1.0/compare \
   src/game/game.h \
   lib/glad/include/glad/glad.h \
   lib/glad/include/KHR/khrplatform.h \
@@ -401,47 +392,7 @@ CMakeFiles/CrazyCraft.dir/src/game/world/Chunk.cpp.o: src/game/world/Chunk.cpp \
   src/vendor/stb_image/stb_image.h \
   src/game/world/block.h \
   src/opengl/debug.h \
-  src/game/world/Voxeldata.h \
-  lib/FastNoise2/include/FastNoise/FastNoise.h \
-  lib/FastNoise2/include/FastNoise/FastNoise_Config.h \
-  lib/FastNoise2/include/FastSIMD/FastSIMD.h \
-  lib/FastNoise2/include/FastSIMD/FastSIMD_Config.h \
-  lib/FastNoise2/include/FastSIMD/FastSIMD_Export.h \
-  lib/FastNoise2/include/FastNoise/FastNoise_Export.h \
-  lib/FastNoise2/include/FastNoise/SmartNode.h \
-  /usr/include/c++/12.1.0/utility \
-  /usr/include/c++/12.1.0/bits/stl_relops.h \
-  /usr/include/c++/12.1.0/functional \
-  /usr/include/c++/12.1.0/tuple \
-  /usr/include/c++/12.1.0/bits/uses_allocator.h \
-  /usr/include/c++/12.1.0/bits/std_function.h \
-  /usr/include/c++/12.1.0/unordered_map \
-  /usr/include/c++/12.1.0/ext/aligned_buffer.h \
-  /usr/include/c++/12.1.0/bits/hashtable.h \
-  /usr/include/c++/12.1.0/bits/hashtable_policy.h \
-  /usr/include/c++/12.1.0/bits/enable_special_members.h \
-  /usr/include/c++/12.1.0/bits/node_handle.h \
-  /usr/include/c++/12.1.0/bits/unordered_map.h \
-  /usr/include/c++/12.1.0/bits/erase_if.h \
-  /usr/include/c++/12.1.0/bits/stl_algo.h \
-  /usr/include/c++/12.1.0/bits/algorithmfwd.h \
-  /usr/include/c++/12.1.0/bits/stl_heap.h \
-  /usr/include/c++/12.1.0/bits/stl_tempbuf.h \
-  /usr/include/c++/12.1.0/bits/uniform_int_dist.h \
-  lib/FastNoise2/include/FastNoise/Generators/BasicGenerators.h \
-  lib/FastNoise2/include/FastNoise/Generators/Generator.h \
-  /usr/include/c++/12.1.0/algorithm \
-  /usr/include/c++/12.1.0/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/12.1.0/pstl/execution_defs.h \
-  lib/FastNoise2/include/FastNoise/Generators/Value.h \
-  lib/FastNoise2/include/FastNoise/Generators/Perlin.h \
-  lib/FastNoise2/include/FastNoise/Generators/Simplex.h \
-  lib/FastNoise2/include/FastNoise/Generators/Cellular.h \
-  lib/FastNoise2/include/FastNoise/Generators/Fractal.h \
-  lib/FastNoise2/include/FastNoise/Generators/DomainWarp.h \
-  lib/FastNoise2/include/FastNoise/Generators/DomainWarpFractal.h \
-  lib/FastNoise2/include/FastNoise/Generators/Modifiers.h \
-  lib/FastNoise2/include/FastNoise/Generators/Blends.h
+  src/game/world/Voxeldata.h
 
 CMakeFiles/CrazyCraft.dir/src/game/world/World.cpp.o: src/game/world/World.cpp \
   /usr/include/stdc-predef.h \
@@ -628,20 +579,11 @@ CMakeFiles/CrazyCraft.dir/src/game/world/World.cpp.o: src/game/world/World.cpp \
   /usr/include/c++/12.1.0/bits/ostream.tcc \
   /usr/include/c++/12.1.0/istream \
   /usr/include/c++/12.1.0/bits/istream.tcc \
-  /usr/include/c++/12.1.0/sstream \
-  /usr/include/c++/12.1.0/bits/sstream.tcc \
-  /usr/include/c++/12.1.0/fstream \
-  /usr/include/c++/12.1.0/bits/codecvt.h \
-  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
-  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
-  /usr/include/c++/12.1.0/bits/fstream.tcc \
   /usr/include/c++/12.1.0/vector \
   /usr/include/c++/12.1.0/bits/stl_uninitialized.h \
   /usr/include/c++/12.1.0/bits/stl_vector.h \
   /usr/include/c++/12.1.0/bits/stl_bvector.h \
   /usr/include/c++/12.1.0/bits/vector.tcc \
-  /usr/include/c++/12.1.0/array \
-  /usr/include/c++/12.1.0/compare \
   src/game/game.h \
   lib/glad/include/glad/glad.h \
   lib/glad/include/KHR/khrplatform.h \
@@ -843,7 +785,50 @@ CMakeFiles/CrazyCraft.dir/src/game/world/World.cpp.o: src/game/world/World.cpp \
   src/input/Input.h \
   src/vendor/stb_image/stb_image.h \
   src/game/world/block.h \
-  src/opengl/debug.h
+  src/opengl/debug.h \
+  src/game/world/World.h \
+  lib/FastNoise2/include/FastNoise/FastNoise.h \
+  lib/FastNoise2/include/FastNoise/FastNoise_Config.h \
+  lib/FastNoise2/include/FastSIMD/FastSIMD.h \
+  lib/FastNoise2/include/FastSIMD/FastSIMD_Config.h \
+  lib/FastNoise2/include/FastSIMD/FastSIMD_Export.h \
+  lib/FastNoise2/include/FastNoise/FastNoise_Export.h \
+  lib/FastNoise2/include/FastNoise/SmartNode.h \
+  /usr/include/c++/12.1.0/utility \
+  /usr/include/c++/12.1.0/bits/stl_relops.h \
+  /usr/include/c++/12.1.0/functional \
+  /usr/include/c++/12.1.0/tuple \
+  /usr/include/c++/12.1.0/bits/uses_allocator.h \
+  /usr/include/c++/12.1.0/bits/std_function.h \
+  /usr/include/c++/12.1.0/unordered_map \
+  /usr/include/c++/12.1.0/ext/aligned_buffer.h \
+  /usr/include/c++/12.1.0/bits/hashtable.h \
+  /usr/include/c++/12.1.0/bits/hashtable_policy.h \
+  /usr/include/c++/12.1.0/bits/enable_special_members.h \
+  /usr/include/c++/12.1.0/bits/node_handle.h \
+  /usr/include/c++/12.1.0/bits/unordered_map.h \
+  /usr/include/c++/12.1.0/bits/erase_if.h \
+  /usr/include/c++/12.1.0/array \
+  /usr/include/c++/12.1.0/compare \
+  /usr/include/c++/12.1.0/bits/stl_algo.h \
+  /usr/include/c++/12.1.0/bits/algorithmfwd.h \
+  /usr/include/c++/12.1.0/bits/stl_heap.h \
+  /usr/include/c++/12.1.0/bits/stl_tempbuf.h \
+  /usr/include/c++/12.1.0/bits/uniform_int_dist.h \
+  lib/FastNoise2/include/FastNoise/Generators/BasicGenerators.h \
+  lib/FastNoise2/include/FastNoise/Generators/Generator.h \
+  /usr/include/c++/12.1.0/algorithm \
+  /usr/include/c++/12.1.0/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/12.1.0/pstl/execution_defs.h \
+  lib/FastNoise2/include/FastNoise/Generators/Value.h \
+  lib/FastNoise2/include/FastNoise/Generators/Perlin.h \
+  lib/FastNoise2/include/FastNoise/Generators/Simplex.h \
+  lib/FastNoise2/include/FastNoise/Generators/Cellular.h \
+  lib/FastNoise2/include/FastNoise/Generators/Fractal.h \
+  lib/FastNoise2/include/FastNoise/Generators/DomainWarp.h \
+  lib/FastNoise2/include/FastNoise/Generators/DomainWarpFractal.h \
+  lib/FastNoise2/include/FastNoise/Generators/Modifiers.h \
+  lib/FastNoise2/include/FastNoise/Generators/Blends.h
 
 CMakeFiles/CrazyCraft.dir/src/game/world/block.cpp.o: src/game/world/block.cpp \
   /usr/include/stdc-predef.h \
@@ -1617,9 +1602,10 @@ CMakeFiles/CrazyCraft.dir/src/input/Input.cpp.o: src/input/Input.cpp \
 
 CMakeFiles/CrazyCraft.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/stdc-predef.h \
-  src/game/world/World.h \
-  src/game/world/Chunk.h \
-  /usr/include/c++/12.1.0/iostream \
+  /usr/include/c++/12.1.0/fstream \
+  /usr/include/c++/12.1.0/istream \
+  /usr/include/c++/12.1.0/ios \
+  /usr/include/c++/12.1.0/iosfwd \
   /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
   /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
   /usr/include/features.h \
@@ -1632,9 +1618,6 @@ CMakeFiles/CrazyCraft.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/gnu/stubs-64.h \
   /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/12.1.0/pstl/pstl_config.h \
-  /usr/include/c++/12.1.0/ostream \
-  /usr/include/c++/12.1.0/ios \
-  /usr/include/c++/12.1.0/iosfwd \
   /usr/include/c++/12.1.0/bits/stringfwd.h \
   /usr/include/c++/12.1.0/bits/memoryfwd.h \
   /usr/include/c++/12.1.0/bits/postypes.h \
@@ -1797,23 +1780,23 @@ CMakeFiles/CrazyCraft.dir/src/main.cpp.o: src/main.cpp \
   /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/ctype_inline.h \
   /usr/include/c++/12.1.0/bits/locale_facets.tcc \
   /usr/include/c++/12.1.0/bits/basic_ios.tcc \
+  /usr/include/c++/12.1.0/ostream \
   /usr/include/c++/12.1.0/bits/ostream.tcc \
-  /usr/include/c++/12.1.0/istream \
   /usr/include/c++/12.1.0/bits/istream.tcc \
-  /usr/include/c++/12.1.0/sstream \
-  /usr/include/c++/12.1.0/bits/sstream.tcc \
-  /usr/include/c++/12.1.0/fstream \
   /usr/include/c++/12.1.0/bits/codecvt.h \
   /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/include/c++/12.1.0/bits/fstream.tcc \
+  /usr/include/c++/12.1.0/sstream \
+  /usr/include/c++/12.1.0/bits/sstream.tcc \
+  src/game/world/World.h \
+  src/game/world/Chunk.h \
+  /usr/include/c++/12.1.0/iostream \
   /usr/include/c++/12.1.0/vector \
   /usr/include/c++/12.1.0/bits/stl_uninitialized.h \
   /usr/include/c++/12.1.0/bits/stl_vector.h \
   /usr/include/c++/12.1.0/bits/stl_bvector.h \
   /usr/include/c++/12.1.0/bits/vector.tcc \
-  /usr/include/c++/12.1.0/array \
-  /usr/include/c++/12.1.0/compare \
   src/game/game.h \
   lib/glad/include/glad/glad.h \
   lib/glad/include/KHR/khrplatform.h \
@@ -2711,9 +2694,17 @@ src/main.cpp:
 
 src/input/Input.cpp:
 
-src/opengl/window.h:
+src/vendor/imgui/stb_truetype.h:
 
-src/game/world/World.cpp:
+/usr/include/c++/12.1.0/bits/fstream.tcc:
+
+/usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h:
+
+/usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h:
+
+/usr/include/c++/12.1.0/fstream:
+
+/usr/include/c++/12.1.0/sstream:
 
 lib/FastNoise2/include/FastNoise/Generators/Modifiers.h:
 
@@ -2732,6 +2723,10 @@ lib/FastNoise2/include/FastNoise/Generators/Value.h:
 /usr/include/c++/12.1.0/bits/stl_heap.h:
 
 /usr/include/c++/12.1.0/bits/stl_algo.h:
+
+/usr/include/c++/12.1.0/compare:
+
+/usr/include/c++/12.1.0/array:
 
 /usr/include/c++/12.1.0/bits/erase_if.h:
 
@@ -2754,6 +2749,10 @@ lib/FastNoise2/include/FastSIMD/FastSIMD.h:
 /usr/include/c++/12.1.0/bits/hashtable.h:
 
 lib/FastNoise2/include/FastNoise/FastNoise_Config.h:
+
+src/opengl/window.h:
+
+src/game/world/World.cpp:
 
 src/game/world/Voxeldata.h:
 
@@ -2951,22 +2950,6 @@ lib/FastNoise2/include/FastNoise/Generators/BasicGenerators.h:
 
 lib/glm/glm/detail/type_vec3.inl:
 
-lib/glm/glm/ext/vector_bool3.hpp:
-
-lib/glm/glm/ext/scalar_uint_sized.hpp:
-
-lib/glm/glm/ext/vector_uint2_sized.hpp:
-
-lib/glm/glm/ext/vector_int3_sized.hpp:
-
-lib/glm/glm/ext/vector_uint2.hpp:
-
-lib/glm/glm/ext/scalar_int_sized.hpp:
-
-lib/glm/glm/ext/vector_int2_sized.hpp:
-
-lib/glm/glm/ext/vector_int2.hpp:
-
 lib/glm/glm/gtc/constants.inl:
 
 /usr/include/c++/12.1.0/bits/basic_string.h:
@@ -2990,6 +2973,10 @@ lib/glm/glm/ext/vector_double3_precision.hpp:
 /usr/include/c++/12.1.0/bits/predefined_ops.h:
 
 /usr/include/c++/12.1.0/bits/stl_pair.h:
+
+lib/glm/glm/ext/vector_int3_sized.hpp:
+
+lib/glm/glm/ext/vector_uint2.hpp:
 
 /usr/include/bits/flt-eval-method.h:
 
@@ -3048,8 +3035,6 @@ lib/glm/glm/ext/matrix_float3x2.hpp:
 /usr/include/c++/12.1.0/bits/refwrap.h:
 
 /usr/include/bits/types/struct_timespec.h:
-
-/usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/emmintrin.h:
 
@@ -3115,6 +3100,10 @@ lib/FastNoise2/include/FastNoise/SmartNode.h:
 
 /usr/include/bits/floatn-common.h:
 
+/usr/include/c++/12.1.0/bits/codecvt.h:
+
+/usr/include/bits/types/mbstate_t.h:
+
 /usr/include/c++/12.1.0/bits/ostream_insert.h:
 
 lib/FastNoise2/include/FastNoise/FastNoise_Export.h:
@@ -3123,8 +3112,6 @@ lib/FastNoise2/include/FastNoise/FastNoise_Export.h:
 
 /usr/include/c++/12.1.0/ext/numeric_traits.h:
 
-/usr/include/c++/12.1.0/sstream:
-
 /usr/include/c++/12.1.0/bits/utility.h:
 
 /usr/include/c++/12.1.0/bits/postypes.h:
@@ -3132,6 +3119,8 @@ lib/FastNoise2/include/FastNoise/FastNoise_Export.h:
 /usr/include/c++/12.1.0/bits/range_access.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stdarg.h:
+
+lib/glm/glm/ext/vector_int2_sized.hpp:
 
 /usr/include/bits/libc-header-start.h:
 
@@ -3185,6 +3174,8 @@ src/game/world/Chunk.cpp:
 
 /usr/include/c++/12.1.0/bits/exception_ptr.h:
 
+lib/glm/glm/ext/vector_uint2_sized.hpp:
+
 /usr/include/c++/12.1.0/pstl/glue_algorithm_defs.h:
 
 lib/glm/glm/ext/matrix_clip_space.inl:
@@ -3216,8 +3207,6 @@ src/game/world/Chunk.h:
 /usr/include/c++/12.1.0/bits/localefwd.h:
 
 /usr/include/c++/12.1.0/bits/streambuf.tcc:
-
-/usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h:
 
 /usr/include/c++/12.1.0/string:
 
@@ -3273,10 +3262,6 @@ src/important.h:
 
 /usr/include/c++/12.1.0/ext/string_conversions.h:
 
-src/vendor/imgui/stb_truetype.h:
-
-/usr/include/c++/12.1.0/bits/fstream.tcc:
-
 /usr/include/c++/12.1.0/iosfwd:
 
 src/vendor/imgui/stb_textedit.h:
@@ -3317,21 +3302,15 @@ src/vendor/imgui/imgui.cpp:
 
 /usr/include/c++/12.1.0/cwchar:
 
-lib/glm/glm/vec3.hpp:
-
-/usr/include/c++/12.1.0/bits/charconv.h:
-
-lib/glm/glm/ext/vector_double2_precision.hpp:
-
-/usr/include/c++/12.1.0/bits/stl_bvector.h:
-
-/usr/include/c++/12.1.0/type_traits:
-
 /usr/include/c++/12.1.0/bits/basic_ios.h:
 
 /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/os_defines.h:
 
 /usr/include/c++/12.1.0/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/12.1.0/bits/charconv.h:
+
+lib/glm/glm/vec3.hpp:
 
 /usr/include/linux/limits.h:
 
@@ -3342,6 +3321,10 @@ lib/glm/glm/ext/matrix_float2x2_precision.hpp:
 lib/glm/glm/mat3x3.hpp:
 
 /usr/include/bits/cpu-set.h:
+
+/usr/include/c++/12.1.0/bits/sstream.tcc:
+
+/usr/include/bits/typesizes.h:
 
 /usr/include/bits/time64.h:
 
@@ -3409,6 +3392,8 @@ lib/glm/glm/ext/matrix_float4x2.hpp:
 
 /usr/include/alloca.h:
 
+lib/glm/glm/ext/vector_bool3.hpp:
+
 /usr/include/c++/12.1.0/bits/std_abs.h:
 
 /usr/include/locale.h:
@@ -3418,8 +3403,6 @@ lib/glm/glm/ext/matrix_float4x2.hpp:
 /usr/include/bits/wordsize.h:
 
 /usr/include/stdio.h:
-
-/usr/include/c++/12.1.0/fstream:
 
 /usr/include/c++/12.1.0/bits/streambuf_iterator.h:
 
@@ -3437,13 +3420,11 @@ lib/glm/glm/ext/matrix_float4x2.hpp:
 
 /usr/include/errno.h:
 
-/usr/include/bits/typesizes.h:
-
-/usr/include/c++/12.1.0/bits/sstream.tcc:
-
 lib/glm/glm/detail/type_mat3x3.hpp:
 
 /usr/include/linux/errno.h:
+
+lib/glm/glm/ext/vector_int2.hpp:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -3501,25 +3482,11 @@ src/game/world/block.cpp:
 
 lib/glm/glm/detail/type_vec2.inl:
 
-/usr/include/bits/types/mbstate_t.h:
-
-/usr/include/c++/12.1.0/bits/codecvt.h:
-
-/usr/include/c++/12.1.0/bits/cxxabi_forced.h:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-lib/glm/glm/ext/vector_float2.hpp:
-
 /usr/include/bits/types/struct_tm.h:
 
 /usr/include/c++/12.1.0/vector:
 
 /usr/include/c++/12.1.0/bits/stl_vector.h:
-
-/usr/include/c++/12.1.0/array:
-
-/usr/include/c++/12.1.0/compare:
 
 lib/glm/glm/detail/func_exponential.inl:
 
@@ -3599,6 +3566,12 @@ lib/glm/glm/detail/qualifier.hpp:
 
 lib/glm/glm/vec2.hpp:
 
+/usr/include/c++/12.1.0/bits/cxxabi_forced.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+lib/glm/glm/ext/vector_float2.hpp:
+
 /usr/include/bits/types/FILE.h:
 
 /usr/include/c++/12.1.0/tr1/poly_hermite.tcc:
@@ -3608,3 +3581,13 @@ lib/glm/glm/ext/vector_float2_precision.hpp:
 /usr/include/bits/mathcalls-narrow.h:
 
 lib/glm/glm/ext/vector_double2.hpp:
+
+/usr/include/c++/12.1.0/bits/stl_bvector.h:
+
+/usr/include/c++/12.1.0/type_traits:
+
+lib/glm/glm/ext/vector_double2_precision.hpp:
+
+lib/glm/glm/ext/scalar_int_sized.hpp:
+
+lib/glm/glm/ext/scalar_uint_sized.hpp:

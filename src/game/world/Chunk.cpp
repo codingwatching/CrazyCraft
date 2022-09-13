@@ -1,26 +1,23 @@
 #include "Chunk.h"
 #include "game/world/Voxeldata.h"
-#include <FastNoise/FastNoise.h>
+
 
 static int TextureAtlasSizeInBlocks = 16;
 float NormalizedBlockTextureSize = 0;
 
 unsigned char Chunk::getBlock(int x, int y, int z)
 {
-	if (x < 0 || x > 16 || y < 0 || y > 16 || z < 0 || z > 16) return 0;
-	//int l = 4 + (noiseOutput[(((x + pos.x * dimensions.x) * dimensions.y) + (z + pos.z * dimensions.z))]) * 2;
-
-	if (y <= 1 - 1)
-		return 2;
-	if (y == 1)
-		return 1;
-	return 0;
+	int wx = x + (pos.x * 16);
+	int wy = y + (pos.y * 16);
+	int wz = z + (pos.z * 16);
+	//if (x < 0 || x > 16 || y < 0 || y > 16 || z < 0 || z > 16) return 0;// remains of a piece of shit
+	parent.GetBlock(wx,wy,wz);
 
 }
 
 bool Chunk::isBlockTransparent(int x, int y, int z)
 {
-	return bd.getBlockData(getBlock(x, y, z)).isTransparent;
+	return parent.bd.getBlockData(getBlock(x, y, z)).isTransparent;
 }
 
 glm::vec2 getuv(Crazycraft::Texture texture, int VertexID, int Faceid)
@@ -64,7 +61,7 @@ void Chunk::UpdateRenderData()
 		{
 			for (int z = 0; z <= 16; z++)
 			{
-				Crazycraft::Block b = bd.getBlockData(getBlock(x, y, z));
+				Crazycraft::Block b = parent.bd.getBlockData(getBlock(x, y, z));
 				if (getBlock(x, y, z))
 				{
 
@@ -399,15 +396,9 @@ void Chunk::render()
 }
 
 
-Chunk::Chunk(glm::ivec3 _pos){
-bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(0,0,0,0,0,0),true));
-bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(1,1,1,1,3,2)));
-bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(2,2,2,2,2,2)));
-bd.addBlock(Crazycraft::Block("E",1,Crazycraft::Texture(33,33,33,33,33,33),true));
+Chunk::Chunk(glm::ivec3 _pos,World _parent){
  NormalizedBlockTextureSize = 1. / (float)TextureAtlasSizeInBlocks;
  pos = _pos;
-noiseOutput = std::vector<float>(16*16);
-auto fnGenerator = FastNoise::New<FastNoise::Simplex>();
-// Generate a 16 x 16 x 16 area of noise
-fnGenerator->GenUniformGrid2D(noiseOutput.data(), 0, 0, 16, 16, 0.2f,122);
+ parent = _parent;
+
 }

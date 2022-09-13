@@ -1,4 +1,8 @@
 //#include <game/world/Chunk.h>
+#include <fstream>
+#include <sstream>
+#include <string>
+
 #include <game/world/World.h>
 #include <important.h>
 

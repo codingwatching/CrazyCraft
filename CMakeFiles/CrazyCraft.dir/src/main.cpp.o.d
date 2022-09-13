@@ -1,8 +1,7 @@
 CMakeFiles/CrazyCraft.dir/src/main.cpp.o: \
  /home/ati/Desktop/code/lol/src/main.cpp /usr/include/stdc-predef.h \
- /home/ati/Desktop/code/lol/src/game/world/World.h \
- /home/ati/Desktop/code/lol/src/game/world/Chunk.h \
- /usr/include/c++/12.1.0/iostream \
+ /usr/include/c++/12.1.0/fstream /usr/include/c++/12.1.0/istream \
+ /usr/include/c++/12.1.0/ios /usr/include/c++/12.1.0/iosfwd \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -11,8 +10,7 @@ CMakeFiles/CrazyCraft.dir/src/main.cpp.o: \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/12.1.0/pstl/pstl_config.h \
- /usr/include/c++/12.1.0/ostream /usr/include/c++/12.1.0/ios \
- /usr/include/c++/12.1.0/iosfwd /usr/include/c++/12.1.0/bits/stringfwd.h \
+ /usr/include/c++/12.1.0/bits/stringfwd.h \
  /usr/include/c++/12.1.0/bits/memoryfwd.h \
  /usr/include/c++/12.1.0/bits/postypes.h /usr/include/c++/12.1.0/cwchar \
  /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
@@ -132,18 +130,20 @@ CMakeFiles/CrazyCraft.dir/src/main.cpp.o: \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/ctype_inline.h \
  /usr/include/c++/12.1.0/bits/locale_facets.tcc \
  /usr/include/c++/12.1.0/bits/basic_ios.tcc \
- /usr/include/c++/12.1.0/bits/ostream.tcc /usr/include/c++/12.1.0/istream \
- /usr/include/c++/12.1.0/bits/istream.tcc /usr/include/c++/12.1.0/sstream \
- /usr/include/c++/12.1.0/bits/sstream.tcc /usr/include/c++/12.1.0/fstream \
+ /usr/include/c++/12.1.0/ostream /usr/include/c++/12.1.0/bits/ostream.tcc \
+ /usr/include/c++/12.1.0/bits/istream.tcc \
  /usr/include/c++/12.1.0/bits/codecvt.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/include/c++/12.1.0/bits/fstream.tcc /usr/include/c++/12.1.0/vector \
+ /usr/include/c++/12.1.0/bits/fstream.tcc /usr/include/c++/12.1.0/sstream \
+ /usr/include/c++/12.1.0/bits/sstream.tcc \
+ /home/ati/Desktop/code/lol/src/game/world/World.h \
+ /home/ati/Desktop/code/lol/src/game/world/Chunk.h \
+ /usr/include/c++/12.1.0/iostream /usr/include/c++/12.1.0/vector \
  /usr/include/c++/12.1.0/bits/stl_uninitialized.h \
  /usr/include/c++/12.1.0/bits/stl_vector.h \
  /usr/include/c++/12.1.0/bits/stl_bvector.h \
- /usr/include/c++/12.1.0/bits/vector.tcc /usr/include/c++/12.1.0/array \
- /usr/include/c++/12.1.0/compare \
+ /usr/include/c++/12.1.0/bits/vector.tcc \
  /home/ati/Desktop/code/lol/src/game/game.h \
  /home/ati/Desktop/code/lol/lib/glad/include/glad/glad.h \
  /home/ati/Desktop/code/lol/lib/glad/include/KHR/khrplatform.h \
