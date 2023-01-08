@@ -7,14 +7,10 @@
 
 #include<game/game.h>
 #include "block.h"
-class Chunk;// frick this complex clusterf***
-
-#include <game/world/World.h>
 
 class Chunk
 {
 private:
-	World parent;
 	glm::ivec3 pos;
 	glm::ivec3 dimensions = glm::ivec3(16, 16, 16);
 	Renderdata rd;
@@ -28,7 +24,7 @@ public:
 
 	bool isBlockTransparent(int x, int y, int z);
 
-	Chunk(glm::ivec3 _pos,World parent);
+	Chunk(glm::ivec3 _pos);
 
 	void generate();
 

@@ -1,6 +1,5 @@
 #include "World.h"
 
-
 #include <FastNoise/FastNoise.h>
 
 World::World(){
@@ -13,7 +12,7 @@ for (int x =(render_distance)*-1;x < render_distance; x++)// diffrent cuz the po
     {
         for (int z = (render_distance)*-1;z < render_distance; z++)
         {
-            chunks.push_back(Chunk(glm::vec3(x,y,z),this));
+            chunks.push_back(Chunk(glm::vec3(x,y,z)));
 
         }
     }
@@ -78,4 +77,11 @@ int World::GetBlock(int x,int y,int z)
 	if (y == l)
 		return 1;
 	return 0;
+}
+
+World& World::getInstance()
+{
+
+    static World instance = World(); 
+    return instance;
 }

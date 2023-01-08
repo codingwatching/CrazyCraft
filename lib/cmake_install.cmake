@@ -1,4 +1,4 @@
-# Install script for directory: /home/ati/Desktop/code/lol/lib
+# Install script for directory: /workspaces/CrazyCraft/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -44,10 +44,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ati/Desktop/code/lol/lib/glad/cmake_install.cmake")
-  include("/home/ati/Desktop/code/lol/lib/glfw/cmake_install.cmake")
-  include("/home/ati/Desktop/code/lol/lib/FastNoise2/cmake_install.cmake")
-  include("/home/ati/Desktop/code/lol/lib/glm/cmake_install.cmake")
+  include("/workspaces/CrazyCraft/lib/glad/cmake_install.cmake")
+  include("/workspaces/CrazyCraft/lib/glfw/cmake_install.cmake")
+  include("/workspaces/CrazyCraft/lib/FastNoise2/cmake_install.cmake")
+  include("/workspaces/CrazyCraft/lib/glm/cmake_install.cmake")
 
 endif()
 

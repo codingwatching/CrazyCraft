@@ -1,4 +1,5 @@
 #include "Chunk.h"
+#include "World.h"
 #include "game/world/Voxeldata.h"
 
 
@@ -11,13 +12,13 @@ unsigned char Chunk::getBlock(int x, int y, int z)
 	int wy = y + (pos.y * 16);
 	int wz = z + (pos.z * 16);
 	//if (x < 0 || x > 16 || y < 0 || y > 16 || z < 0 || z > 16) return 0;// remains of a piece of shit
-	parent.GetBlock(wx,wy,wz);
+	World::getInstance().GetBlock(wx,wy,wz);
 
 }
 
 bool Chunk::isBlockTransparent(int x, int y, int z)
 {
-	return parent.bd.getBlockData(getBlock(x, y, z)).isTransparent;
+	return World::getInstance().bd.getBlockData(getBlock(x, y, z)).isTransparent;
 }
 
 glm::vec2 getuv(Crazycraft::Texture texture, int VertexID, int Faceid)
@@ -61,7 +62,7 @@ void Chunk::UpdateRenderData()
 		{
 			for (int z = 0; z <= 16; z++)
 			{
-				Crazycraft::Block b = parent.bd.getBlockData(getBlock(x, y, z));
+				Crazycraft::Block b = World::getInstance().bd.getBlockData(getBlock(x, y, z));
 				if (getBlock(x, y, z))
 				{
 
@@ -396,9 +397,8 @@ void Chunk::render()
 }
 
 
-Chunk::Chunk(glm::ivec3 _pos,World _parent){
+Chunk::Chunk(glm::ivec3 _pos){
  NormalizedBlockTextureSize = 1. / (float)TextureAtlasSizeInBlocks;
  pos = _pos;
- parent = _parent;
 
 }
